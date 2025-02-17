@@ -292,5 +292,47 @@
     "title": "Estatistica Descritiva",
     "section": "",
     "text": "Clique no link abaixo para baixar o PDF: Baixar PDF ## Por que Estudar Estatística Descritiva?\nA Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
+  },
+  {
+    "objectID": "07-ex-inter.html",
+    "href": "07-ex-inter.html",
+    "title": "Exercícios Interactivos",
+    "section": "",
+    "text": "1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "07-ex-inter.html#htmlwidgets",
+    "href": "07-ex-inter.html#htmlwidgets",
+    "title": "Exercícios Interactivos",
+    "section": "HTMLwidgets",
+    "text": "HTMLwidgets\n\n# Carregar a biblioteca leaflet\nlibrary(leaflet)\n\n# Coordenadas aproximadas de Cabinda, Angola\ncabinda_lat &lt;- -5.55\ncabinda_lng &lt;- 12.19\n\n# Criar o mapa\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Adicionar os tiles do OpenStreetMap\n  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = \"Cabinda, Angola\")\nm  # Print the map"
+  },
+  {
+    "objectID": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
+    "href": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
+    "title": "Exercícios Interactivos",
+    "section": "Exemplo de questão de múltipla escolha",
+    "text": "Exemplo de questão de múltipla escolha\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:\n\n\n  População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.  População:Todos os estudantes do 1º ano do curso de Matemática, Amostra : Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.\n\n\n\n\n\nLimpar\n\n\n\n\nA função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:\n\n\n \\[Y=β_0+β_1X+e\\]  \\[ Y=β_0+β_1X\\]  \\[ \\hat Y=\\hat β_0\\]   \\[ \\hat Y=\\hat β_0+β_1X\\]\n\n\n\n\n\nLimpar\n\n\n\n\nCom um modelo de regressão, a inferência estatística pode ser feita desde que:\n\n\n \\[R^2=1\\]  1 e 2 estão corretas   Nenhuma das anteriores   O modelo é estatisticamente válido\n\n\n\n\n\nLimpar\n\n\n\n\nQual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?\n\n\n  O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações   O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações   Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes  O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões\n\n\n\n\n\nLimpar\n\n\n\n\nO diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: :\n\n\n  A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear   A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.   A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de normalidade dos erros é cumprida neste modelo   A suposição de variância constante dos erros é cumprida para este modelo.   A suposição de normalidade dos erros não é cumprida para este modelo.   A suposição de variância constante dos erros não é cumprida neste modelo.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é não linear e positiva.   a. A relação é linear e positiva   Não há relação.   A relação é não linear e negativa.\n\n\n\n\n\nLimpar\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é não linear e negativa.   Não há relação.   A relação é linear e positiva   A relação é não linear e positiva.\n\n\n\n\n\nLimpar\n\n\n\nNum estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:\n\n\n (A), (D), (E), (F) , (H).   (A), (D), (C), (F) , (H).   (A), (D), (E), (F) , (B).\n\n\n\n\n\nLimpar\n\n\n\nE, as qualitativas são:\n\n\n (B), (C), (G) ,(F) .  (B), (C), (G).  (B), (C), (G)),(H).\n\n\n\n\n\nLimpar\n\n\n\nDiga porque é que a seguinte situação representam má amostra:\n\nPara saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:\n\n\n A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .   Não é representativa da população de onde foi retirada-é uma amostra enviesada.   Diferentes tipos de pessoas frequentam o mesmo supermercado.\n\n\n\n\n\nLimpar\n\nsingle.choice() function: check arguments.\nsingle.choice() function: check arguments.\n\\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nOUTRA\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:\n\n\nA resposta é 1.\n\nA resposta é \n\n\nLimpar"
+  },
+  {
+    "objectID": "07-ex-inter.html#essay-em-ficheiro-externo",
+    "href": "07-ex-inter.html#essay-em-ficheiro-externo",
+    "title": "Exercícios Interactivos",
+    "section": "Essay em ficheiro externo",
+    "text": "Essay em ficheiro externo\n\nhttps://bookdown.org/yihui/rmarkdown-cookbook/include-html.html"
+  },
+  {
+    "objectID": "07-ex-inter.html#incluir-geogebra",
+    "href": "07-ex-inter.html#incluir-geogebra",
+    "title": "Exercícios Interactivos",
+    "section": "Incluir geogebra",
+    "text": "Incluir geogebra\n\nknitr::include_url(\"https://www.geogebra.org/m/W9Nz53Ct\")"
+  },
+  {
+    "objectID": "07-ex-inter.html#como-fazer-2",
+    "href": "07-ex-inter.html#como-fazer-2",
+    "title": "Exercícios Interactivos",
+    "section": "Como fazer 2",
+    "text": "Como fazer 2\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:{r eval=FALSE} install.packages(\"bookdown\") # or the development version # devtools::install_github(\"rstudio/bookdown\")\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/."
   }
 ]

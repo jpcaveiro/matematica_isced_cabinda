@@ -1,0 +1,43 @@
+
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+ 
+<script>
+// Escolha múltipla
+function show_answer(idname,message,correct) { 
+    console.log("show_answer:" + message)
+    document.getElementById(idname).innerHTML = message;
+    //document.getElementById("demo").style.fontSize = "25px";
+    if (correct) {
+      document.getElementById(idname).style.color = "green";
+    } else {
+      document.getElementById(idname).style.color = "red";
+    }
+    //document.getElementById("demo").style.backgroundColor = "yellow";
+}
+function reset(idnamepartial) { 
+    const idnamecomment = idnamepartial+"-comment"
+    const idnameform = idnamepartial+"-form"
+    console.log("reset:" + idnamecomment)
+    document.getElementById(idnamecomment).innerHTML = "";
+    //document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById(idnamecomment).style.color = "black";
+    //document.getElementById("demo").style.backgroundColor = "yellow";
+    const form = document.getElementById(idnameform);
+    const radios = form.querySelectorAll('input[type="radio"]');
+    for (const radio of radios) {
+        radio.checked = false;
+    }
+}
+// Essay
+function toggle_div(divname) { 
+  const myDiv = document.getElementById(divname); /* Use ID */
+  const myDivDisplay = myDiv.style.display; /* Use ID */
+  if (myDivDisplay === 'none') {
+    console.log('The div is hidden'); /* Displayed if hidden */
+    myDiv.style.display = 'block'; /* Show the div */
+  } else {
+    console.log('The div is visible'); /* Displayed if visible */
+    myDiv.style.display = 'none'; /* Hide the div */
+  }
+}
+</script>

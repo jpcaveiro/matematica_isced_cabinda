@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.553">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Estatistica Descritiva - Exercícios Interactivos</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="site_libs/htmltools-fill-0.5.8/fill.css" rel="stylesheet">
+
+<script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-1.3.1/leaflet.js"></script>
+
+<link href="site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+
+<script src="site_libs/proj4-2.6.2/proj4.min.js"></script>
+
+<script src="site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+
+<link href="site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+
+<script src="site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+
+
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Estatistica Descritiva</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./01-intro.qmd"> 
+<span class="menu-text">Introdução à Estatística Descritiva</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./02-analise-explo-dados.html"> 
+<span class="menu-text">Análise Exploratória de Dados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./03-medidas-dispersao.html"> 
+<span class="menu-text">Medidas de Dispersão</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./04-distribuicoes-frequencia.html"> 
+<span class="menu-text">Distribuições de Frequência</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./05-graficos-estatisticos.html"> 
+<span class="menu-text">Gráficos Estatísticos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./06-exercicios.html"> 
+<span class="menu-text">Exercícios e Aplicações</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="./07-ex-inter.html" aria-current="page"> 
+<span class="menu-text">Exercícios Interactivos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./08-referencias.html"> 
+<span class="menu-text">Referências</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Exercícios Interactivos</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<section id="htmlwidgets" class="level2">
+<h2 class="anchored" data-anchor-id="htmlwidgets">HTMLwidgets</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carregar a biblioteca leaflet</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Coordenadas aproximadas de Cabinda, Angola</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>cabinda_lat <span class="ot">&lt;-</span> <span class="sc">-</span><span class="fl">5.55</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>cabinda_lng <span class="ot">&lt;-</span> <span class="fl">12.19</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Criar o mapa</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>m <span class="ot">&lt;-</span> <span class="fu">leaflet</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addTiles</span>() <span class="sc">%&gt;%</span>  <span class="co"># Adicionar os tiles do OpenStreetMap</span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">addMarkers</span>(<span class="at">lng =</span> cabinda_lng, <span class="at">lat =</span> cabinda_lat, <span class="at">popup =</span> <span class="st">"Cabinda, Angola"</span>)</span>
+<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>m  <span class="co"># Print the map</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="leaflet html-widget html-fill-item" id="htmlwidget-1fb31e3725dba6c95d94" style="width:100%;height:464px;"></div>
+<script type="application/json" data-for="htmlwidget-1fb31e3725dba6c95d94">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false,"attribution":"&copy; <a href=\"https://openstreetmap.org/copyright/\">OpenStreetMap<\/a>,  <a href=\"https://opendatacommons.org/licenses/odbl/\">ODbL<\/a>"}]},{"method":"addMarkers","args":[-5.55,12.19,null,null,null,{"interactive":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"Cabinda, Angola",null,null,null,null,{"interactive":false,"permanent":false,"direction":"auto","opacity":1,"offset":[0,0],"textsize":"10px","textOnly":false,"className":"","sticky":true},null]}],"limits":{"lat":[-5.55,-5.55],"lng":[12.19,12.19]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+</section>
+<section id="exemplo-de-questão-de-múltipla-escolha" class="level2">
+<h2 class="anchored" data-anchor-id="exemplo-de-questão-de-múltipla-escolha">Exemplo de questão de múltipla escolha</h2>
+<p>
+</p><ol type="1">
+<li>Pretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:
+<p></p>
+<form id="ex01-form">
+<input type="radio" id="option3" value="3" name="ex01" onclick="show_answer('ex01-comment','Opção incorrecta! observe-se que nesta resposta,as definições da popolução e amostra  utilzam o termo Todos os alunos,  um termo que representa totalidade (população)e não amostra.',false)"> <label for="option3"> População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.</label><br> <input type="radio" id="option1" value="1" name="ex01" onclick="show_answer('ex01-comment','Opção certa!Nesta questão espera-se que o estudante, a partir das definições de população, amostra e variável identifique-as. Lembre-se que População ou universo designa um conjunto de unidade individuais com uma ou mais características comuns que se pretendem estudar. Um subconjunto finito da população chama-se amostra e característica dos elementos da amostra que nos interessa averiguar estatisticamente chama-se variável',true)"> <label for="option1">População:Todos os estudantes do 1º ano do curso de Matemática, Amostra : Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.</label><br> <input type="radio" id="option2" value="2" name="ex01" onclick="show_answer('ex01-comment','Opção incorrecta! observe-se que nesta resposta,as definições da popolução e amostra  utilzam o termo Todos os alunos,  um termo que representa totalidade (população)e não amostra',false)"> <label for="option2"> População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.</label><br>
+</form>
+<div id="ex01-comment">
+
+</div>
+<button type="button" onclick="reset('ex01')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="2" type="1">
+<li>A função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:
+<p></p>
+<form id="ex02-form">
+<input type="radio" id="option2" value="2" name="ex02" onclick="show_answer('ex02-comment','Opção incorrecta! note que nesta equação há um termo que representa fatores aleatórios (e). Esses fatores aleatórios fazem com que a relação entre X e Y não seja perfeita ou determinística',false)"> <label for="option2"><span class="math display">\[Y=β_0+β_1X+e\]</span></label><br> <input type="radio" id="option1" value="1" name="ex02" onclick="show_answer('ex02-comment','Opção certa!esta equação representa uma linha reta, uma função de duas variáveis que estão relacionadas de forma perfeita ou determinística',true)"> <label for="option1"><span class="math display">\[ Y=β_0+β_1X\]</span></label><br> <input type="radio" id="option4" value="4" name="ex02" onclick="show_answer('ex02-comment','Opção incorrecta!Essa relação inclui uma variável ajustada e um fator constante, portanto não é nem mesmo uma relação entre duas variáveis.',false)"> <label for="option4"><span class="math display">\[ \hat Y=\hat β_0\]</span> </label><br> <input type="radio" id="option3" value="3" name="ex02" onclick="show_answer('ex02-comment','Opção incorrecta! Esta equação representa um ajuste, observe que a equação inclui a variável de resposta ajustada e não a original.',false)"> <label for="option3"><span class="math display">\[ \hat Y=\hat β_0+β_1X\]</span></label><br>
+</form>
+<div id="ex02-comment">
+
+</div>
+<button type="button" onclick="reset('ex02')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="3" type="1">
+<li>Com um modelo de regressão, a inferência estatística pode ser feita desde que:
+<p></p>
+<form id="ex03-form">
+<input type="radio" id="option1" value="1" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta!Este é um fator importante para fazer inferências nestes modelos, mas não é o único ',true)"> <label for="option1"><span class="math display">\[R^2=1\]</span></label><br> <input type="radio" id="option3" value="3" name="ex03" onclick="show_answer('ex03-comment','Opção correcta! Precisamos que a variabilidade da variável de resposta seja explicada pelas variáveis independentes (opção a) e também que as suposições estatísticas sejam cumpridas (opção b)',false)"> <label for="option3">1 e 2 estão corretas</label><br> <input type="radio" id="option4" value="4" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta!tente novamente!.',false)"> <label for="option4"> Nenhuma das anteriores</label><br> <input type="radio" id="option2" value="2" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta! note que Este é um fator importante para fazer inferências nestes modelos, mas é o único?',false)"> <label for="option2"> O modelo é estatisticamente válido</label><br>
+</form>
+<div id="ex03-comment">
+
+</div>
+<button type="button" onclick="reset('ex03')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="4" type="1">
+<li>Qual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?
+<p></p>
+<form id="ex04-form">
+<input type="radio" id="option2" value="2" name="ex04" onclick="show_answer('ex04-comment','Opção incorrecta! Na verdade, o r quadrado aumenta à medida que mais variáveistêm o modelo.',false)"> <label for="option2"> O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações</label><br> <input type="radio" id="option1" value="1" name="ex04" onclick="show_answer('ex04-comment','Opção correcta! Isso mesmo! Essa é exatamente a resposta, mas foi só sorte? Então revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado.',true)"> <label for="option1"> O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações</label><br> <input type="radio" id="option4" value="4" name="ex04" onclick="show_answer('ex04-comment','Opção incorrecta!tente novamente!Isso não faz muito sentido, revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado.',false)"> <label for="option4"> Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes</label><br> <input type="radio" id="option3" value="3" name="ex04" onclick="show_answer('ex04-comment','Opção incorrecta!  Isso não faz muito sentido, revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado',false)"> <label for="option3">O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões</label><br>
+</form>
+<div id="ex04-comment">
+
+</div>
+<button type="button" onclick="reset('ex04')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="5" type="1">
+<li>O diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: <img src="Scatter1.png" class="img-fluid">:
+<p></p>
+<form id="ex005-form">
+<input type="radio" id="option2" value="2" name="ex005" onclick="show_answer('ex005-comment','Opção incorrecta! Na verdade, os pontos do diagrama não estão tão espalhados e podemos ver uma relação linear não tão fraca',false)"> <label for="option2"> A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear</label><br> <input type="radio" id="option3" value="3" name="ex005" onclick="show_answer('ex005-comment','Opção incorrecta! No diagrama podemos ver como os pontos seguem o formato de uma linha reta',false)"> <label for="option3"> A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear</label><br> <input type="radio" id="option1" value="1" name="ex005" onclick="show_answer('ex005-comment','Opção correcta! A relação parece ser forte, então valeria a pena executar um modelo de regressão entre essas variáveis',true)"> <label for="option1"> A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear</label><br> <input type="radio" id="option4" value="4" name="ex005" onclick="show_answer('ex005-comment','Opção incorrecta!  A relação parece ser forte, então valeria a pena executar um modelo de regressão entre essas variáveis.',false)"> <label for="option4"> A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear</label><br>
+</form>
+<div id="ex005-comment">
+
+</div>
+<button type="button" onclick="reset('ex005')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="6" type="1">
+<li>O gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: <img src="Scatter2.png" class="img-fluid">:
+<p></p>
+<form id="ex006-form">
+<input type="radio" id="option1" value="1" name="ex006" onclick="show_answer('ex006-comment','Opção correcta! Isso mesmo! Podemos ver como os pontos não são distribuídos uniformemente, então a variância não é constante e uma solução poderia ser transformar a variável de resposta',true)"> <label for="option1"> A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.</label><br> <input type="radio" id="option4" value="4" name="ex006" onclick="show_answer('ex006-comment','Opção incorrecta! Representar graficamente os resíduos do modelo e seus valores ajustados não me diz nada sobre a suposição de normalidade.',false)"> <label for="option4"> A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.</label><br> <input type="radio" id="option3" value="3" name="ex006" onclick="show_answer('ex006-comment','Opção incorrecta! Podemos ver como os pontos não são distribuídos uniformemente, então a variância não é constante',false)"> <label for="option3"> A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.</label><br> <input type="radio" id="option2" value="2" name="ex006" onclick="show_answer('ex006-comment','Opção incorrecta! Na verdade, Representar graficamente os resíduos do modelo e seus valores ajustados não me diz nada sobre a suposição de normalidade.',false)"> <label for="option2"> A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y</label><br>
+</form>
+<div id="ex006-comment">
+
+</div>
+<button type="button" onclick="reset('ex006')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="7" type="1">
+<li>O gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: <img src="qqNorm.png" class="img-fluid">:
+<p></p>
+<form id="ex007-form">
+<input type="radio" id="option2" value="2" name="ex007" onclick="show_answer('ex007-comment','Opção incorrecta! Podemos ver como há muitos pontos fora das faixas de confiança, então não há normalidade.',false)"> <label for="option2"> A suposição de normalidade dos erros é cumprida neste modelo</label><br> <input type="radio" id="option3" value="3" name="ex007" onclick="show_answer('ex007-comment','Opção incorrecta!Este gráfico não é útil para concluir sobre a suposição de variância constante.',false)"> <label for="option3"> A suposição de variância constante dos erros é cumprida para este modelo.</label><br> <input type="radio" id="option1" value="1" name="ex007" onclick="show_answer('ex007-comment','Opção correcta! Podemos ver como há muitos pontos fora das faixas de confiança, então não há normalidade.',true)"> <label for="option1"> A suposição de normalidade dos erros não é cumprida para este modelo.</label><br> <input type="radio" id="option4" value="4" name="ex007" onclick="show_answer('ex007-comment','Opção incorrecta! Este gráfico não é útil para concluir sobre a suposição de variância constante.',false)"> <label for="option4"> A suposição de variância constante dos erros não é cumprida neste modelo.</label><br>
+</form>
+<div id="ex007-comment">
+
+</div>
+<button type="button" onclick="reset('ex007')">
+Limpar
+</button></li>
+</ol>
+<p>
+</p><ol start="8" type="1">
+<li>O gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:</li>
+</ol>
+<img src="Scatter3.png" class="img-fluid">:
+<p></p>
+<form id="ex008-form">
+<input type="radio" id="option1" value="1" name="ex008" onclick="show_answer('ex008-comment','Opção correcta! Podemos ver a relação positiva com uma forma funcional que não é linear.',true)"> <label for="option1"> A relação é não linear e positiva.</label><br> <input type="radio" id="option2" value="2" name="ex008" onclick="show_answer('ex008-comment','Opção incorrecta! De fato, a relação é positiva, mas é linear? Não parece uma linha reta, parece?.',false)"> <label for="option2"> a. A relação é linear e positiva</label><br> <input type="radio" id="option4" value="4" name="ex008" onclick="show_answer('ex008-comment','Opção incorrecta! Não consegue ver nenhuma forma funcional?',false)"> <label for="option4"> Não há relação.</label><br> <input type="radio" id="option3" value="3" name="ex008" onclick="show_answer('ex008-comment','Opção incorrecta!De fato, a relação é não linear, mas é negativa? Não parece diminuir, não é?.',false)"> <label for="option3"> A relação é não linear e negativa.</label><br>
+</form>
+<div id="ex008-comment">
+
+</div>
+<button type="button" onclick="reset('ex008')">
+Limpar
+</button>
+<p>
+</p><ol start="9" type="1">
+<li>O gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:</li>
+</ol>
+<img src="Scatter4.png" class="img-fluid">:
+<p></p>
+<form id="ex009-form">
+<input type="radio" id="option4" value="4" name="ex009" onclick="show_answer('ex009-comment','Opção incorrecta! Não consegue ver nenhuma forma funcional?',false)"> <label for="option4"> A relação é não linear e negativa.</label><br> <input type="radio" id="option1" value="1" name="ex009" onclick="show_answer('ex009-comment','Opção correcta! ão há associação entre as variáveis, nem positiva, nem negativa, nem com nenhuma forma funcional.',true)"> <label for="option1"> Não há relação.</label><br> <input type="radio" id="option2" value="2" name="ex009" onclick="show_answer('ex009-comment','Opção incorrecta! consegue ver alguma forma funcional?.',false)"> <label for="option2"> A relação é linear e positiva</label><br> <input type="radio" id="option3" value="3" name="ex009" onclick="show_answer('ex009-comment','Opção incorrecta!consegue ver alguma forma funcional?.',false)"> <label for="option3"> A relação é não linear e positiva.</label><br>
+</form>
+<div id="ex009-comment">
+
+</div>
+<button type="button" onclick="reset('ex009')">
+Limpar
+</button>
+<p>
+</p><ol start="3" type="1">
+<li>Num estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:
+<p></p>
+<form id="ex03-form">
+<input type="radio" id="option2" value="2" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta! observe-se que nesta resposta,',false)"> <label for="option2">(A), (D), (E), (F) , (H).</label><br> <input type="radio" id="option1" value="1" name="ex03" onclick="show_answer('ex03-comment','Opção certa!Nesta questão espera-se que o estudante, a partir da definição de variável identifique-as. Lembre-se que uma variável diz-se quantitativa (ou numérica) se se referir a uma característica que se possa contar ou medir. Por exemplo, o número de irmãos de um aluno escolhido ao acaso, na turma, é uma variável quantitativa de contagem, enquanto que a sua altura é uma variável quantitativa de medição',true)"> <label for="option1"> (A), (D), (C), (F) , (H).</label><br> <input type="radio" id="option3" value="3" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta! observe-se que nesta resposta,as .',false)"> <label for="option3"> (A), (D), (E), (F) , (B).</label><br>
+</form>
+<div id="ex03-comment">
+
+</div>
+<button type="button" onclick="reset('ex03')">
+Limpar
+</button></li>
+</ol>
+<p>
+E, as qualitativas são:
+</p>
+<form id="ex03-form">
+<input type="radio" id="option3" value="3" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta! observe-se que nesta resposta,.',false)"> <label for="option3">(B), (C), (G) ,(F) .</label><br> <input type="radio" id="option1" value="1" name="ex03" onclick="show_answer('ex03-comment','Opção certa! Nesta questão espera-se que o estudante, a partir da definição de variável identifique-as. Lembre-se que uma variável diz-se qualitativa (ou categórica) se não for susceptível de medição ou contagem, mas unicamente de uma classificação, podendo assumir várias modalidades ou categorias',true)"> <label for="option1">(B), (C), (G).</label><br> <input type="radio" id="option2" value="2" name="ex03" onclick="show_answer('ex03-comment','Opção incorrecta! observe-se que nesta resposta,as definições ',false)"> <label for="option2">(B), (C), (G)),(H).</label><br>
+</form>
+<div id="ex03-comment">
+
+</div>
+<button type="button" onclick="reset('ex03')">
+Limpar
+</button>
+<p>
+</p><ol start="3" type="1">
+<li>Diga porque é que a seguinte situação representam má amostra:</li>
+</ol>
+Para saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:
+<p></p>
+<form id="ex04-form">
+<input type="radio" id="option3" value="3" name="ex04" onclick="show_answer('ex04-comment','Opção incorrecta! observe-se que nesta resposta,.',false)"> <label for="option3">A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .</label><br> <input type="radio" id="option1" value="1" name="ex04" onclick="show_answer('ex04-comment','Opção certa! Observe-se que diferentes tipos de pessoas frequentam diferentes tipos de supermercados. A amostra daria unicamente indicações sobre a população constituída pelos clientes desse supermercado. Podemos ainda referir, como exemplo, que os preços e o tipo de produtos que estão à venda, não são iguais em todos os supermercados, pelo que a amostra não é representativa',true)"> <label for="option1"> Não é representativa da população de onde foi retirada-é uma amostra enviesada.</label><br> <input type="radio" id="option2" value="2" name="ex04" onclick="show_answer('ex04-comment','Opção incorrecta! ',false)"> <label for="option2"> Diferentes tipos de pessoas frequentam o mesmo supermercado.</label><br>
+</form>
+<div id="ex04-comment">
+
+</div>
+<button type="button" onclick="reset('ex04')">
+Limpar
+</button>
+<p>single.choice() function: check arguments.</p>
+<p>single.choice() function: check arguments.</p>
+<p><span class="math display">\[
+\sum (y_i-\hat y_i)^2=\sum (y_i-b_0-b_1x_i^2)
+\]</span></p>
+<p>OUTRA</p>
+
+<p>Pretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:</p>
+<form id="ex02-form">
+<input type="radio" id="option2" value="2" name="ex02" onclick="show_answer('ex02-comment','Incorreto. Aqui, uma justificação de porque está errado.',false)">
+<label for="option2">A resposta é 1.</label><br>
+<input type="radio" id="option1" value="1" name="ex02" onclick="show_answer('ex02-comment','A População em estudo são todos os alunos do 1º ano do curso de Matemática do ISECED- Cabinda e  Amostra recolhida são os 40 estudantes que responderam ao inquérito no 1º ano do curso de Matemática do ISECED-Cabinda.',true)">
+<label for="option1">A resposta é </label><br>
+</form>
+<div id="ex02-comment"></div>
+<button type="button" onclick="reset('ex02')">Limpar</button>
+
+</section>
+<section id="essay-em-ficheiro-externo" class="level2">
+<h2 class="anchored" data-anchor-id="essay-em-ficheiro-externo">Essay em ficheiro externo</h2>
+<ul>
+<li>https://bookdown.org/yihui/rmarkdown-cookbook/include-html.html</li>
+</ul>
+</section>
+<section id="incluir-geogebra" class="level2">
+<h2 class="anchored" data-anchor-id="incluir-geogebra">Incluir geogebra</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_url</span>(<span class="st">"https://www.geogebra.org/m/W9Nz53Ct"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe src="https://www.geogebra.org/m/W9Nz53Ct" width="672" height="400px" data-external="1">
+</iframe>
+</div>
+</section>
+<section id="como-fazer-2" class="level2">
+<h2 class="anchored" data-anchor-id="como-fazer-2">Como fazer 2</h2>
+<p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
+<p>The <strong>bookdown</strong> package can be installed from CRAN or Github:<code>{r eval=FALSE} install.packages("bookdown") # or the development version # devtools::install_github("rstudio/bookdown")</code></p>
+<p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
+<p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
