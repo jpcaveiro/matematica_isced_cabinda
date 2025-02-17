@@ -1,0 +1,228 @@
+---
+title: "Análise Exploratória de Dados"
+---
+
+Esta secção segue de perto:\[Murteira et al(2015) & Hall et al(2011)\]
+
+A Análise Exploratória de Dados é também designada Análise Preliminar de Dados ou Estatística Descritiva, embora alguns autores estabeleçam diferenças subtis entre estas designações.
+
+Pretende-se que o estudante seja capaz de elaborar e interpretar uma análise estatística exploratória simples de dados univariados.
+
+**Fases de uma Análise Exploratória de Dados**
+
+-   **Organização dos dados** através da construção de **tabelas de frequências**.
+
+-   **Descrição numérica dos dados** através do cálculo de **medidas amostrais**.
+
+-   **Descrição gráfica dos dados** de vários tipos.
+
+-   **Análise** e **interpretação das medidas numéricas** e dos **gráficos** obtidos.
+
+-   **Tabelas de frequências (org. dados)**
+
+Tabelas de contagens que resumem a informação contida na amostra, ordenando os seus valores e agrupando-os em categorias (de valores repetidos ou de valores distribuidos por classes/intervalos). Em geral, são calculadas as
+
+-   **frequências absolutas** (acumuladas ou não acumuladas);
+
+-   **frequências relativas** (acumuladas ou não acumuladas).
+
+**Organização dos Dados**
+
+## Medidas de localização
+
+Das medidas, ou estatísticas que iremos definir, para caracterizar os dados, destacam-se as medidas de localização nomeadamente as que localizam o centro da amostra (média, moda e mediana) , e as medidas de dispersão.
+
+Vamos estudar seguidamente algumas medidas de localização, nomeadamente as que localizam o centro da amostra:
+
+**Média Moda Mediana**
+
+Procuraremos realçar:
+
+-   Processo de as calcular
+
+-   Propriedades
+
+-   Limitações
+
+*Média*
+
+A *média amostral* ou simplesmente *média*, que se representa por $\bar x$ é uma medida de localização do centro da amostra, e obtém-se a partir da seguinte expressão:
+
+$$
+\bar x=\frac{1}{n}\sum_i^ n x_i
+$$
+
+*dados não agrupados*
+
+onde ( x_1 , x_2, ..., x_n ) representam os elementos da amostra e *n* a sua dimensão.
+
+Se as observações se encontram agrupadas em classes, na forma de intervalos, então um valor aproximado para a média é dado pela seguinte expressão:
+
+$$
+\bar x=\frac{1}{n}\sum_i^ k n_ik_i
+$$ onde:
+
+-   *k* é o número de classes do agrupamento;
+-   (n_i) é a frequência absoluta da classe i.
+-   (y_i) é o ponto médio da classe i, o qual é considerado como elemento representativo da classe.
+
+**Particularidade**
+
+A média goza de uma particularidade interessante e que consiste no seguinte:
+
+se calcularmos os desvios de todas as observações relativamente à média e somarmos esses desvios o resultado obtido é igual a zero.
+
+$$(x_1-\bar x)+(x_2-\bar x)+...+(x_n-\bar x)=0$$ Suponhamos que numa festa foram distribuídos berlindes pelos meninos presentes. Os berlindes eram lançados ao ar e quem mais corria mais apanhava. No fim fez-se a contagem e verificou-se a seguinte distribuição sobre os números de berlindes que cada menino conseguiu apanhar:
+
+João 8
+
+Filipa 7
+
+Ana 3
+
+Maria 5
+
+Teresa 4
+
+David 6
+
+A cada menino coube em média 5.5 berlindes. Houve meninos que apanharam menos berlindes do que a média, enquanto que outros apanharam mais. Os meninos que apanharam mais berlindes resolveram dividir com os que apanharam menos de forma a ficarem todos com a mesma quantidade. Terão conseguido?
+
+Resolusão:
+
+Calculando os desvios relativamente à média, temos:
+
+```         
+               Desvio
+               
+```
+
+João 8 $$8 - 5.5 = 2.5$$
+
+Filipa 7 $$7 - 5.5 = 1.5$$
+
+Ana 3 $$3 - 5.5 = -2.5$$
+
+Maria 5 $$5 - 5.5 = -0.5$$
+
+Teresa 4 $$4 - 5.5 = -1.5$$
+
+David 6 $$6 - 5.5 = 0.5$$
+
+$$-0.5 -1.5 + 0.5 + 2.5 + 1.5 -2.5 = 0$$
+
+O resultado verifica-se porque a soma dos desvios positivos é igual à soma dos desvios negativos.
+
+A média tem uma outra característica, que torna a sua utilização vantajosa em certas aplicações:
+
+-   Quando o que se pretende representar é a quantidade total expressa pelos dados, utiliza-se a média.
+
+-   Na realidade, ao multiplicar a média pelo nº total de elementos, obtemos a quantidade pretendida!
+
+Os dados de tipo qualitativo não tem sentido calcular a média, mesmo que os dados sejam números. Se, por exemplo, temos um conjunto de 1's e 2's, se se referirem à variável sexo, em que se utilizou o 1 para representar o sexo masculino e o 2 para o sexo feminino (variável codificada), não tem qualquer significado calcular a média daquele conjunto de dados.
+
+*Moda*
+
+Para um conjunto de dados, define-se moda como sendo:o valor que surge com mais frequência se os dados são discretos, ou, o intervalo de classe com maior frequência se os dados são contínuos.
+
+Esta medida é especialmente útil para reduzir a informação de um conjunto de dados qualitativos, apresentados sob a forma de nomes ou categorias, para os quais não se pode calcular a média e por vezes a mediana (se não forem susceptíveis de ordenação).
+
+*Mediana*
+
+*mediana*, $m_e$, é uma medida de localização do centro da distribuição dos dados, definida do seguinte modo:
+
+Ordenados os elementos da amostra, a mediana é o valor (pertencente ou não à amostra) que a divide ao meio, isto é, 50% dos elementos da amostra são menores ou iguais à mediana e os outros 50% são maiores ou iguais à mediana
+
+Para a sua determinação utiliza-se a seguinte regra, depois de ordenada a amostra de n elementos:
+
+-   Se n é ímpar, a mediana é o elemento médio.
+
+-   Se n é par, a mediana é a semi-soma dos dois elementos médios.
+
+Se se representarem os elementos da amostra ordenada com a seguinte notação: $$
+x_{(1)}, x_{2:n}, ..., x_{n:n} 
+$$ então uma expressão para o cálculo da mediana será:
+
+$$
+med=\left\{
+\begin{array}{ll}
+ X_{\left(\frac{n+1}{2}\right)}, &  \text{se n ímpar} \\
+\frac{1}{2}\left(
+     X_{\left(\frac{n}{2}\right)} + X_{\left(\frac{n}{2}+1\right)} \right),  & \text{se n par} \\
+\end{array}
+\right.
+$$
+
+omo medida de localização, a mediana é mais resistente do que a média, pois não é tão sensível aos dados !
+
+-   Quando a distribuição é simétrica, a média e a mediana coincidem.
+
+-   A mediana não é tão sensível, como a média, às observações que são muito maiores ou muito menores do que as restantes (outliers). Por outro lado a média reflete o valor de todas as observações.
+
+Assim, não se pode dizer em termos absolutos qual destas medidas de localização é preferível, dependendo do contexto em que estão a ser utilizadas.
+
+Como a média é influenciada quer por valores muito grandes, quer por valores muito pequenos, se a distribuição dos dados:
+
+-   for aproximadamente simétrica, a média aproxima-se da mediana
+
+-   for enviesada para a direita (alguns valores grandes como "outliers"), a média tende a ser maior que a mediana
+
+-   for enviesada para a esquerda (alguns valores pequenos como "outliers"), a média tende a ser inferior à mediana.
+
+Representando as ditribuições dos dados (esta observação é válida para as representações gráficas na forma de diagramas de barras ou de histograma) na forma de uma mancha, temos, de um modo geral:
+
+![](Med.png)
+
+**Quantis**
+
+*Quantil de ordem p*
+
+Generalizando a noção de *mediana* $m_e$, é a medida de localização, tal que 50% dos elementos da amostra são menores ou iguais a $m_e$, e os outros 50% são maiores ou iguais a $m_e$, temos a noção de quantil de ordem p, com 0\<p\<1, como sendo o valor $Q_p$ tal que 100p% dos elementos da amostra são menores ou iguais a $Q_p$ e os restantes 100 (1-p)% dos elementos da amostra são maiores ou iguais a $Q_p$.
+
+Tal como a mediana, é uma medida que se calcula a partir da amostra ordenada. Um processo de obter os quantis é utilizando a Função Distribuição Empírica.
+
+## Informações uteis
+
+• [INSTITUTO SUPERIOR DE CIÊNCIAS DA EDUCAÇÃO DE CABINDA/ANGOLA](https://isced-cabinda.com/)
+
+• [PIB per capita de Angola](https://www.worldometers.info/world-population/angola-population/)
+
+• [Taxa de pobreza em Angola](https://www.worldbank.org/en/country/angola/overview/)
+
+• [Dados da UNICEF Angola](https://www.unicef.org/angola/)
+
+• [Instituto Nacional de Estatística de Angola](https://www.ine.gov.ao/)
+
+•[Banco Nacional de Angola](https://www.bna.ao/)
+
+•[Ministério das Finanças de Angola](https://www.minfin.gov.ao/)
+
+# Recursos de Estatística Descritiva
+
+## Baixar documentos
+
+Aqui estão alguns recursos úteis:
+
+•[Baixar o PDF de Estatística Básica](Arquivos/estatistica(1).pdf) •[Baixar o PDF de Estatística Básica](Arquivos/OTDslides(1).pdf)
+
+# Meu Website de Estatística Descritiva
+
+## Visualizar PDF incorporado
+
+\`\`\`{=html} <iframe src="arquivos/documento.pdf" width="100%" height="600px"></iframe>
+
+# Medidas de Tendência Central
+
+## Média
+
+A média é calculada como a soma de todos os valores dividida pelo número de valores.
+
+\`\`\`{r} dados \<- c(10, 20, 30, 40, 50) media \<- mean(dados) media
+
+# Medidas de Tendência Central
+
+## Média
+
+A média é calculada como a soma de todos os valores dividida pelo número de valores.
+
+\`\`\`{r} dados \<- c(10, 20, 30, 40, 50) media \<- mean(dados) media

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.433">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Estatistica Descritiva - Introdução</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">Estatistica Descritiva</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="./index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html" rel="" target="">
+ <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./01-intro.qmd" rel="" target="">
+ <span class="menu-text">Introdução à Estatística Descritiva</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./02-analise-exploratoria-dados.qmd" rel="" target="">
+ <span class="menu-text">Análise Exploratória de Dados</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./03-medidas-dispersao.html" rel="" target="">
+ <span class="menu-text">Medidas de Dispersão</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./04-distribuicoes-frequencia.html" rel="" target="">
+ <span class="menu-text">Distribuições de Frequência</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./05-graficos-estatisticos.html" rel="" target="">
+ <span class="menu-text">Gráficos Estatísticos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./06-exercicios.html" rel="" target="">
+ <span class="menu-text">Exercícios e Aplicações</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./07-referencias.html" rel="" target="">
+ <span class="menu-text">Referências</span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools ms-auto">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Introdução</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="conceitos-básicos" class="level2">
+<h2 class="anchored" data-anchor-id="conceitos-básicos">Conceitos Básicos</h2>
+<p>Alguns termos extensamente utilizados em estatística, são definidos, segue de perto em <a href="https://repositorio.ul.pt/handle/10451/49830">Graça Martins etal(2007)</a>.</p>
+<p><strong>O que é a estatística</strong>?</p>
+<p>A palavra estatística teve origem no latim. Vem de Status que significa estado(Anderson, Sweeney &amp; Williams, 2003).</p>
+<p>A Estatística é, segundo Anderson, et al.&nbsp;(2003), um ramo da matemática que se preocupa em recolher, organizar, descrever, analisar e interpretar dados.</p>
+<p>Todas estas ações são atualmente usadas no nosso quotidiano em inúmeras e várias áreas de atividade - procura e oferta de produtos, taxa de desemprego, cálculo da inflação, resultado das eleições, tendências partidárias, audiências de emissoras de rádio, canais de televisão.</p>
+<p>A Estatística mostra-se, assim, uma ferramenta fundamental quer para o Estado, em todas as suas ações governamentais, bem como para qualquer outro âmbito socioeconómico ou cultural e em todas as especialidades e campos da ciência (Noriega,Huerta, &amp; Sánchez, s/d).</p>
+<p>Neste contexto, são muitas as razões que justificam a necessidade e importância do ensino e da aprendizagem da Estatística.</p>
+<p><a href="http://www.alea.pt/">No site ALEA</a>, considera-se que a estatística tem um papel muito importante na análise e na síntese da informação e que uma população bem informada é uma população mais qualificada.</p>
+<p><strong>Objecto da Estatística</strong></p>
+<p>O objecto da Estatística é o estudo da variabilidade e da incerteza presentes na maior parte dos fenómenos com que nos deparamos no dia a dia, a partir de dados recolhidos sobre esses fenómenos.</p>
+<p>A Estatística fornece-nos as técnicas para extrair informação de dados, os quais são muitas vezes incompletos, na medida em que nos dão informação útil sobre o problema em estudo, não realçando, no entanto, aspectos importantes.</p>
+<p>É objectivo da Estatística extrair informação dos dados para obter uma melhor compreensão das situações que representam.</p>
+<p>Branco (2000) considera que o objectivo do ensino da Estatística é incutir, no aluno, a maneira de pensar própria da Estatística e usar essa maneira de pensar para resolver problemas. Quando o aluno se aperceber de que esta maneira de pensar ajuda a compreender o mundo que o rodeia, então Ela revela-se útil e sua aprendizagem pode tornar-se uma atividade atrativa.</p>
+<p>Muitos educadores e investigadores matemáticos convergem na tese de que a Literacia estatística é uma meta na educação Matemática. (Watson &amp; Moritz, 2000; Konold &amp; Higgins, 2003). Boaventura &amp; Fernandes (2004) generalizam que é importante estudar Estatística visto que a “literacia estatística” dá a possibilidade aos alunos de intervirem como cidadãos esclarecidos, participativos e críticos.</p>
+<p>Entende-se por literacia estatística: “dominar a linguagem estatística (não só ao nível dos conceitos associados às medidas como também aos gráficos); compreender os procedimentos estatísticos(desde a recolha da amostra até divulgação dos resultados); interpretar as situações e os resultados (o que dizem os resultados sobre a situação em questão); avaliar a validade das conclusões (análise crítica sobre a razoabilidade das conclusões tendo em conta os contextos); ponderar eventuais distorções da realidade (considerar possibilidades de enviesamento ou manipulações tendenciosas)” (Canavarro, 2000, p.&nbsp;160).</p>
+<p>A literacia estatística constitui, portanto, uma ponte entre o saber matemático e a utilização da mesma no quotidiano.</p>
+<p>Branco (2000) considera que o ensino da estatística deve incidir na análise de dados reais com o apoio de tecnologias, designadamente informáticas.</p>
+<p>Neste Capítulo “Estatística Descritiva, apresentam-se os conceitos fundamentais da estatística descritiva cobrindo os seguintes tópicos: Introdução à Estatística, Dados tabelas e gráficos, Medidas de localização, Medidas de dispersão, Distribuição e Exercícios e Aplicações.</p>
+<p>A <em>Estatística</em> é a ciência que se ocupa da obtenção de informação, seu tratamento inicial, com a finalidade de, através de modelos probabilísticos adequados, inferir de uma amostra para a população e, eventualmente, prever a evolução futura de um fenómeno.</p>
+<p><strong>Censo e Estudo por Amostragem</strong></p>
+<p>Em termos genéricos, na análise de uma característica <strong>mensurável</strong>, duas perspectivas distintas existem:</p>
+<ol type="1">
+<li><p>Recolhem-se e analisam-se todos os elementos que constituem a população(conjunto constituído por todos os elementos que são objecto de estudo).Neste caso, realiza-se um <em>Censo</em></p></li>
+<li><p>Recolhe-se e analisa-se uma amostra(subconjunto da população). Neste caso, realiza-se um Estudo por <em>Amostragem</em>.</p></li>
+</ol>
+<p>Pretende-se que a amostra seja representativa da população.O processo de recolha e selecção dos elementos que constituem a amostra é objecto de estudo das <em>TÉCNICAS DE AMOSTRAGEM</em>.</p>
+<p><strong>Estatística descritiva</strong> vs <strong>inferencial</strong></p>
+<p><strong>Estatística descritiva</strong>: conjunto de métodos estatísticos que visam sumariar e descrever os atributos mais proeminentes dos dados.</p>
+<p><strong>Estatística Inferencial</strong>: conjunto de métodos estatísticos que visam caracterizar uma população a partir de uma amostra.</p>
+<p>Uma noção fundamental em Estatística é a de conjunto ou agregado, conceito para o qual se usam, indiferentemente, os termos <strong>População</strong> ou <strong>universo</strong>.</p>
+<p><strong>População</strong> ou <strong>Universo Estatístico</strong>: conjunto de elementos, com uma ou mais características comuns, sobre o qual incide o estudo estatístico.</p>
+<p><strong>Ex.:</strong> os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.</p>
+<p>Nem sempre é possível estudar exaustivamente todos os elementos da população! Porquê?</p>
+<ul>
+<li><p>Pode a população ter dimensão infinita Exemplo: População constituída pelas pressões atmosféricas, nos diferentes pontos de uma cidade.</p></li>
+<li><p>Pode o estudo da população levar à destruição da população Exemplo: População dos fósforos de uma caixa.</p></li>
+<li><p>Pode o estudo da população ser muito dispendioso Exemplo: Sondagens exaustivas de todos os eleitores, sobre determinado candidato.</p></li>
+</ul>
+<p>Quando não é possível estudar, exaustivamente, todos os elementos da população, estudam-se só alguns elementos, a que damos o nome de <strong>Amostra</strong>.</p>
+<p><strong>Amostra</strong>: subconjunto finito da população, que se estuda com o objectivo de tirar conclusões para a população de onde foi recolhida.</p>
+<p><strong>Ex.:</strong> conjunto de 15 alunos seleccionados ao acaso do conjunto de todos os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.</p>
+<p>A fase de recolha da amostra é importante, pois a <strong>amostra</strong> deve ser tão representativa quanto possível da <strong>População</strong> que se pretende estudar, uma vez que vai ser a partir do estudo da amostra, que vamos tirar conclusões para a População.</p>
+<p><strong>Razões para a recolha de uma amostra</strong>: <strong>dimensão excessiva da populacão</strong>,<strong>estudo de natureza destrutiva</strong>, <strong>economia</strong> e <strong>tempo</strong>.</p>
+<p>Quando a <strong>amostra</strong> não representa correctamente a <strong>população</strong> diz-se <strong>enviesada</strong> e a sua utilização pode dar origem a interpretações erradas, como se sugere nos seguintes exemplos:</p>
+<ul>
+<li><p>Utilizar uma <strong>amostra</strong> constituída por 10 benfiquistas, para prever o vencedor do próximo Benfica-Sporting.</p></li>
+<li><p>Utilizar uma <strong>amostra</strong> constituída pelos leitores habituais de determinada revista especializada, para tirar conclusões sobre a população geral.</p></li>
+</ul>
+<p><strong>Recenseamento</strong> e <strong>sondagem</strong></p>
+<p><strong>Recenseamento</strong>: em regra geral, associado à contagem oficial e periódica dos indivíduos de um País, ou parte de um País. Ele abrange, no entanto, um leque mais vasto de situações. Assim, pode definir-se recenseamento do seguinte modo:</p>
+<p>estudo científico de um universo de pessoas, instituições ou objectos físicos com o propósito de adquirir conhecimentos, observando todos os seus elementos, e fazer juízos quantitativos acerca de características importantes desse universo.</p>
+<p><strong>sondagem</strong></p>
+<p>Por vezes não é viável nem desejável, principalmente quando o número de elementos da <strong>população</strong> é muito elevado, inquirir todos os seus elementos sempre que se quer estudar uma ou mais características particulares dessa <strong>população</strong>. Surge o conceito de <strong>sondagem</strong>, que se pode tentar definir como:</p>
+<ul>
+<li>estudo científico de uma parte de uma população com o objectivo de estudar atitudes, hábitos e preferências da população relativamente a acontecimentos, circunstâncias e assuntos de interesse comum.</li>
+</ul>
+<p>É fundamental referir que, contrariamente ao <strong>recenseamento</strong>, as <strong>sondagens</strong> inquirem ou analisam apenas uma parte da <strong>população</strong> em estudo, isto é, restrinjem-se a uma <strong>amostra dessa população</strong>, mas com o objectivo de extrapolar para todos os elementos da <strong>população</strong> os resultados observados na <strong>amostra</strong>.</p>
+<p><strong>Estatística descritiva</strong> e <strong>estatística indutiva</strong></p>
+<p>Numa análise estatística distinguem-se essencialmente duas fases:</p>
+<ul>
+<li>Uma primeira fase em que se procura descrever e estudar a amostra: <strong>Estatística descritiva</strong>.</li>
+</ul>
+<p><strong>Estatística descritiva</strong> : Procura-se descrever a amostra, pondo em evidência as características principais e as propriedades.</p>
+<p>e uma segunda fase em que se procura tirar conclusões para a população - <strong>Estatística indutiva</strong>.</p>
+<p><strong>Estatística indutiva</strong>: Conhecidas certas propriedades (obtidas a partir de uma análise descritiva da amostra), expressas por meio de proposições, imaginam-se proposições mais gerais, que exprimam a existência de leis (na população).</p>
+</section>
+<section id="natureza-da-medida-das-variáveis" class="level2">
+<h2 class="anchored" data-anchor-id="natureza-da-medida-das-variáveis">Natureza da medida das variáveis</h2>
+<p><strong>Variável</strong>:característica mensurável ou atributo de interesse para estudo na população. <strong>Exemplo</strong>: nota de ingresso.</p>
+<p><strong>Nota</strong>: Uma amostra pode conter mais de uma característica de interesse para cada uma das unidades observadas. Com duas características temos uma <strong>amostra bivariada</strong>; com mais do que duas temos uma <strong>amostra multivariada</strong>.</p>
+<p><strong>Exemplo</strong>:Na população de alunos de 1ª matrícula do ISCED de Cabinda, em um determinado ano letivo, pode interessar a análise de várias características em simultâneo como, por exemplo, nota de ingresso e Instituição de proveniência.</p>
+<p><strong>Natureza da variável</strong></p>
+<p>A Natureza da variável podem ser:</p>
+<p><strong>Quantitativa(ou numúrica)</strong>:assumem valores intrinsecamente numéricos.Estas podem ser:</p>
+<ul>
+<li><p><strong>Discretas</strong>: assumem um conjunto finito ou infinito numerável (que se consegue contar) de possibilidades.Ex.: número de peças defeituosas por lote.</p></li>
+<li><p><strong>Contínuas</strong>: assumem valores em intervalos reais.Ex.: comprimentos, pesos, tempos, Renda das famílias em Kwanza.</p></li>
+</ul>
+<p><strong>Qualitativa(ou categórica)</strong>: assumem valores intrinsecamente não numéricos.Ex.: Instituição de proveniência.</p>
+<p><strong>Natureza discreta</strong> ou <strong>contínua</strong>?</p>
+<p>A fronteira pode ser pouco clara. Por vezes,os dados de uma variável contínua são registados com precisão finita sendo, na prática, tomados como de natureza discreta.Ex.: a <strong>idade</strong> de uma pessoa, em anos.</p>
+<p>os valores possíveis que uma variável discreta pode assumir representam uma gama de valores tão dispersos que, na prática, os dados observados para a variável são tratados como se fossem de natureza contínua, agrupando-se os valores em intervalos(classes).Ex.: <strong>nº de habitações familiares por Bairro</strong>.</p>
+<p><strong>Escalas de medidas de uma variável</strong></p>
+<ol type="1">
+<li><strong>Escala de razões</strong>: os valores numéricos possuem ordem e diferenças têm significado.</li>
+</ol>
+<ul>
+<li>O valor zero representa ausência da característica e múltiplos de valores possuem significado.</li>
+</ul>
+<p>São exemplos: <strong>medidas de comprimento</strong>, <strong>pesos</strong>, <strong>intervalos de tempo</strong>, <strong>o nº de filhos de um casal</strong>.</p>
+<ol start="2" type="1">
+<li><strong>Escala de intervalos</strong>: os valores numéricos possuem ordem e diferenças têm significado.</li>
+</ol>
+<ul>
+<li>São exemplos: <strong>temperatura medida em graus ºC</strong> ou <strong>ºF</strong>; <strong>medidas de altitude</strong>.</li>
+</ul>
+<ol start="3" type="1">
+<li><strong>Escala ordinal</strong> : os valores (numéricos ou não) possuem uma ordem intrínseca.</li>
+</ol>
+<ul>
+<li>São exemplos: <strong>classificações obtidas no 2º e 3º ciclos do ensino básico (1 a 5)</strong>; <strong>grupos etários (crianças, jovens, adultos e idosos)</strong>.</li>
+</ul>
+<ol start="4" type="1">
+<li>Escala nominal: os valores (numéricos ou não) não possuem uma ordem intrínseca.</li>
+</ol>
+<ul>
+<li>São exemplos: <strong>tipo de sangue de uma pessoa (O, A, B e AB)</strong>; <strong>sexo (0-Feminino,1 Masculino)</strong>.</li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

@@ -1,0 +1,355 @@
+---
+title: "Exercícios Interactivos"
+---
+
+```{r}
+1 + 1
+```
+
+## HTMLwidgets
+
+```{r}
+# Carregar a biblioteca leaflet
+library(leaflet)
+
+# Coordenadas aproximadas de Cabinda, Angola
+cabinda_lat <- -5.55
+cabinda_lng <- 12.19
+
+# Criar o mapa
+m <- leaflet() %>%
+  addTiles() %>%  # Adicionar os tiles do OpenStreetMap
+  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = "Cabinda, Angola")
+m  # Print the map
+```
+
+## Exemplo de questão de múltipla escolha
+
+
+```{r echo=FALSE, results = 'asis'}
+# Notas:
+# 1. O texto com matemática tem que ter 
+# duas barras: \\sqrt  e não \sqrt.
+# 2. A primeira opção é a correta mas depois o sistema baralha.
+# O texto com matemática tem que ter 
+# duas barras: \\sqrt  e não \sqrt.
+source("interaction.R")
+
+cat(single.choice(
+  "ex01",
+  
+" 1. Pretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é: ",
+
+ "População:Todos os estudantes do 1º ano do curso de Matemática, Amostra : Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.","Opção certa!Nesta questão espera-se que o estudante, a partir das definições de população, amostra e variável identifique-as. Lembre-se que População ou universo designa um conjunto de unidade individuais com uma ou mais características comuns que se pretendem estudar. Um subconjunto finito da população chama-se amostra e característica dos elementos da amostra que nos interessa averiguar estatisticamente chama-se variável", 
+
+" População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.","Opção incorrecta! observe-se que nesta resposta,as definições da popolução e amostra  utilzam o termo Todos os alunos,  um termo que representa totalidade (população)e não amostra",
+
+ " População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.","Opção incorrecta! observe-se que nesta resposta,as definições da popolução e amostra  utilzam o termo Todos os alunos,  um termo que representa totalidade (população)e não amostra." 
+))
+```
+
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  "ex02",
+  
+" 2. A função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão: ",
+
+"$$ Y=β_0+β_1X$$", "Opção certa!esta equação representa uma linha reta, uma função de duas variáveis que estão relacionadas de forma perfeita ou determinística", 
+
+"$$Y=β_0+β_1X+e$$","Opção incorrecta! note que nesta equação há um termo que representa fatores aleatórios (e). Esses fatores aleatórios fazem com que a relação entre X e Y não seja perfeita ou determinística",
+
+ "$$ \\hat Y=\\hat β_0+β_1X$$","Opção incorrecta! Esta equação representa um ajuste, observe que a equação inclui a variável de resposta ajustada e não a original.",
+       
+"$$ \\hat Y=\\hat β_0$$ ","Opção incorrecta!Essa relação inclui uma variável ajustada e um fator constante, portanto não é nem mesmo uma relação entre duas variáveis." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  "ex03",
+  
+" 3. Com um modelo de regressão, a inferência estatística pode ser feita desde que: ",
+
+"$$R^2=1$$", "Opção incorrecta!Este é um fator importante para fazer inferências nestes modelos, mas não é o único ", 
+
+" O modelo é estatisticamente válido","Opção incorrecta! note que Este é um fator importante para fazer inferências nestes modelos, mas é o único?",
+
+ "1 e 2 estão corretas","Opção correcta! Precisamos que a variabilidade da variável de resposta seja explicada pelas variáveis independentes (opção a) e também que as suposições estatísticas sejam cumpridas (opção b)",
+       
+" Nenhuma das anteriores","Opção incorrecta!tente novamente!." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  "ex04",
+  
+" 4. Qual é a diferença entre o R ao quadrado e o R ao quadrado ajustado? ",
+
+" O  R quadrado aumenta quanto mais variáveis houver, enquanto o  R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações","Opção correcta! Isso mesmo! Essa é exatamente a resposta, mas foi só sorte? Então revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado.",
+
+" O  R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações","Opção incorrecta! Na verdade, o r quadrado aumenta à medida que mais variáveistêm o modelo." , 
+
+
+ "O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões","Opção incorrecta!  Isso não faz muito sentido, revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado",
+       
+" Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes","Opção incorrecta!tente novamente!Isso não faz muito sentido, revise  para entender melhor os conceitos de R ao quadrado e R ao quadrado ajustado." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  
+  "ex005",
+  
+" 5. O diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que:   ![](Scatter1.png):",
+
+
+" A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear","Opção correcta! A relação parece ser forte, então valeria a pena executar um modelo de regressão entre essas variáveis",
+
+" A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear","Opção incorrecta! Na verdade, os pontos do diagrama não estão tão espalhados e podemos ver uma relação linear não tão fraca",
+
+" A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear","Opção incorrecta! No diagrama podemos ver como os pontos seguem o formato de uma linha reta" , 
+
+ " A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear","Opção incorrecta!  A relação parece ser forte, então valeria a pena executar um modelo de regressão entre essas variáveis." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  
+  "ex006",
+  
+"6. O gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode
+concluir-se que:  ![](Scatter2.png):",
+
+
+" A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.","Opção correcta! Isso mesmo! Podemos ver como os pontos não são distribuídos uniformemente, então a variância não é constante e uma solução poderia ser transformar a variável de resposta",
+
+" A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y","Opção incorrecta! Na verdade, Representar graficamente os resíduos do modelo e seus valores ajustados não me diz nada sobre a suposição de normalidade.",
+
+" A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.","Opção incorrecta! Podemos ver como os pontos não são distribuídos uniformemente, então a variância não é constante" , 
+
+ " A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.","Opção incorrecta! Representar graficamente os resíduos do modelo e seus valores ajustados não me diz nada sobre a suposição de normalidade." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  
+  "ex007",
+  
+"7. O gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: ![](qqNorm.png):",
+
+
+
+"  A suposição de normalidade dos erros não é cumprida para este modelo.","Opção correcta! Podemos ver como há muitos pontos fora das faixas de confiança, então não há normalidade.",
+
+" A suposição de normalidade dos erros é cumprida neste modelo","Opção incorrecta! Podemos ver como há muitos pontos fora das faixas de confiança, então não há normalidade.",
+
+" A suposição de variância constante dos erros é cumprida para este modelo.","Opção incorrecta!Este gráfico não é útil para concluir sobre a suposição de variância constante." , 
+
+ " A suposição de variância constante dos erros não é cumprida neste modelo.","Opção incorrecta! Este gráfico não é útil para concluir sobre a suposição de variância constante." 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  
+  "ex008",
+  
+"8. O gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:      
+
+![](Scatter3.png):",
+
+"  A relação é não linear e positiva.","Opção correcta! Podemos ver a relação positiva com uma forma funcional que não é linear.",
+
+" a. A relação é linear e positiva","Opção incorrecta! De fato, a relação é positiva, mas é linear? Não parece uma linha reta, parece?.",
+
+" A relação é não linear e negativa.","Opção incorrecta!De fato, a relação é não linear, mas é negativa? Não parece diminuir, não é?." , 
+
+ " Não há relação.","Opção incorrecta! Não consegue ver nenhuma forma funcional?" 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  
+  "ex009",
+  
+"9. O gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:
+
+![](Scatter4.png):", 
+
+
+"  Não há relação.","Opção correcta! ão há associação entre as variáveis, nem positiva, nem negativa, nem com nenhuma forma funcional.",
+
+"  A relação é linear e positiva","Opção incorrecta! consegue ver alguma forma funcional?.",
+
+" A relação é não linear e positiva.","Opção incorrecta!consegue ver alguma forma funcional?." , 
+
+ " A relação é não linear e negativa.","Opção incorrecta! Não consegue ver nenhuma forma funcional?" 
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  "ex03",
+  
+" 3. Num estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são: ",
+
+
+" (A), (D), (C), (F) , (H).","Opção certa!Nesta questão espera-se que o estudante, a partir da definição de variável identifique-as. Lembre-se que uma variável diz-se quantitativa (ou numérica) se se referir a uma característica que se possa contar ou medir. Por exemplo, o número de irmãos de um aluno escolhido ao acaso, na turma, é uma variável quantitativa de contagem, enquanto que a sua altura é uma variável quantitativa de medição",
+
+"(A), (D), (E), (F) , (H).","Opção incorrecta! observe-se que nesta resposta,",
+
+"	(A), (D), (E), (F) , (B).","Opção incorrecta! observe-se que nesta resposta,as ."
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+cat(single.choice(
+  "ex03",
+  
+"E, as qualitativas são:",
+
+
+"(B), (C), (G).", "Opção certa! Nesta questão espera-se que o estudante, a partir da definição de variável identifique-as. Lembre-se que uma variável diz-se qualitativa (ou categórica) se não for susceptível de medição ou contagem, mas unicamente de uma classificação, podendo assumir várias modalidades ou categorias", 
+
+"(B), (C), (G)),(H).", "Opção incorrecta! observe-se que nesta resposta,as definições ",
+
+"(B), (C), (G) ,(F) .", "Opção incorrecta! observe-se que nesta resposta,."
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+source("interaction.R")
+cat(single.choice(
+  
+  "ex04",
+  
+"3.	Diga porque é que a seguinte situação representam má amostra: 
+
+Para saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:",
+
+" Não	é representativa da população de onde foi retirada-é uma amostra enviesada.",   "Opção certa! Observe-se que diferentes tipos de pessoas frequentam diferentes tipos de supermercados. A amostra daria unicamente indicações sobre a população constituída pelos clientes desse supermercado. Podemos ainda referir, como exemplo, que os preços e o tipo de produtos que estão à venda, não são iguais em todos os supermercados, pelo que a amostra não é representativa", 
+
+" Diferentes tipos de pessoas frequentam o mesmo  supermercado.", "Opção incorrecta! ",
+
+"A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .", "Opção incorrecta! observe-se que nesta resposta,."
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+
+cat(single.choice(
+  "ex03",
+  ## Analisar a formulação e tipo de resposta
+  
+" 4. Das afirmações que se seguem assinale com F (Falsas) e com V (Verdadeiras): ",
+
+
+" Um pesquisador que ordena uma lista de cidades segundo o ritmo de vida, do mais lento para o mais acelerado, está a operar no nível de medida nominal.","Opção Falsa!Nesta questão espera-se que o estudante, a partir da definição de variável identifique-as. Lembre-se que uma variável diz-se quantitativa (ou numérica) se se referir a uma característica que se possa contar ou medir. Por exemplo, o número de irmãos de um aluno escolhido ao acaso, na turma, é uma variável quantitativa de contagem, enquanto que a sua altura é uma variável quantitativa de medição",
+
+"A frequência relativa é obtida adicionando-se a frequência absoluta ao somatório das frequências posteriores", "Opção incorrecta! observe-se que nesta resposta,", "Terminar...justificação",
+
+"No estudo de determinada característica associada a uma população, deve-se recorrer a uma amostra quando for impraticável (ou mesmo impossível) observar todo o grupo", "Opção incorrecta! ",
+
+"	A Estatística Descritiva compreende as técnicas por meio das quais são tomadas decisões sobre uma população com base na observação de uma amostra", "Opção incorrecta! observe-se que nesta resposta,",
+
+"	Uma população só pode ser caracterizada se forem observados todos os seus componentes", "Opção incorrecta! observe-se que nesta resposta,.",
+
+"	As distribuições de frequências que têm a maior concentração de dados à esquerda da média são denominadas assimétricas negativas", "Opção incorrecta! observe-se que nesta resposta,",
+
+"	Ao nascer, os bebés são pesados e medidos, para saber se estão dentro das tabelas padrão. Estas duas variáveis são contínuas", "Opção incorrecta! ",
+
+"	Um conjunto de 500 notas de Estatística, extraídas dos arquivos da secretaria de uma universidade, constitui uma relação de dados brutos", "Opção incorrecta! observe-se que nesta resposta,."
+
+))
+```
+
+```{r echo=FALSE, results = 'asis'}
+# O texto com matemática tem que ter 
+# duas barras: \\sqrt  e não \sqrt.
+source("interaction.R")
+cat(single.choice(
+  
+  "ex05",
+  
+  "Quanto é $\\sqrt{4}$?",
+  
+  "A resposta é 2.","Opção certa!",
+  
+  "A resposta é 1.", "Incorreto. Aqui, uma justificação de porque está errado.",
+  
+  "A resposta é 0.", "Incorreto. Aqui, uma justificação de porque está errado.",
+  
+  "A resposta é -1 $\\frac{x}{y}$.", "Incorreto. Aqui, uma justificação de porque está errado.",
+  "$$ Y = \beta_0 + \beta_1 X $$."
+))
+```
+
+$$
+\sum (y_i-\hat y_i)^2=\sum (y_i-b_0-b_1x_i^2)
+$$
+
+OUTRA
+
+```{r echo=FALSE, results = 'asis'}
+source("interaction.R")
+
+opcao.correta.ex02 <-"A População em estudo são todos os alunos do 1º ano do curso de Matemática do ISECED- Cabinda e  Amostra recolhida são os 40 estudantes que responderam ao inquérito no 1º ano do curso de Matemática do ISECED-Cabinda."
+  
+single.choice(
+  "ex02",
+  "Pretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:",
+  "A resposta é ", opcao.correta.ex02,
+  "A resposta é 1.", "Incorreto. Aqui, uma justificação de porque está errado."
+)
+
+```
+
+## Essay em ficheiro externo
+
+-   https://bookdown.org/yihui/rmarkdown-cookbook/include-html.html
+
+```{r, echo=FALSE, results='asis'}
+# Usar estas etapas e depois um filtro para converter <h1> em enunciado etc
+# Já depois do html estar feito?
+#library(rmarkdown)
+#rmarkdown::render("..\\exerc\\aberta_001.Rmd", html_fragment(), quiet = TRUE)
+#xfun::file_string('..\\exerc\\aberta_001.html')
+```
+
+## Incluir geogebra
+
+```{r}
+knitr::include_url("https://www.geogebra.org/m/W9Nz53Ct")
+```
+
+## Como fazer 2
+
+This is a *sample* book written in **Markdown**. You can use anything that Pandoc's Markdown supports, e.g., a math equation $a^2 + b^2 = c^2$.
+
+The **bookdown** package can be installed from CRAN or Github:`{r eval=FALSE} install.packages("bookdown") # or the development version # devtools::install_github("rstudio/bookdown")`
+
+Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading `#`.
+
+To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <https://yihui.name/tinytex/>.
+
+```{r include=FALSE}
+# automatically create a bib database for R packages
+knitr::write_bib(c(
+  .packages(), 'bookdown', 'knitr', 'rmarkdown'
+), 'packages.bib')
+```

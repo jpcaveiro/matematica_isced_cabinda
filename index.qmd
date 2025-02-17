@@ -1,10 +1,73 @@
 ---
-title: "."
+title: "Estatistica Descritiva"
 ---
 
-This is a Quarto website.
+# Bem-vindo ao  Website de Estatística Descritiva
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+Este site é dedicado ao estudo e aplicação da **Estatística Descritiva**, uma área fundamental para a análise e interpretação de dados. Aqui  encontrará conceitos teóricos, exemplos práticos, recursos para download e ferramentas interativas para aprimorar seu conhecimento.
 
 
-Escrever aqui.
+
+## O que é Estatística Descritiva?
+
+A Estatística Descritiva é o ramo da Estatística que visa **resumir**, **organizar** e **descrever** conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.
+
+Neste site, você aprenderá sobre:
+- Medidas de tendência central (média, mediana, moda).
+- Medidas de dispersão (variância, desvio padrão, amplitude).
+- Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão).
+- Exemplos práticos com dados reais.
+
+<hr>
+
+## Conteúdos Disponíveis
+
+Explore os tópicos abaixo para começar sua jornada na Estatística Descritiva:
+
+[02-analise-explo-dados.qmd](02-analise-explo-dados.qmd)
+
+### 📊 **Conceitos Básicos**
+- [Medidas de Tendência Central](medidas-tendencia-central.qmd)
+- [Medidas de Dispersão](medidas-dispersao.qmd)
+- [Gráficos e Visualizações](graficos.qmd)
+
+### 📂 **Recursos para Download**
+- [PDF: Introdução à Estatística Descritiva](/Arquivos/introducao-estatistica.pdf)
+- [Apresentação: Conceitos Básicos](/Arquivos/apresentacao-estatistica.pptx)
+- [Planilha de Dados para Prática](/Arquivos/dados-pratica.xlsx)
+
+### 🛠️ **Ferramentas Interativas**
+
+- [Calculadora de Média e Mediana](#) *(em breve)*
+- [Gerador de Gráficos](#) *(em breve)*
+
+<hr>
+
+## Baixar o PDF
+
+Clique no link abaixo para baixar o PDF:
+[Baixar PDF](/arquivos/estatistica_01.pdf)
+## Por que Estudar Estatística Descritiva?
+
+A Estatística Descritiva é a base para qualquer análise de dados. Ela  ajuda-nos a:
+- Entender padrões e tendências em conjuntos de dados.
+- Tomar decisões informadas com base em evidências.
+- Comunicar resultados de forma clara e eficiente.
+
+Seja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz.
+
+<hr>
+
+## Sobre o Autor
+
+Olá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.
+
+[👉 Saiba mais sobre mim](/about.qmd)
+
+<hr>
+
+## Comece Agora!
+
+Clique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela [Introdução à Estatística Descritiva](/posts/introducao.qmd).
+
+Boa aprendizagem! 🚀

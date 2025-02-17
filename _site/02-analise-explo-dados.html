@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Estatistica Descritiva</title>
+<title>Estatistica Descritiva - Análise Exploratória de Dados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 </head>
 
@@ -81,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./index.html" rel="" target="">
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
@@ -93,7 +95,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Introdução à Estatística Descritiva</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./02-analise-explo-dados.html" rel="" target="">
+    <a class="nav-link" href="./02-analise-exploratoria-dados.qmd" rel="" target="">
  <span class="menu-text">Análise Exploratória de Dados</span></a>
   </li>  
   <li class="nav-item">
@@ -113,11 +115,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercícios e Aplicações</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./07-ex-inter.html" rel="" target="">
- <span class="menu-text">Exercícios Interactivos</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./08-referencias.html" rel="" target="">
+    <a class="nav-link" href="./07-referencias.html" rel="" target="">
  <span class="menu-text">Referências</span></a>
   </li>  
 </ul>
@@ -137,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Estatistica Descritiva</h1>
+<h1 class="title">Análise Exploratória de Dados</h1>
 </div>
 
 
@@ -152,61 +150,160 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="bem-vindo-ao-website-de-estatística-descritiva" class="level1">
-<h1>Bem-vindo ao Website de Estatística Descritiva</h1>
-<p>Este site é dedicado ao estudo e aplicação da <strong>Estatística Descritiva</strong>, uma área fundamental para a análise e interpretação de dados. Aqui encontrará conceitos teóricos, exemplos práticos, recursos para download e ferramentas interativas para aprimorar seu conhecimento.</p>
-<section id="o-que-é-estatística-descritiva" class="level2">
-<h2 class="anchored" data-anchor-id="o-que-é-estatística-descritiva">O que é Estatística Descritiva?</h2>
-<p>A Estatística Descritiva é o ramo da Estatística que visa <strong>resumir</strong>, <strong>organizar</strong> e <strong>descrever</strong> conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.</p>
-<p>Neste site, você aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais.</p>
-<hr>
-</section>
-<section id="conteúdos-disponíveis" class="level2">
-<h2 class="anchored" data-anchor-id="conteúdos-disponíveis">Conteúdos Disponíveis</h2>
-<p>Explore os tópicos abaixo para começar sua jornada na Estatística Descritiva:</p>
-<p><a href="./02-analise-explo-dados.html">02-analise-explo-dados.qmd</a></p>
-<section id="conceitos-básicos" class="level3">
-<h3 class="anchored" data-anchor-id="conceitos-básicos">📊 <strong>Conceitos Básicos</strong></h3>
+<p>Esta secção segue de perto:[Murteira et al(2015) &amp; Hall et al(2011)]</p>
+<p>A Análise Exploratória de Dados é também designada Análise Preliminar de Dados ou Estatística Descritiva, embora alguns autores estabeleçam diferenças subtis entre estas designações.</p>
+<p>Pretende-se que o estudante seja capaz de elaborar e interpretar uma análise estatística exploratória simples de dados univariados.</p>
+<p><strong>Fases de uma Análise Exploratória de Dados</strong></p>
 <ul>
-<li><a href="medidas-tendencia-central.qmd">Medidas de Tendência Central</a></li>
-<li><a href="medidas-dispersao.qmd">Medidas de Dispersão</a></li>
-<li><a href="graficos.qmd">Gráficos e Visualizações</a></li>
+<li><p><strong>Organização dos dados</strong> através da construção de <strong>tabelas de frequências</strong>.</p></li>
+<li><p><strong>Descrição numérica dos dados</strong> através do cálculo de <strong>medidas amostrais</strong>.</p></li>
+<li><p><strong>Descrição gráfica dos dados</strong> de vários tipos.</p></li>
+<li><p><strong>Análise</strong> e <strong>interpretação das medidas numéricas</strong> e dos <strong>gráficos</strong> obtidos.</p></li>
+<li><p><strong>Tabelas de frequências (org. dados)</strong></p></li>
 </ul>
-</section>
-<section id="recursos-para-download" class="level3">
-<h3 class="anchored" data-anchor-id="recursos-para-download">📂 <strong>Recursos para Download</strong></h3>
+<p>Tabelas de contagens que resumem a informação contida na amostra, ordenando os seus valores e agrupando-os em categorias (de valores repetidos ou de valores distribuidos por classes/intervalos). Em geral, são calculadas as</p>
 <ul>
-<li><a href="./Arquivos/introducao-estatistica.pdf">PDF: Introdução à Estatística Descritiva</a></li>
-<li><a href="./Arquivos/apresentacao-estatistica.pptx">Apresentação: Conceitos Básicos</a></li>
-<li><a href="./Arquivos/dados-pratica.xlsx">Planilha de Dados para Prática</a></li>
+<li><p><strong>frequências absolutas</strong> (acumuladas ou não acumuladas);</p></li>
+<li><p><strong>frequências relativas</strong> (acumuladas ou não acumuladas).</p></li>
 </ul>
-</section>
-<section id="ferramentas-interativas" class="level3">
-<h3 class="anchored" data-anchor-id="ferramentas-interativas">🛠️ <strong>Ferramentas Interativas</strong></h3>
+<p><strong>Organização dos Dados</strong></p>
+<section id="medidas-de-localização" class="level2">
+<h2 class="anchored" data-anchor-id="medidas-de-localização">Medidas de localização</h2>
+<p>Das medidas, ou estatísticas que iremos definir, para caracterizar os dados, destacam-se as medidas de localização nomeadamente as que localizam o centro da amostra (média, moda e mediana) , e as medidas de dispersão.</p>
+<p>Vamos estudar seguidamente algumas medidas de localização, nomeadamente as que localizam o centro da amostra:</p>
+<p><strong>Média Moda Mediana</strong></p>
+<p>Procuraremos realçar:</p>
 <ul>
-<li><a href="#">Calculadora de Média e Mediana</a> <em>(em breve)</em></li>
-<li><a href="#">Gerador de Gráficos</a> <em>(em breve)</em></li>
+<li><p>Processo de as calcular</p></li>
+<li><p>Propriedades</p></li>
+<li><p>Limitações</p></li>
 </ul>
-<hr>
+<p><em>Média</em></p>
+<p>A <em>média amostral</em> ou simplesmente <em>média</em>, que se representa por <span class="math inline">\(\bar x\)</span> é uma medida de localização do centro da amostra, e obtém-se a partir da seguinte expressão:</p>
+<p><span class="math display">\[
+\bar x=\frac{1}{n}\sum_i^ n x_i
+\]</span></p>
+<p><em>dados não agrupados</em></p>
+<p>onde ( x_1 , x_2, …, x_n ) representam os elementos da amostra e <em>n</em> a sua dimensão.</p>
+<p>Se as observações se encontram agrupadas em classes, na forma de intervalos, então um valor aproximado para a média é dado pela seguinte expressão:</p>
+<p><span class="math display">\[
+\bar x=\frac{1}{n}\sum_i^ k n_ik_i
+\]</span> onde:</p>
+<ul>
+<li><em>k</em> é o número de classes do agrupamento;</li>
+<li>(n_i) é a frequência absoluta da classe i.</li>
+<li>(y_i) é o ponto médio da classe i, o qual é considerado como elemento representativo da classe.</li>
+</ul>
+<p><strong>Particularidade</strong></p>
+<p>A média goza de uma particularidade interessante e que consiste no seguinte:</p>
+<p>se calcularmos os desvios de todas as observações relativamente à média e somarmos esses desvios o resultado obtido é igual a zero.</p>
+<p><span class="math display">\[(x_1-\bar x)+(x_2-\bar x)+...+(x_n-\bar x)=0\]</span> Suponhamos que numa festa foram distribuídos berlindes pelos meninos presentes. Os berlindes eram lançados ao ar e quem mais corria mais apanhava. No fim fez-se a contagem e verificou-se a seguinte distribuição sobre os números de berlindes que cada menino conseguiu apanhar:</p>
+<p>João 8</p>
+<p>Filipa 7</p>
+<p>Ana 3</p>
+<p>Maria 5</p>
+<p>Teresa 4</p>
+<p>David 6</p>
+<p>A cada menino coube em média 5.5 berlindes. Houve meninos que apanharam menos berlindes do que a média, enquanto que outros apanharam mais. Os meninos que apanharam mais berlindes resolveram dividir com os que apanharam menos de forma a ficarem todos com a mesma quantidade. Terão conseguido?</p>
+<p>Resolusão:</p>
+<p>Calculando os desvios relativamente à média, temos:</p>
+<pre><code>               Desvio
+               </code></pre>
+<p>João 8 <span class="math display">\[8 - 5.5 = 2.5\]</span></p>
+<p>Filipa 7 <span class="math display">\[7 - 5.5 = 1.5\]</span></p>
+<p>Ana 3 <span class="math display">\[3 - 5.5 = -2.5\]</span></p>
+<p>Maria 5 <span class="math display">\[5 - 5.5 = -0.5\]</span></p>
+<p>Teresa 4 <span class="math display">\[4 - 5.5 = -1.5\]</span></p>
+<p>David 6 <span class="math display">\[6 - 5.5 = 0.5\]</span></p>
+<p><span class="math display">\[-0.5 -1.5 + 0.5 + 2.5 + 1.5 -2.5 = 0\]</span></p>
+<p>O resultado verifica-se porque a soma dos desvios positivos é igual à soma dos desvios negativos.</p>
+<p>A média tem uma outra característica, que torna a sua utilização vantajosa em certas aplicações:</p>
+<ul>
+<li><p>Quando o que se pretende representar é a quantidade total expressa pelos dados, utiliza-se a média.</p></li>
+<li><p>Na realidade, ao multiplicar a média pelo nº total de elementos, obtemos a quantidade pretendida!</p></li>
+</ul>
+<p>Os dados de tipo qualitativo não tem sentido calcular a média, mesmo que os dados sejam números. Se, por exemplo, temos um conjunto de 1’s e 2’s, se se referirem à variável sexo, em que se utilizou o 1 para representar o sexo masculino e o 2 para o sexo feminino (variável codificada), não tem qualquer significado calcular a média daquele conjunto de dados.</p>
+<p><em>Moda</em></p>
+<p>Para um conjunto de dados, define-se moda como sendo:o valor que surge com mais frequência se os dados são discretos, ou, o intervalo de classe com maior frequência se os dados são contínuos.</p>
+<p>Esta medida é especialmente útil para reduzir a informação de um conjunto de dados qualitativos, apresentados sob a forma de nomes ou categorias, para os quais não se pode calcular a média e por vezes a mediana (se não forem susceptíveis de ordenação).</p>
+<p><em>Mediana</em></p>
+<p><em>mediana</em>, <span class="math inline">\(m_e\)</span>, é uma medida de localização do centro da distribuição dos dados, definida do seguinte modo:</p>
+<p>Ordenados os elementos da amostra, a mediana é o valor (pertencente ou não à amostra) que a divide ao meio, isto é, 50% dos elementos da amostra são menores ou iguais à mediana e os outros 50% são maiores ou iguais à mediana</p>
+<p>Para a sua determinação utiliza-se a seguinte regra, depois de ordenada a amostra de n elementos:</p>
+<ul>
+<li><p>Se n é ímpar, a mediana é o elemento médio.</p></li>
+<li><p>Se n é par, a mediana é a semi-soma dos dois elementos médios.</p></li>
+</ul>
+<p>Se se representarem os elementos da amostra ordenada com a seguinte notação: <span class="math display">\[
+x_{(1)}, x_{2:n}, ..., x_{n:n}
+\]</span> então uma expressão para o cálculo da mediana será:</p>
+<p><span class="math display">\[
+med=\left\{
+\begin{array}{ll}
+X_{\left(\frac{n+1}{2}\right)}, &amp;  \text{se n ímpar} \\
+\frac{1}{2}\left(
+     X_{\left(\frac{n}{2}\right)} + X_{\left(\frac{n}{2}+1\right)} \right),  &amp; \text{se n par} \\
+\end{array}
+\right.
+\]</span></p>
+<p>omo medida de localização, a mediana é mais resistente do que a média, pois não é tão sensível aos dados !</p>
+<ul>
+<li><p>Quando a distribuição é simétrica, a média e a mediana coincidem.</p></li>
+<li><p>A mediana não é tão sensível, como a média, às observações que são muito maiores ou muito menores do que as restantes (outliers). Por outro lado a média reflete o valor de todas as observações.</p></li>
+</ul>
+<p>Assim, não se pode dizer em termos absolutos qual destas medidas de localização é preferível, dependendo do contexto em que estão a ser utilizadas.</p>
+<p>Como a média é influenciada quer por valores muito grandes, quer por valores muito pequenos, se a distribuição dos dados:</p>
+<ul>
+<li><p>for aproximadamente simétrica, a média aproxima-se da mediana</p></li>
+<li><p>for enviesada para a direita (alguns valores grandes como “outliers”), a média tende a ser maior que a mediana</p></li>
+<li><p>for enviesada para a esquerda (alguns valores pequenos como “outliers”), a média tende a ser inferior à mediana.</p></li>
+</ul>
+<p>Representando as ditribuições dos dados (esta observação é válida para as representações gráficas na forma de diagramas de barras ou de histograma) na forma de uma mancha, temos, de um modo geral:</p>
+<p><img src="Med.png" class="img-fluid"></p>
+<p><strong>Quantis</strong></p>
+<p><em>Quantil de ordem p</em></p>
+<p>Generalizando a noção de <em>mediana</em> <span class="math inline">\(m_e\)</span>, é a medida de localização, tal que 50% dos elementos da amostra são menores ou iguais a <span class="math inline">\(m_e\)</span>, e os outros 50% são maiores ou iguais a <span class="math inline">\(m_e\)</span>, temos a noção de quantil de ordem p, com 0&lt;p&lt;1, como sendo o valor <span class="math inline">\(Q_p\)</span> tal que 100p% dos elementos da amostra são menores ou iguais a <span class="math inline">\(Q_p\)</span> e os restantes 100 (1-p)% dos elementos da amostra são maiores ou iguais a <span class="math inline">\(Q_p\)</span>.</p>
+<p>Tal como a mediana, é uma medida que se calcula a partir da amostra ordenada. Um processo de obter os quantis é utilizando a Função Distribuição Empírica.</p>
+</section>
+<section id="informações-uteis" class="level2">
+<h2 class="anchored" data-anchor-id="informações-uteis">Informações uteis</h2>
+<p>• <a href="https://isced-cabinda.com/">INSTITUTO SUPERIOR DE CIÊNCIAS DA EDUCAÇÃO DE CABINDA/ANGOLA</a></p>
+<p>• <a href="https://www.worldometers.info/world-population/angola-population/">PIB per capita de Angola</a></p>
+<p>• <a href="https://www.worldbank.org/en/country/angola/overview/">Taxa de pobreza em Angola</a></p>
+<p>• <a href="https://www.unicef.org/angola/">Dados da UNICEF Angola</a></p>
+<p>• <a href="https://www.ine.gov.ao/">Instituto Nacional de Estatística de Angola</a></p>
+<p>•<a href="https://www.bna.ao/">Banco Nacional de Angola</a></p>
+<p>•<a href="https://www.minfin.gov.ao/">Ministério das Finanças de Angola</a></p>
+</section>
+<section id="recursos-de-estatística-descritiva" class="level1">
+<h1>Recursos de Estatística Descritiva</h1>
+<section id="baixar-documentos" class="level2">
+<h2 class="anchored" data-anchor-id="baixar-documentos">Baixar documentos</h2>
+<p>Aqui estão alguns recursos úteis:</p>
+<p>•<a href="Arquivos/estatistica(1).pdf">Baixar o PDF de Estatística Básica</a> •<a href="Arquivos/OTDslides(1).pdf">Baixar o PDF de Estatística Básica</a></p>
 </section>
 </section>
-<section id="baixar-o-pdf" class="level2">
-<h2 class="anchored" data-anchor-id="baixar-o-pdf">Baixar o PDF</h2>
-<p>Clique no link abaixo para baixar o PDF: <a href="./arquivos/estatistica_01.pdf">Baixar PDF</a> ## Por que Estudar Estatística Descritiva?</p>
-<p>A Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.</p>
-<p>Seja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz.</p>
-<hr>
+<section id="meu-website-de-estatística-descritiva" class="level1">
+<h1>Meu Website de Estatística Descritiva</h1>
+<section id="visualizar-pdf-incorporado" class="level2">
+<h2 class="anchored" data-anchor-id="visualizar-pdf-incorporado">Visualizar PDF incorporado</h2>
+<p>```{=html} <iframe src="arquivos/documento.pdf" width="100%" height="600px"></iframe></p>
 </section>
-<section id="sobre-o-autor" class="level2">
-<h2 class="anchored" data-anchor-id="sobre-o-autor">Sobre o Autor</h2>
-<p>Olá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.</p>
-<p><a href="./about.html">👉 Saiba mais sobre mim</a></p>
-<hr>
 </section>
-<section id="comece-agora" class="level2">
-<h2 class="anchored" data-anchor-id="comece-agora">Comece Agora!</h2>
-<p>Clique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela <a href="./posts/introducao.qmd">Introdução à Estatística Descritiva</a>.</p>
-<p>Boa aprendizagem! 🚀</p>
+<section id="medidas-de-tendência-central" class="level1">
+<h1>Medidas de Tendência Central</h1>
+<section id="média" class="level2">
+<h2 class="anchored" data-anchor-id="média">Média</h2>
+<p>A média é calculada como a soma de todos os valores dividida pelo número de valores.</p>
+<p>```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media</p>
+</section>
+</section>
+<section id="medidas-de-tendência-central-1" class="level1">
+<h1>Medidas de Tendência Central</h1>
+<section id="média-1" class="level2">
+<h2 class="anchored" data-anchor-id="média-1">Média</h2>
+<p>A média é calculada como a soma de todos os valores dividida pelo número de valores.</p>
+<p>```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media</p>
 
 
 </section>

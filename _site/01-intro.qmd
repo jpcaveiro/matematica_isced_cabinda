@@ -1,0 +1,162 @@
+---
+title: "Introdução"
+---
+
+## Conceitos Básicos
+
+Alguns termos extensamente utilizados em estatística, são definidos, segue de perto em [Graça Martins etal(2007)](https://repositorio.ul.pt/handle/10451/49830).
+
+**O que é a estatística**?
+
+A palavra estatística teve origem no latim. Vem de Status que significa estado(Anderson, Sweeney & Williams, 2003).
+
+A Estatística é, segundo Anderson, et al. (2003), um ramo da matemática que se preocupa em recolher, organizar, descrever, analisar e interpretar dados.
+
+Todas estas ações são atualmente usadas no nosso quotidiano em inúmeras e várias áreas de atividade - procura e oferta de produtos, taxa de desemprego, cálculo da inflação, resultado das eleições, tendências partidárias, audiências de emissoras de rádio, canais de televisão.
+
+A Estatística mostra-se, assim, uma ferramenta fundamental quer para o Estado, em todas as suas ações governamentais, bem como para qualquer outro âmbito socioeconómico ou cultural e em todas as especialidades e campos da ciência (Noriega,Huerta, & Sánchez, s/d).
+
+Neste contexto, são muitas as razões que justificam a necessidade e importância do ensino e da aprendizagem da Estatística.
+
+[No site ALEA](http://www.alea.pt/), considera-se que a estatística tem um papel muito importante na análise e na síntese da informação e que uma população bem informada é uma população mais qualificada.
+
+**Objecto da Estatística**
+
+O objecto da Estatística é o estudo da variabilidade e da incerteza presentes na maior parte dos fenómenos com que nos deparamos no dia a dia, a partir de dados recolhidos sobre esses fenómenos.
+
+A Estatística fornece-nos as técnicas para extrair informação de dados, os quais são muitas vezes incompletos, na medida em que nos dão informação útil sobre o problema em estudo, não realçando, no entanto, aspectos importantes.
+
+É objectivo da Estatística extrair informação dos dados para obter uma melhor compreensão das situações que representam.
+
+Branco (2000) considera que o objectivo do ensino da Estatística é incutir, no aluno, a maneira de pensar própria da Estatística e usar essa maneira de pensar para resolver problemas. Quando o aluno se aperceber de que esta maneira de pensar ajuda a compreender o mundo que o rodeia, então Ela revela-se útil e sua aprendizagem  pode tornar-se uma atividade atrativa.
+
+Muitos educadores e investigadores matemáticos convergem na tese de que a Literacia estatística é uma meta na educação Matemática. (Watson & Moritz, 2000; Konold & Higgins, 2003). Boaventura & Fernandes (2004) generalizam que é importante estudar Estatística visto que a "literacia estatística" dá a possibilidade aos alunos de intervirem como cidadãos esclarecidos, participativos e críticos.
+
+Entende-se por literacia estatística: "dominar a linguagem estatística (não só ao nível dos conceitos associados às medidas como também aos gráficos); compreender os procedimentos estatísticos(desde a recolha da amostra até divulgação dos resultados); interpretar as situações e os resultados (o que dizem os resultados sobre a situação em questão); avaliar a validade das conclusões (análise crítica sobre a razoabilidade das conclusões tendo em conta os contextos); ponderar eventuais distorções da realidade (considerar possibilidades de enviesamento ou manipulações tendenciosas)" (Canavarro, 2000, p. 160).
+
+A literacia estatística constitui, portanto, uma ponte entre o saber matemático e a utilização da mesma no quotidiano.
+
+Branco (2000) considera que o ensino da estatística deve incidir na análise de dados reais com o apoio de tecnologias, designadamente informáticas.
+
+Neste Capítulo "Estatística Descritiva, apresentam-se os conceitos fundamentais da estatística descritiva cobrindo os seguintes tópicos: Introdução à Estatística, Dados tabelas e gráficos, Medidas de localização, Medidas de dispersão, Distribuição e Exercícios e Aplicações.
+
+A *Estatística* é a ciência que se ocupa da obtenção de informação, seu tratamento inicial, com a finalidade de, através de modelos probabilísticos adequados, inferir de uma amostra para a população e, eventualmente, prever a evolução futura de um fenómeno.
+
+**Censo e Estudo por Amostragem**
+
+Em termos genéricos, na análise de uma característica **mensurável**, duas perspectivas distintas existem:
+
+1.  Recolhem-se e analisam-se todos os elementos que constituem a população(conjunto constituído por todos os elementos que são objecto de estudo).Neste caso, realiza-se um *Censo*
+
+2.  Recolhe-se e analisa-se uma amostra(subconjunto da população). Neste caso, realiza-se um Estudo por *Amostragem*.
+
+Pretende-se que a amostra seja representativa da população.O processo de recolha e selecção dos elementos que constituem a amostra é objecto de estudo das *TÉCNICAS DE AMOSTRAGEM*.
+
+**Estatística descritiva** vs **inferencial**
+
+**Estatística descritiva**: conjunto de métodos estatísticos que visam sumariar e descrever os atributos mais proeminentes dos dados.
+
+**Estatística Inferencial**: conjunto de métodos estatísticos que visam caracterizar uma população a partir de uma amostra.
+
+Uma noção fundamental em Estatística é a de conjunto ou agregado, conceito para o qual se usam, indiferentemente, os termos **População** ou **universo**.
+
+**População** ou **Universo Estatístico**: conjunto de elementos, com uma ou mais características comuns, sobre o qual incide o estudo estatístico.
+
+**Ex.:** os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.
+
+Nem sempre é possível estudar exaustivamente todos os elementos da população! Porquê?
+
+-   Pode a população ter dimensão infinita Exemplo: População constituída pelas pressões atmosféricas, nos diferentes pontos de uma cidade.
+
+-   Pode o estudo da população levar à destruição da população Exemplo: População dos fósforos de uma caixa.
+
+-   Pode o estudo da população ser muito dispendioso Exemplo: Sondagens exaustivas de todos os eleitores, sobre determinado candidato.
+
+Quando não é possível estudar, exaustivamente, todos os elementos da população, estudam-se só alguns elementos, a que damos o nome de **Amostra**.
+
+**Amostra**: subconjunto finito da população, que se estuda com o objectivo de tirar conclusões para a população de onde foi recolhida.
+
+**Ex.:** conjunto de 15 alunos seleccionados ao acaso do conjunto de todos os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.
+
+A fase de recolha da amostra é importante, pois a **amostra** deve ser tão representativa quanto possível da **População** que se pretende estudar, uma vez que vai ser a partir do estudo da amostra, que vamos tirar conclusões para a População.
+
+**Razões para a recolha de uma amostra**: **dimensão excessiva da populacão**,**estudo de natureza destrutiva**, **economia** e **tempo**.
+
+Quando a **amostra** não representa correctamente a **população** diz-se **enviesada** e a sua utilização pode dar origem a interpretações erradas, como se sugere nos seguintes exemplos:
+
+-   Utilizar uma **amostra** constituída por 10 benfiquistas, para prever o vencedor do próximo Benfica-Sporting.
+
+-   Utilizar uma **amostra** constituída pelos leitores habituais de determinada revista especializada, para tirar conclusões sobre a população geral.
+
+**Recenseamento** e **sondagem**
+
+**Recenseamento**: em regra geral, associado à contagem oficial e periódica dos indivíduos de um País, ou parte de um País. Ele abrange, no entanto, um leque mais vasto de situações. Assim, pode definir-se recenseamento do seguinte modo:
+
+estudo científico de um universo de pessoas, instituições ou objectos físicos com o propósito de adquirir conhecimentos, observando todos os seus elementos, e fazer juízos quantitativos acerca de características importantes desse universo.
+
+**sondagem**
+
+Por vezes não é viável nem desejável, principalmente quando o número de elementos da **população** é muito elevado, inquirir todos os seus elementos sempre que se quer estudar uma ou mais características particulares dessa **população**. Surge o conceito de **sondagem**, que se pode tentar definir como:
+
+-   estudo científico de uma parte de uma população com o objectivo de estudar atitudes, hábitos e preferências da população relativamente a acontecimentos, circunstâncias e assuntos de interesse comum.
+
+É fundamental referir que, contrariamente ao **recenseamento**, as **sondagens** inquirem ou analisam apenas uma parte da **população** em estudo, isto é, restrinjem-se a uma **amostra dessa população**, mas com o objectivo de extrapolar para todos os elementos da **população** os resultados observados na **amostra**.
+
+**Estatística descritiva** e **estatística indutiva**
+
+Numa análise estatística distinguem-se essencialmente duas fases:
+
+-   Uma primeira fase em que se procura descrever e estudar a amostra: **Estatística descritiva**.
+
+**Estatística descritiva** : Procura-se descrever a amostra, pondo em evidência as características principais e as propriedades.
+
+e uma segunda fase em que se procura tirar conclusões para a população - **Estatística indutiva**.
+
+**Estatística indutiva**: Conhecidas certas propriedades (obtidas a partir de uma análise descritiva da amostra), expressas por meio de proposições, imaginam-se proposições mais gerais, que exprimam a existência de leis (na população).
+
+## Natureza da medida das variáveis
+
+**Variável**:característica mensurável ou atributo de interesse para estudo na população. **Exemplo**: nota de ingresso.
+
+**Nota**: Uma amostra pode conter mais de uma característica de interesse para cada uma das unidades observadas. Com duas características temos uma **amostra bivariada**; com mais do que duas temos uma **amostra multivariada**.
+
+**Exemplo**:Na população de alunos de 1ª matrícula do ISCED de Cabinda, em um determinado ano letivo, pode interessar a análise de várias características em simultâneo como, por exemplo, nota de ingresso e Instituição de proveniência.
+
+**Natureza da variável**
+
+A Natureza da variável podem ser:
+
+**Quantitativa(ou numúrica)**:assumem valores intrinsecamente numéricos.Estas podem ser:
+
+-   **Discretas**: assumem um conjunto finito ou infinito numerável (que se consegue contar) de possibilidades.Ex.: número de peças defeituosas por lote.
+
+-   **Contínuas**: assumem valores em intervalos reais.Ex.: comprimentos, pesos, tempos, Renda das famílias em Kwanza.
+
+**Qualitativa(ou categórica)**: assumem valores intrinsecamente não numéricos.Ex.: Instituição de proveniência.
+
+**Natureza discreta** ou **contínua**?
+
+A fronteira pode ser pouco clara. Por vezes,os dados de uma variável contínua são registados com precisão finita sendo, na prática, tomados como de natureza discreta.Ex.: a **idade** de uma pessoa, em anos.
+
+os valores possíveis que uma variável discreta pode assumir representam uma gama de valores tão dispersos que, na prática, os dados observados para a variável são tratados como se fossem de natureza contínua, agrupando-se os valores em intervalos(classes).Ex.: **nº de habitações familiares por Bairro**.
+
+**Escalas de medidas de uma variável**
+
+1.  **Escala de razões**: os valores numéricos possuem ordem e diferenças têm significado.
+
+-   O valor zero representa ausência da característica e múltiplos de valores possuem significado.
+
+São exemplos: **medidas de comprimento**, **pesos**, **intervalos de tempo**, **o nº de filhos de um casal**.
+
+2.  **Escala de intervalos**: os valores numéricos possuem ordem e diferenças têm significado.
+
+-   São exemplos: **temperatura medida em graus ºC** ou **ºF**; **medidas de altitude**.
+
+3.  **Escala ordinal** : os valores (numéricos ou não) possuem uma ordem intrínseca.
+
+-   São exemplos: **classificações obtidas no 2º e 3º ciclos do ensino básico (1 a 5)**; **grupos etários (crianças, jovens, adultos e idosos)**.
+
+4.  Escala nominal: os valores (numéricos ou não) não possuem uma ordem intrínseca.
+
+-   São exemplos: **tipo de sangue de uma pessoa (O, A, B e AB)**; **sexo (0-Feminino,1 Masculino)**.
+

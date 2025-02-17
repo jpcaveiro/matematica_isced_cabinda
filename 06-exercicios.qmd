@@ -1,0 +1,370 @@
+---
+title: "Estatistica Descritiva"
+---
+
+---
+title: "c1 ex01"
+author: "Joaquim Gomes"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# question
+
+
+Qual o valor das medidas de localização: média, mediana e moda?
+
+## keywords
+
+* Média
+*	Mediana
+* Moda a partir de tabela de frequências
+
+more keywords
+
+## answer
+
+
+```{r echo=FALSE}
+dados <- c(156, 164, 146, 163, 162,
+166, 163, 165, 164, 167,
+165, 160, 165, 159, 167,
+175, 175, 167, 158, 155,
+165, 150, 165, 163, 152)
+```
+
+
+Etapa 1 à mão. Carregar o conjunto de dados
+
+A expressão é:
+
+\[
+\bar x = \frac{1}{25}(156+164+\cdots+163+152)
+\]
+
+$$
+\bar x = \frac{1}{25}(156+164+\cdots+163+152)
+$$
+
+sendo o resultado \(\bar x\) com duas casas decimais
+\[
+\bar x = `r round( mean(dados), 2)`
+\]
+
+
+Etapa 1. Carregar o conjunto de dados
+
+
+```{r}
+dados <- c(156, 164, 146, 163, 162,
+166, 163, 165, 164, 167,
+165, 160, 165, 159, 167,
+175, 175, 167, 158, 155,
+165, 150, 165, 163, 152)
+```
+
+
+Etapa 2. Calcular a média
+
+```{r}
+# ctrl+alt+I
+media <- mean(dados)
+media
+```
+
+Etapa 3. Calcular a mediana.
+
+```{r}
+mediana <- median(dados)
+mediana
+```
+
+Etapa 4. Calcular a moda.
+
+```{r}
+moda<-table(dados)
+moda
+```
+
+Outra maneira de fazer:
+
+```{r}
+mean(dados)
+median(dados)
+table(dados)
+```
+
+E outra maneira:
+```{r}
+summary(dados)
+```
+
+
+# question
+
+Construir a tabela de frequências dos dados acima e representa graficamente(gráfico de barras de frequência absoluta e relativa, gráfico de linhas, gráfico de setores e o boxplot).
+
+
+
+## keywords
+
+ssss
+
+## answer
+
+ A tabela de frequência absoluta é:
+```{r echo=FALSE} 
+n<-length(dados)
+fi<-table(dados)
+```
+ A tabela de frequência relativa é:
+```{r echo=FALSE} 
+fri<-fi/n
+```
+frequência absoluta acumulada é:
+```{r echo=FALSE} 
+Fi<-cumsum(fi)
+```
+ 
+ 
+ A tabela de frequência relativa acumulda é:
+```{r echo=FALSE} 
+Fri<-cumsum(fri)
+
+```
+
+tabela de frequências é:
+```{r echo=FALSE} 
+cbind(fi,Fi,fri,Fri)
+```
+
+o gráfico de barras é:
+```{r echo=FALSE} 
+barplot(fi)
+```
+
+o gráfico circular é:
+```{r echo=FALSE} 
+pie(fi)
+```
+o gráfico de linha é:
+```{r echo=FALSE} 
+plot(fi,type="b")
+```
+
+A expressão é:
+$$
+\sum (y_i-\hat y_i)^2=\sum (y_i-b_0-b_1x_i^2)
+$$
+
+You can also embed plots, for example:
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+# question
+
+
+Nos quatro primeiros dias úteis de uma semana o gerente de uma agência bancária atendeu $19$, $15$, $17$ e $21$  clientes. No quinto dia útil dessa semana esse gerente atendeu n clientes.Se a média do número diário de clientes atendidos por esse gerente nos cinco dias úteis dessa semana foi $19$.Calcule a mediana.
+
+## keywords
+
+Mediana
+
+## answer
+
+Apesar de já saber qual a média, primeiro precisamos saber a quantidade de clientes que foi atendida no quinto dia útil, assim,
+
+$$\bar x_p= \frac{1}{5}(15+17+19+21+x)$$
+$$19= \frac{1}{5}(15+17+19+21+x)$$ $$72+x=95$$  $$x=95-72$$ $$x=23$$ 
+Para encontrar a mediana precisamos colocar os valores em ordem crescente, temos então: $15$ $17$ $19$ $21$ $23$, Portanto,a mediana é  $19$ .
+
+
+# question
+
+O quadro seguinte mostra o desempenho de uma equipa de futebol no último campeonato.A coluna da esquerda mostra o número de golos marcados e a coluna da direita informa em quantos jogos a equipa marcou aquele número de golos.
+
+Golos Marcados | Quantidade de Partidas
+-----------:   | :---------------------:
+$0$           | $5$
+$1$           | $3$
+$2$           | $4$
+$3$           | $3$
+$4$           | $2$
+$5$           | $2$
+$7$           | $1$ 
+               
+
+
+
+|**Ano**|**Empresas Fiscalizadas**|
+|:----:|:---------------------:|
+| 1998|7.042                  |
+| 1999|6.561                  |
+| 2000|8.585                  | 
+| 2001|9.641                  |
+| 2002|8.873                  |
+| 2003|9.367                  |
+| 2004|13.856                 |
+| 2005|12.192                 |
+| 2006|13.326                 |
+| 2007|13.390                 |
+| 2008|10.839                 |
+| 2009|13.379                 |
+| 2010|11.978                 |
+
+Fonte:
+
+
+Se $\bar x$, $y$ e $z$ são, respectivamente, a média, a mediana e a moda desta distribuição, então:
+
+a)$\bar x$=$y$<$z$.
+
+b)$z$<$\bar x$=$y$.
+
+c)$y$<$z$<$\bar x$.
+
+d)$z$<$\bar x$<$y$.
+
+e)$z$<$y$<$\bar x$.
+
+## keywords
+
+ssss
+
+## answer
+
+Precisamos calcular a média, a mediana e a moda. Para calcular a média devemos somar o número total de golos e dividir pelo número de partidas.
+
+O número total de golos será encontrado multiplicando-se o número de golos marcados pela quantidade de partidas, ou seja:
+$$
+Total de golos = 0.5+1.3+2.4+3.3+4.2+5.2+7.1 = 45
+$$
+Sendo o total de partidas igual a $20$, a média de golos será igual a: $$\bar x=M_e=\frac{45}{20}=2.25$$
+
+Para encontrar o valor da moda, vamos verificar a quantidade de golos mais frequente. Neste caso, notamos que em $5$ partidas não foram feitos nenhum golo.
+
+Depois desse resultado, as partidas que tiveram $2$ golos foram as mais frequentes (ao todo, $4$ partidas). Portanto,
+
+$$z = M_o = 0$$
+
+A mediana será encontrada colocando os números de golos em ordem. Como o número de jogos foi igual a $20$ que é um valor par, temos que calcular a média entre os dois valores centrais, assim temos:
+
+$0$ $0$ $0$ $0$ $0$ $1$ $1$ $1$ $2$ $2$ $2$ $2$ $3$ $3$ $3$ $4$ $4$ $5$ $5$ $7$
+
+$$y=M_d=\frac{2+4}{2}=\frac{4}{2}=2$$
+
+Com esses resultados, sabemos que:
+
+$$\bar x (média) = 2.25$$
+$$y (mediana) = 2$$
+$$z (moda) = 0$$
+
+Ou seja,
+
+$z$<$y$<$\bar x$(0<2<2.25)
+
+Alternativa:e)$z$<$y$<$\bar x$.
+
+
+# question
+
+No ISCED-Cabinda a disciplina de Estatística, as avaliações são divididas em três categorias: Prova, Trabalho Prático e Participação em Sala de Aula, com pesos respectivos de 5, 3 e 2. Um estudante  obteve as seguintes notas:*Prova*:12,5;*Trabalho Prático*: 12; *Participação em Sala de Aula*:9,5. Calcule a média do estudante nessa disciplina.
+
+## keywords
+Como cada nota possui um peso, trata-se  de uma média ponderada. A média ponderada é um tipo de média que leva em consideração a importância de cada valor ao calcular a média geral. Atribuindo um peso a cada valor, que indica sua importância relativa.
+
+## answer
+A média ponderada é calculada usando a forma:
+$$
+\bar x_p=\frac{Σ(w_ix_i)}{Σ(w_i)}
+$$
+Onde:
+
+$w_i$ é o peso associado ao valor $x_i$;
+
+$x_i$ é o valor;
+
+$Σ$ é o símbolo que representa a soma.
+
+Calculando a média ponderada
+
+$$
+\bar x_p=\frac{Σ(w_ix_i)}{Σ(w_i)}
+$$
+$$
+=\frac{(5.12,5+3.12+2.9,5)}{(5+3+2)}
+$$
+$$
+=\frac{(62,5+36+19)}{10}
+$$
+$$
+=\frac{(117,5)}{10}=11,75
+$$
+
+A média do estudante é: 11,75
+
+```{r echo=FALSE}
+# Definindo os pesos
+pesos <- c(5, 3, 2)
+
+# Definindo as notas
+notas <- c(12.5, 12.0, 9.5)
+
+# Calculando a média ponderada
+media_ponderada <- sum(pesos * notas)/sum(pesos)
+
+# Imprimindo o resultado
+print(paste("Média ponderada:", media_ponderada))
+```
+
+# question
+
+A lista do número de irmãos dos alunos do 1º ano do curso de Matemática do ISCED-Cabinda é a seguinte:
+
+$1$ $0$ $1$ $2$ $1$ $1$ $1$ $3$ $0$ $4$ $0$ $1$ $1$
+
+$4$ $2$ $2$ $1$ $3$ $1$ $2$ $1$ $1$ $2$ $1$ $2$ $3$
+
+Construa :
+
+a) A tabela de frequências.
+
+b) O diagrama de barras.              
+
+## keywords
+
+ssss
+
+## answer
+A tabela de frequência absoluta é:
+```{r echo=FALSE}
+d1<- c(1,0,1,2,1,1,1,3,0,4,0,1,1,4,2,2,1,3,1,2,1,1,2,1,2,3,2)
+n<-length(d1)
+fi<-table(d1)
+fi
+```
+ A tabela de frequência relativa é:
+```{r echo=FALSE} 
+fri<-fi/n
+fri
+```
+tabela de frequências é:
+
+```{r echo=FALSE} 
+gf= cbind(fi,fri)
+knitr::kable(gf,padding=1, caption="tabela de frequências") 
+
+```
+
+o gráfico de barras é:
+```{r echo=FALSE} 
+barplot(fi)
+```
+
+
+
+
+
+
+

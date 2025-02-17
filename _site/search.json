@@ -2,8 +2,295 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": ".",
+    "title": "Estatistica Descritiva",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nEscrever aqui."
+    "text": "Este site é dedicado ao estudo e aplicação da Estatística Descritiva, uma área fundamental para a análise e interpretação de dados. Aqui encontrará conceitos teóricos, exemplos práticos, recursos para download e ferramentas interativas para aprimorar seu conhecimento.\n\n\nA Estatística Descritiva é o ramo da Estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, você aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais.\n\n\n\n\nExplore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n02-analise-explo-dados.qmd\n\n\n\nMedidas de Tendência Central\nMedidas de Dispersão\nGráficos e Visualizações\n\n\n\n\n\nPDF: Introdução à Estatística Descritiva\nApresentação: Conceitos Básicos\nPlanilha de Dados para Prática\n\n\n\n\n\nCalculadora de Média e Mediana (em breve)\nGerador de Gráficos (em breve)\n\n\n\n\n\n\nClique no link abaixo para baixar o PDF: Baixar PDF ## Por que Estudar Estatística Descritiva?\nA Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz.\n\n\n\n\nOlá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim\n\n\n\n\nClique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "02-medidas-tendencia-central.html",
+    "href": "02-medidas-tendencia-central.html",
+    "title": "Medidas de Tendência Central",
+    "section": "",
+    "text": "A média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+  },
+  {
+    "objectID": "02-medidas-tendencia-central.html#média",
+    "href": "02-medidas-tendencia-central.html#média",
+    "title": "Medidas de Tendência Central",
+    "section": "",
+    "text": "A média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+  },
+  {
+    "objectID": "02-medidas-tendencia-central.html#média-1",
+    "href": "02-medidas-tendencia-central.html#média-1",
+    "title": "Medidas de Tendência Central",
+    "section": "Média",
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html",
+    "href": "02-analise-explo-dados.html",
+    "title": "Análise Exploratória de Dados",
+    "section": "",
+    "text": "Esta secção segue de perto:[Murteira et al(2015) & Hall et al(2011)]\nA Análise Exploratória de Dados é também designada Análise Preliminar de Dados ou Estatística Descritiva, embora alguns autores estabeleçam diferenças subtis entre estas designações.\nPretende-se que o estudante seja capaz de elaborar e interpretar uma análise estatística exploratória simples de dados univariados.\nFases de uma Análise Exploratória de Dados\nTabelas de contagens que resumem a informação contida na amostra, ordenando os seus valores e agrupando-os em categorias (de valores repetidos ou de valores distribuidos por classes/intervalos). Em geral, são calculadas as\nOrganização dos Dados"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#medidas-de-localização",
+    "href": "02-analise-explo-dados.html#medidas-de-localização",
+    "title": "Análise Exploratória de Dados",
+    "section": "Medidas de localização",
+    "text": "Medidas de localização\nDas medidas, ou estatísticas que iremos definir, para caracterizar os dados, destacam-se as medidas de localização nomeadamente as que localizam o centro da amostra (média, moda e mediana) , e as medidas de dispersão.\nVamos estudar seguidamente algumas medidas de localização, nomeadamente as que localizam o centro da amostra:\nMédia Moda Mediana\nProcuraremos realçar:\n\nProcesso de as calcular\nPropriedades\nLimitações\n\nMédia\nA média amostral ou simplesmente média, que se representa por \\(\\bar x\\) é uma medida de localização do centro da amostra, e obtém-se a partir da seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ n x_i\n\\]\ndados não agrupados\nonde ( x_1 , x_2, …, x_n ) representam os elementos da amostra e n a sua dimensão.\nSe as observações se encontram agrupadas em classes, na forma de intervalos, então um valor aproximado para a média é dado pela seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ k n_ik_i\n\\] onde:\n\nk é o número de classes do agrupamento;\n(n_i) é a frequência absoluta da classe i.\n(y_i) é o ponto médio da classe i, o qual é considerado como elemento representativo da classe.\n\nParticularidade\nA média goza de uma particularidade interessante e que consiste no seguinte:\nse calcularmos os desvios de todas as observações relativamente à média e somarmos esses desvios o resultado obtido é igual a zero.\n\\[(x_1-\\bar x)+(x_2-\\bar x)+...+(x_n-\\bar x)=0\\] Suponhamos que numa festa foram distribuídos berlindes pelos meninos presentes. Os berlindes eram lançados ao ar e quem mais corria mais apanhava. No fim fez-se a contagem e verificou-se a seguinte distribuição sobre os números de berlindes que cada menino conseguiu apanhar:\nJoão 8\nFilipa 7\nAna 3\nMaria 5\nTeresa 4\nDavid 6\nA cada menino coube em média 5.5 berlindes. Houve meninos que apanharam menos berlindes do que a média, enquanto que outros apanharam mais. Os meninos que apanharam mais berlindes resolveram dividir com os que apanharam menos de forma a ficarem todos com a mesma quantidade. Terão conseguido?\nResolusão:\nCalculando os desvios relativamente à média, temos:\n               Desvio\n               \nJoão 8 \\[8 - 5.5 = 2.5\\]\nFilipa 7 \\[7 - 5.5 = 1.5\\]\nAna 3 \\[3 - 5.5 = -2.5\\]\nMaria 5 \\[5 - 5.5 = -0.5\\]\nTeresa 4 \\[4 - 5.5 = -1.5\\]\nDavid 6 \\[6 - 5.5 = 0.5\\]\n\\[-0.5 -1.5 + 0.5 + 2.5 + 1.5 -2.5 = 0\\]\nO resultado verifica-se porque a soma dos desvios positivos é igual à soma dos desvios negativos.\nA média tem uma outra característica, que torna a sua utilização vantajosa em certas aplicações:\n\nQuando o que se pretende representar é a quantidade total expressa pelos dados, utiliza-se a média.\nNa realidade, ao multiplicar a média pelo nº total de elementos, obtemos a quantidade pretendida!\n\nOs dados de tipo qualitativo não tem sentido calcular a média, mesmo que os dados sejam números. Se, por exemplo, temos um conjunto de 1’s e 2’s, se se referirem à variável sexo, em que se utilizou o 1 para representar o sexo masculino e o 2 para o sexo feminino (variável codificada), não tem qualquer significado calcular a média daquele conjunto de dados.\nModa\nPara um conjunto de dados, define-se moda como sendo:o valor que surge com mais frequência se os dados são discretos, ou, o intervalo de classe com maior frequência se os dados são contínuos.\nEsta medida é especialmente útil para reduzir a informação de um conjunto de dados qualitativos, apresentados sob a forma de nomes ou categorias, para os quais não se pode calcular a média e por vezes a mediana (se não forem susceptíveis de ordenação).\nMediana\nmediana, \\(m_e\\), é uma medida de localização do centro da distribuição dos dados, definida do seguinte modo:\nOrdenados os elementos da amostra, a mediana é o valor (pertencente ou não à amostra) que a divide ao meio, isto é, 50% dos elementos da amostra são menores ou iguais à mediana e os outros 50% são maiores ou iguais à mediana\nPara a sua determinação utiliza-se a seguinte regra, depois de ordenada a amostra de n elementos:\n\nSe n é ímpar, a mediana é o elemento médio.\nSe n é par, a mediana é a semi-soma dos dois elementos médios.\n\nSe se representarem os elementos da amostra ordenada com a seguinte notação: \\[\nx_{(1)}, x_{2:n}, ..., x_{n:n}\n\\] então uma expressão para o cálculo da mediana será:\n\\[\nmed=\\left\\{\n\\begin{array}{ll}\nX_{\\left(\\frac{n+1}{2}\\right)}, &  \\text{se n ímpar} \\\\\n\\frac{1}{2}\\left(\n     X_{\\left(\\frac{n}{2}\\right)} + X_{\\left(\\frac{n}{2}+1\\right)} \\right),  & \\text{se n par} \\\\\n\\end{array}\n\\right.\n\\]\nomo medida de localização, a mediana é mais resistente do que a média, pois não é tão sensível aos dados !\n\nQuando a distribuição é simétrica, a média e a mediana coincidem.\nA mediana não é tão sensível, como a média, às observações que são muito maiores ou muito menores do que as restantes (outliers). Por outro lado a média reflete o valor de todas as observações.\n\nAssim, não se pode dizer em termos absolutos qual destas medidas de localização é preferível, dependendo do contexto em que estão a ser utilizadas.\nComo a média é influenciada quer por valores muito grandes, quer por valores muito pequenos, se a distribuição dos dados:\n\nfor aproximadamente simétrica, a média aproxima-se da mediana\nfor enviesada para a direita (alguns valores grandes como “outliers”), a média tende a ser maior que a mediana\nfor enviesada para a esquerda (alguns valores pequenos como “outliers”), a média tende a ser inferior à mediana.\n\nRepresentando as ditribuições dos dados (esta observação é válida para as representações gráficas na forma de diagramas de barras ou de histograma) na forma de uma mancha, temos, de um modo geral:\n\nQuantis\nQuantil de ordem p\nGeneralizando a noção de mediana \\(m_e\\), é a medida de localização, tal que 50% dos elementos da amostra são menores ou iguais a \\(m_e\\), e os outros 50% são maiores ou iguais a \\(m_e\\), temos a noção de quantil de ordem p, com 0&lt;p&lt;1, como sendo o valor \\(Q_p\\) tal que 100p% dos elementos da amostra são menores ou iguais a \\(Q_p\\) e os restantes 100 (1-p)% dos elementos da amostra são maiores ou iguais a \\(Q_p\\).\nTal como a mediana, é uma medida que se calcula a partir da amostra ordenada. Um processo de obter os quantis é utilizando a Função Distribuição Empírica."
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#informações-uteis",
+    "href": "02-analise-explo-dados.html#informações-uteis",
+    "title": "Análise Exploratória de Dados",
+    "section": "Informações uteis",
+    "text": "Informações uteis\n• INSTITUTO SUPERIOR DE CIÊNCIAS DA EDUCAÇÃO DE CABINDA/ANGOLA\n• PIB per capita de Angola\n• Taxa de pobreza em Angola\n• Dados da UNICEF Angola\n• Instituto Nacional de Estatística de Angola\n•Banco Nacional de Angola\n•Ministério das Finanças de Angola"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#média",
+    "href": "02-analise-explo-dados.html#média",
+    "title": "Análise Exploratória de Dados",
+    "section": "Média",
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#média-1",
+    "href": "02-analise-explo-dados.html#média-1",
+    "title": "Análise Exploratória de Dados",
+    "section": "Média",
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+  },
+  {
+    "objectID": "01-Intro.html",
+    "href": "01-Intro.html",
+    "title": "Introdução",
+    "section": "",
+    "text": "Alguns termos extensamente utilizados em estatística, são definidos, segue de perto em Graça Martins etal(2007).\nO que é a estatística?\nA palavra estatística teve origem no latim. Vem de Status que significa estado(Anderson, Sweeney & Williams, 2003).\nA Estatística é, segundo Anderson, et al. (2003), um ramo da matemática que se preocupa em recolher, organizar, descrever, analisar e interpretar dados.\nTodas estas ações são atualmente usadas no nosso quotidiano em inúmeras e várias áreas de atividade - procura e oferta de produtos, taxa de desemprego, cálculo da inflação, resultado das eleições, tendências partidárias, audiências de emissoras de rádio, canais de televisão.\nA Estatística mostra-se, assim, uma ferramenta fundamental quer para o Estado, em todas as suas ações governamentais, bem como para qualquer outro âmbito socioeconómico ou cultural e em todas as especialidades e campos da ciência (Noriega,Huerta, & Sánchez, s/d).\nNeste contexto, são muitas as razões que justificam a necessidade e importância do ensino e da aprendizagem da Estatística.\nNo site ALEA, considera-se que a estatística tem um papel muito importante na análise e na síntese da informação e que uma população bem informada é uma população mais qualificada.\nObjecto da Estatística\nO objecto da Estatística é o estudo da variabilidade e da incerteza presentes na maior parte dos fenómenos com que nos deparamos no dia a dia, a partir de dados recolhidos sobre esses fenómenos.\nA Estatística fornece-nos as técnicas para extrair informação de dados, os quais são muitas vezes incompletos, na medida em que nos dão informação útil sobre o problema em estudo, não realçando, no entanto, aspectos importantes.\nÉ objectivo da Estatística extrair informação dos dados para obter uma melhor compreensão das situações que representam.\nBranco (2000) considera que o objectivo do ensino da Estatística é incutir, no aluno, a maneira de pensar própria da Estatística e usar essa maneira de pensar para resolver problemas. Quando o aluno se aperceber de que esta maneira de pensar ajuda a compreender o mundo que o rodeia, então Ela revela-se útil e sua aprendizagem pode tornar-se uma atividade atrativa.\nMuitos educadores e investigadores matemáticos convergem na tese de que a Literacia estatística é uma meta na educação Matemática. (Watson & Moritz, 2000; Konold & Higgins, 2003). Boaventura & Fernandes (2004) generalizam que é importante estudar Estatística visto que a “literacia estatística” dá a possibilidade aos alunos de intervirem como cidadãos esclarecidos, participativos e críticos.\nEntende-se por literacia estatística: “dominar a linguagem estatística (não só ao nível dos conceitos associados às medidas como também aos gráficos); compreender os procedimentos estatísticos(desde a recolha da amostra até divulgação dos resultados); interpretar as situações e os resultados (o que dizem os resultados sobre a situação em questão); avaliar a validade das conclusões (análise crítica sobre a razoabilidade das conclusões tendo em conta os contextos); ponderar eventuais distorções da realidade (considerar possibilidades de enviesamento ou manipulações tendenciosas)” (Canavarro, 2000, p. 160).\nA literacia estatística constitui, portanto, uma ponte entre o saber matemático e a utilização da mesma no quotidiano.\nBranco (2000) considera que o ensino da estatística deve incidir na análise de dados reais com o apoio de tecnologias, designadamente informáticas.\nNeste Capítulo “Estatística Descritiva, apresentam-se os conceitos fundamentais da estatística descritiva cobrindo os seguintes tópicos: Introdução à Estatística, Dados tabelas e gráficos, Medidas de localização, Medidas de dispersão, Distribuição e Exercícios e Aplicações.\nA Estatística é a ciência que se ocupa da obtenção de informação, seu tratamento inicial, com a finalidade de, através de modelos probabilísticos adequados, inferir de uma amostra para a população e, eventualmente, prever a evolução futura de um fenómeno.\nCenso e Estudo por Amostragem\nEm termos genéricos, na análise de uma característica mensurável, duas perspectivas distintas existem:\n\nRecolhem-se e analisam-se todos os elementos que constituem a população(conjunto constituído por todos os elementos que são objecto de estudo).Neste caso, realiza-se um Censo\nRecolhe-se e analisa-se uma amostra(subconjunto da população). Neste caso, realiza-se um Estudo por Amostragem.\n\nPretende-se que a amostra seja representativa da população.O processo de recolha e selecção dos elementos que constituem a amostra é objecto de estudo das TÉCNICAS DE AMOSTRAGEM.\nEstatística descritiva vs inferencial\nEstatística descritiva: conjunto de métodos estatísticos que visam sumariar e descrever os atributos mais proeminentes dos dados.\nEstatística Inferencial: conjunto de métodos estatísticos que visam caracterizar uma população a partir de uma amostra.\nUma noção fundamental em Estatística é a de conjunto ou agregado, conceito para o qual se usam, indiferentemente, os termos População ou universo.\nPopulação ou Universo Estatístico: conjunto de elementos, com uma ou mais características comuns, sobre o qual incide o estudo estatístico.\nEx.: os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.\nNem sempre é possível estudar exaustivamente todos os elementos da população! Porquê?\n\nPode a população ter dimensão infinita Exemplo: População constituída pelas pressões atmosféricas, nos diferentes pontos de uma cidade.\nPode o estudo da população levar à destruição da população Exemplo: População dos fósforos de uma caixa.\nPode o estudo da população ser muito dispendioso Exemplo: Sondagens exaustivas de todos os eleitores, sobre determinado candidato.\n\nQuando não é possível estudar, exaustivamente, todos os elementos da população, estudam-se só alguns elementos, a que damos o nome de Amostra.\nAmostra: subconjunto finito da população, que se estuda com o objectivo de tirar conclusões para a população de onde foi recolhida.\nEx.: conjunto de 15 alunos seleccionados ao acaso do conjunto de todos os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.\nA fase de recolha da amostra é importante, pois a amostra deve ser tão representativa quanto possível da População que se pretende estudar, uma vez que vai ser a partir do estudo da amostra, que vamos tirar conclusões para a População.\nRazões para a recolha de uma amostra: dimensão excessiva da populacão,estudo de natureza destrutiva, economia e tempo.\nQuando a amostra não representa correctamente a população diz-se enviesada e a sua utilização pode dar origem a interpretações erradas, como se sugere nos seguintes exemplos:\n\nUtilizar uma amostra constituída por 10 benfiquistas, para prever o vencedor do próximo Benfica-Sporting.\nUtilizar uma amostra constituída pelos leitores habituais de determinada revista especializada, para tirar conclusões sobre a população geral.\n\nRecenseamento e sondagem\nRecenseamento: em regra geral, associado à contagem oficial e periódica dos indivíduos de um País, ou parte de um País. Ele abrange, no entanto, um leque mais vasto de situações. Assim, pode definir-se recenseamento do seguinte modo:\nestudo científico de um universo de pessoas, instituições ou objectos físicos com o propósito de adquirir conhecimentos, observando todos os seus elementos, e fazer juízos quantitativos acerca de características importantes desse universo.\nsondagem\nPor vezes não é viável nem desejável, principalmente quando o número de elementos da população é muito elevado, inquirir todos os seus elementos sempre que se quer estudar uma ou mais características particulares dessa população. Surge o conceito de sondagem, que se pode tentar definir como:\n\nestudo científico de uma parte de uma população com o objectivo de estudar atitudes, hábitos e preferências da população relativamente a acontecimentos, circunstâncias e assuntos de interesse comum.\n\nÉ fundamental referir que, contrariamente ao recenseamento, as sondagens inquirem ou analisam apenas uma parte da população em estudo, isto é, restrinjem-se a uma amostra dessa população, mas com o objectivo de extrapolar para todos os elementos da população os resultados observados na amostra.\nEstatística descritiva e estatística indutiva\nNuma análise estatística distinguem-se essencialmente duas fases:\n\nUma primeira fase em que se procura descrever e estudar a amostra: Estatística descritiva.\n\nEstatística descritiva : Procura-se descrever a amostra, pondo em evidência as características principais e as propriedades.\ne uma segunda fase em que se procura tirar conclusões para a população - Estatística indutiva.\nEstatística indutiva: Conhecidas certas propriedades (obtidas a partir de uma análise descritiva da amostra), expressas por meio de proposições, imaginam-se proposições mais gerais, que exprimam a existência de leis (na população)."
+  },
+  {
+    "objectID": "01-Intro.html#conceitos-básicos",
+    "href": "01-Intro.html#conceitos-básicos",
+    "title": "Introdução",
+    "section": "",
+    "text": "Alguns termos extensamente utilizados em estatística, são definidos, segue de perto em Graça Martins etal(2007).\nO que é a estatística?\nA palavra estatística teve origem no latim. Vem de Status que significa estado(Anderson, Sweeney & Williams, 2003).\nA Estatística é, segundo Anderson, et al. (2003), um ramo da matemática que se preocupa em recolher, organizar, descrever, analisar e interpretar dados.\nTodas estas ações são atualmente usadas no nosso quotidiano em inúmeras e várias áreas de atividade - procura e oferta de produtos, taxa de desemprego, cálculo da inflação, resultado das eleições, tendências partidárias, audiências de emissoras de rádio, canais de televisão.\nA Estatística mostra-se, assim, uma ferramenta fundamental quer para o Estado, em todas as suas ações governamentais, bem como para qualquer outro âmbito socioeconómico ou cultural e em todas as especialidades e campos da ciência (Noriega,Huerta, & Sánchez, s/d).\nNeste contexto, são muitas as razões que justificam a necessidade e importância do ensino e da aprendizagem da Estatística.\nNo site ALEA, considera-se que a estatística tem um papel muito importante na análise e na síntese da informação e que uma população bem informada é uma população mais qualificada.\nObjecto da Estatística\nO objecto da Estatística é o estudo da variabilidade e da incerteza presentes na maior parte dos fenómenos com que nos deparamos no dia a dia, a partir de dados recolhidos sobre esses fenómenos.\nA Estatística fornece-nos as técnicas para extrair informação de dados, os quais são muitas vezes incompletos, na medida em que nos dão informação útil sobre o problema em estudo, não realçando, no entanto, aspectos importantes.\nÉ objectivo da Estatística extrair informação dos dados para obter uma melhor compreensão das situações que representam.\nBranco (2000) considera que o objectivo do ensino da Estatística é incutir, no aluno, a maneira de pensar própria da Estatística e usar essa maneira de pensar para resolver problemas. Quando o aluno se aperceber de que esta maneira de pensar ajuda a compreender o mundo que o rodeia, então Ela revela-se útil e sua aprendizagem pode tornar-se uma atividade atrativa.\nMuitos educadores e investigadores matemáticos convergem na tese de que a Literacia estatística é uma meta na educação Matemática. (Watson & Moritz, 2000; Konold & Higgins, 2003). Boaventura & Fernandes (2004) generalizam que é importante estudar Estatística visto que a “literacia estatística” dá a possibilidade aos alunos de intervirem como cidadãos esclarecidos, participativos e críticos.\nEntende-se por literacia estatística: “dominar a linguagem estatística (não só ao nível dos conceitos associados às medidas como também aos gráficos); compreender os procedimentos estatísticos(desde a recolha da amostra até divulgação dos resultados); interpretar as situações e os resultados (o que dizem os resultados sobre a situação em questão); avaliar a validade das conclusões (análise crítica sobre a razoabilidade das conclusões tendo em conta os contextos); ponderar eventuais distorções da realidade (considerar possibilidades de enviesamento ou manipulações tendenciosas)” (Canavarro, 2000, p. 160).\nA literacia estatística constitui, portanto, uma ponte entre o saber matemático e a utilização da mesma no quotidiano.\nBranco (2000) considera que o ensino da estatística deve incidir na análise de dados reais com o apoio de tecnologias, designadamente informáticas.\nNeste Capítulo “Estatística Descritiva, apresentam-se os conceitos fundamentais da estatística descritiva cobrindo os seguintes tópicos: Introdução à Estatística, Dados tabelas e gráficos, Medidas de localização, Medidas de dispersão, Distribuição e Exercícios e Aplicações.\nA Estatística é a ciência que se ocupa da obtenção de informação, seu tratamento inicial, com a finalidade de, através de modelos probabilísticos adequados, inferir de uma amostra para a população e, eventualmente, prever a evolução futura de um fenómeno.\nCenso e Estudo por Amostragem\nEm termos genéricos, na análise de uma característica mensurável, duas perspectivas distintas existem:\n\nRecolhem-se e analisam-se todos os elementos que constituem a população(conjunto constituído por todos os elementos que são objecto de estudo).Neste caso, realiza-se um Censo\nRecolhe-se e analisa-se uma amostra(subconjunto da população). Neste caso, realiza-se um Estudo por Amostragem.\n\nPretende-se que a amostra seja representativa da população.O processo de recolha e selecção dos elementos que constituem a amostra é objecto de estudo das TÉCNICAS DE AMOSTRAGEM.\nEstatística descritiva vs inferencial\nEstatística descritiva: conjunto de métodos estatísticos que visam sumariar e descrever os atributos mais proeminentes dos dados.\nEstatística Inferencial: conjunto de métodos estatísticos que visam caracterizar uma população a partir de uma amostra.\nUma noção fundamental em Estatística é a de conjunto ou agregado, conceito para o qual se usam, indiferentemente, os termos População ou universo.\nPopulação ou Universo Estatístico: conjunto de elementos, com uma ou mais características comuns, sobre o qual incide o estudo estatístico.\nEx.: os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.\nNem sempre é possível estudar exaustivamente todos os elementos da população! Porquê?\n\nPode a população ter dimensão infinita Exemplo: População constituída pelas pressões atmosféricas, nos diferentes pontos de uma cidade.\nPode o estudo da população levar à destruição da população Exemplo: População dos fósforos de uma caixa.\nPode o estudo da população ser muito dispendioso Exemplo: Sondagens exaustivas de todos os eleitores, sobre determinado candidato.\n\nQuando não é possível estudar, exaustivamente, todos os elementos da população, estudam-se só alguns elementos, a que damos o nome de Amostra.\nAmostra: subconjunto finito da população, que se estuda com o objectivo de tirar conclusões para a população de onde foi recolhida.\nEx.: conjunto de 15 alunos seleccionados ao acaso do conjunto de todos os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.\nA fase de recolha da amostra é importante, pois a amostra deve ser tão representativa quanto possível da População que se pretende estudar, uma vez que vai ser a partir do estudo da amostra, que vamos tirar conclusões para a População.\nRazões para a recolha de uma amostra: dimensão excessiva da populacão,estudo de natureza destrutiva, economia e tempo.\nQuando a amostra não representa correctamente a população diz-se enviesada e a sua utilização pode dar origem a interpretações erradas, como se sugere nos seguintes exemplos:\n\nUtilizar uma amostra constituída por 10 benfiquistas, para prever o vencedor do próximo Benfica-Sporting.\nUtilizar uma amostra constituída pelos leitores habituais de determinada revista especializada, para tirar conclusões sobre a população geral.\n\nRecenseamento e sondagem\nRecenseamento: em regra geral, associado à contagem oficial e periódica dos indivíduos de um País, ou parte de um País. Ele abrange, no entanto, um leque mais vasto de situações. Assim, pode definir-se recenseamento do seguinte modo:\nestudo científico de um universo de pessoas, instituições ou objectos físicos com o propósito de adquirir conhecimentos, observando todos os seus elementos, e fazer juízos quantitativos acerca de características importantes desse universo.\nsondagem\nPor vezes não é viável nem desejável, principalmente quando o número de elementos da população é muito elevado, inquirir todos os seus elementos sempre que se quer estudar uma ou mais características particulares dessa população. Surge o conceito de sondagem, que se pode tentar definir como:\n\nestudo científico de uma parte de uma população com o objectivo de estudar atitudes, hábitos e preferências da população relativamente a acontecimentos, circunstâncias e assuntos de interesse comum.\n\nÉ fundamental referir que, contrariamente ao recenseamento, as sondagens inquirem ou analisam apenas uma parte da população em estudo, isto é, restrinjem-se a uma amostra dessa população, mas com o objectivo de extrapolar para todos os elementos da população os resultados observados na amostra.\nEstatística descritiva e estatística indutiva\nNuma análise estatística distinguem-se essencialmente duas fases:\n\nUma primeira fase em que se procura descrever e estudar a amostra: Estatística descritiva.\n\nEstatística descritiva : Procura-se descrever a amostra, pondo em evidência as características principais e as propriedades.\ne uma segunda fase em que se procura tirar conclusões para a população - Estatística indutiva.\nEstatística indutiva: Conhecidas certas propriedades (obtidas a partir de uma análise descritiva da amostra), expressas por meio de proposições, imaginam-se proposições mais gerais, que exprimam a existência de leis (na população)."
+  },
+  {
+    "objectID": "01-Intro.html#natureza-da-medida-das-variáveis",
+    "href": "01-Intro.html#natureza-da-medida-das-variáveis",
+    "title": "Introdução",
+    "section": "Natureza da medida das variáveis",
+    "text": "Natureza da medida das variáveis\nVariável:característica mensurável ou atributo de interesse para estudo na população. Exemplo: nota de ingresso.\nNota: Uma amostra pode conter mais de uma característica de interesse para cada uma das unidades observadas. Com duas características temos uma amostra bivariada; com mais do que duas temos uma amostra multivariada.\nExemplo:Na população de alunos de 1ª matrícula do ISCED de Cabinda, em um determinado ano letivo, pode interessar a análise de várias características em simultâneo como, por exemplo, nota de ingresso e Instituição de proveniência.\nNatureza da variável\nA Natureza da variável podem ser:\nQuantitativa(ou numúrica):assumem valores intrinsecamente numéricos.Estas podem ser:\n\nDiscretas: assumem um conjunto finito ou infinito numerável (que se consegue contar) de possibilidades.Ex.: número de peças defeituosas por lote.\nContínuas: assumem valores em intervalos reais.Ex.: comprimentos, pesos, tempos, Renda das famílias em Kwanza.\n\nQualitativa(ou categórica): assumem valores intrinsecamente não numéricos.Ex.: Instituição de proveniência.\nNatureza discreta ou contínua?\nA fronteira pode ser pouco clara. Por vezes,os dados de uma variável contínua são registados com precisão finita sendo, na prática, tomados como de natureza discreta.Ex.: a idade de uma pessoa, em anos.\nos valores possíveis que uma variável discreta pode assumir representam uma gama de valores tão dispersos que, na prática, os dados observados para a variável são tratados como se fossem de natureza contínua, agrupando-se os valores em intervalos(classes).Ex.: nº de habitações familiares por Bairro.\nEscalas de medidas de uma variável\n\nEscala de razões: os valores numéricos possuem ordem e diferenças têm significado.\n\n\nO valor zero representa ausência da característica e múltiplos de valores possuem significado.\n\nSão exemplos: medidas de comprimento, pesos, intervalos de tempo, o nº de filhos de um casal.\n\nEscala de intervalos: os valores numéricos possuem ordem e diferenças têm significado.\n\n\nSão exemplos: temperatura medida em graus ºC ou ºF; medidas de altitude.\n\n\nEscala ordinal : os valores (numéricos ou não) possuem uma ordem intrínseca.\n\n\nSão exemplos: classificações obtidas no 2º e 3º ciclos do ensino básico (1 a 5); grupos etários (crianças, jovens, adultos e idosos).\n\n\nEscala nominal: os valores (numéricos ou não) não possuem uma ordem intrínseca.\n\n\nSão exemplos: tipo de sangue de uma pessoa (O, A, B e AB); sexo (0-Feminino,1 Masculino)."
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#baixar-documentos",
+    "href": "02-analise-explo-dados.html#baixar-documentos",
+    "title": "Análise Exploratória de Dados",
+    "section": "Baixar documentos",
+    "text": "Baixar documentos\nAqui estão alguns recursos úteis:\n•Baixar o PDF de Estatística Básica •Baixar o PDF de Estatística Básica"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#visualizar-pdf-incorporado",
+    "href": "02-analise-explo-dados.html#visualizar-pdf-incorporado",
+    "title": "Análise Exploratória de Dados",
+    "section": "Visualizar PDF incorporado",
+    "text": "Visualizar PDF incorporado\n```{=html}"
+  },
+  {
+    "objectID": "index.html#o-que-é-estatística-descritiva",
+    "href": "index.html#o-que-é-estatística-descritiva",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "A Estatística Descritiva é o ramo da Estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, você aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais."
+  },
+  {
+    "objectID": "index.html#conteúdos-disponíveis",
+    "href": "index.html#conteúdos-disponíveis",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "Explore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n02-analise-explo-dados.qmd\n\n\n\nMedidas de Tendência Central\nMedidas de Dispersão\nGráficos e Visualizações\n\n\n\n\n\nPDF: Introdução à Estatística Descritiva\nApresentação: Conceitos Básicos\nPlanilha de Dados para Prática\n\n\n\n\n\nCalculadora de Média e Mediana (em breve)\nGerador de Gráficos (em breve)"
+  },
+  {
+    "objectID": "index.html#recursos-para-download",
+    "href": "index.html#recursos-para-download",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "Aqui você pode baixar materiais complementares para aprofundar seus estudos:"
+  },
+  {
+    "objectID": "index.html#sobre-o-autor",
+    "href": "index.html#sobre-o-autor",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "Olá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim"
+  },
+  {
+    "objectID": "index.html#comece-agora",
+    "href": "index.html#comece-agora",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "Clique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
+  },
+  {
+    "objectID": "index.html#objetivos",
+    "href": "index.html#objetivos",
+    "title": ".",
+    "section": "Objetivos",
+    "text": "Objetivos\n\nFornecer recursos educacionais de alta qualidade para estudantes e professores de Matemática.\nPromover o interesse pela Matemática através de exemplos práticos e aplicações no mundo real.\nFacilitar o acesso a materiais de estudo, como notas de aula, exercícios resolvidos e videoaulas.\nApoiar a preparação para exames e avaliações."
+  },
+  {
+    "objectID": "index.html#conteúdos-disponíveis-1",
+    "href": "index.html#conteúdos-disponíveis-1",
+    "title": "Estatistica Descritiva",
+    "section": "Conteúdos Disponíveis",
+    "text": "Conteúdos Disponíveis\nExplore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n\n📊 Conceitos Básicos\nMedidas de Tendência Central](/posts/medidas-tendencia-central.qmd) Medidas de Dispersão](/posts/medidas-dispersao.qmd) Gráficos e Visualizações](/posts/graficos.qmd)\n\n\n📂 Recursos para Download\nPDF: Introdução à Estatística Descritiva Apresentação: Conceitos Básicos Planilha de Dados para Prática\n\n\n🛠️ Ferramentas Interativas\nCalculadora de Média e Mediana (em breve) Gerador de Gráficos (em breve)"
+  },
+  {
+    "objectID": "index.html#destaques",
+    "href": "index.html#destaques",
+    "title": ".",
+    "section": "Destaques",
+    "text": "Destaques\n\nBaixar o Guia de Estatística Descritiva: Um material completo sobre os fundamentos da Estatística Descritiva.\nVideoaulas de Cálculo: Acesse nossa playlist de videoaulas para entender conceitos complexos de forma simples.\nExercícios Interativos: Pratique Matemática com exercícios dinâmicos e feedback imediato."
+  },
+  {
+    "objectID": "index.html#como-usar-o-site",
+    "href": "index.html#como-usar-o-site",
+    "title": ".",
+    "section": "Como Usar o Site",
+    "text": "Como Usar o Site\n\nNavegue pelos menus acima para acessar os conteúdos organizados por tópicos.\nUtilize a barra de pesquisa para encontrar tópicos específicos.\nBaixe materiais em PDF, Word ou PowerPoint para estudo offline.\nParticipe das discussões e envie suas dúvidas através do nosso fórum."
+  },
+  {
+    "objectID": "index.html#comece-agora-1",
+    "href": "index.html#comece-agora-1",
+    "title": "Estatistica Descritiva",
+    "section": "Comece Agora!",
+    "text": "Comece Agora!\nClique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
+  },
+  {
+    "objectID": "index.html#o-que-é-estatística-descritiva-1",
+    "href": "index.html#o-que-é-estatística-descritiva-1",
+    "title": "Estatistica Descritiva",
+    "section": "O que é Estatística Descritiva?",
+    "text": "O que é Estatística Descritiva?\nA Estatística Descritiva é o ramo da estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais."
+  },
+  {
+    "objectID": "index.html#por-que-estudar-estatística-descritiva",
+    "href": "index.html#por-que-estudar-estatística-descritiva",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "A Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
+  },
+  {
+    "objectID": "index.html#sobre-o-autor-1",
+    "href": "index.html#sobre-o-autor-1",
+    "title": "Estatistica Descritiva",
+    "section": "Sobre o Autor",
+    "text": "Sobre o Autor\nOlá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim"
+  },
+  {
+    "objectID": "06-exercicios.html",
+    "href": "06-exercicios.html",
+    "title": "c1 ex01",
+    "section": "",
+    "text": "Qual o valor das medidas de localização: média, mediana e moda?\n\n\n\nMédia\nMediana\nModa a partir de tabela de frequências\n\nmore keywords\n\n\n\nEtapa 1 à mão. Carregar o conjunto de dados\nA expressão é:\n[ x = (156+164++163+152) ]\n\\[\n\\bar x = \\frac{1}{25}(156+164+\\cdots+163+152)\n\\]\nsendo o resultado (x) com duas casas decimais [ x = 162.28 ]\nEtapa 1. Carregar o conjunto de dados\n\ndados &lt;- c(156, 164, 146, 163, 162,\n166, 163, 165, 164, 167,\n165, 160, 165, 159, 167,\n175, 175, 167, 158, 155,\n165, 150, 165, 163, 152)\n\nEtapa 2. Calcular a média\n\n# ctrl+alt+I\nmedia &lt;- mean(dados)\nmedia\n\n[1] 162.28\n\n\nEtapa 3. Calcular a mediana.\n\nmediana &lt;- median(dados)\nmediana\n\n[1] 164\n\n\nEtapa 4. Calcular a moda.\n\nmoda&lt;-table(dados)\nmoda\n\ndados\n146 150 152 155 156 158 159 160 162 163 164 165 166 167 175 \n  1   1   1   1   1   1   1   1   1   3   2   5   1   3   2 \n\n\nOutra maneira de fazer:\n\nmean(dados)\n\n[1] 162.28\n\nmedian(dados)\n\n[1] 164\n\ntable(dados)\n\ndados\n146 150 152 155 156 158 159 160 162 163 164 165 166 167 175 \n  1   1   1   1   1   1   1   1   1   3   2   5   1   3   2 \n\n\nE outra maneira:\n\nsummary(dados)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  146.0   159.0   164.0   162.3   165.0   175.0"
+  },
+  {
+    "objectID": "06-exercicios.html#keywords",
+    "href": "06-exercicios.html#keywords",
+    "title": "c1 ex01",
+    "section": "",
+    "text": "Média\nMediana\nModa a partir de tabela de frequências\n\nmore keywords"
+  },
+  {
+    "objectID": "06-exercicios.html#answer",
+    "href": "06-exercicios.html#answer",
+    "title": "c1 ex01",
+    "section": "",
+    "text": "Etapa 1 à mão. Carregar o conjunto de dados\nA expressão é:\n[ x = (156+164++163+152) ]\n\\[\n\\bar x = \\frac{1}{25}(156+164+\\cdots+163+152)\n\\]\nsendo o resultado (x) com duas casas decimais [ x = 162.28 ]\nEtapa 1. Carregar o conjunto de dados\n\ndados &lt;- c(156, 164, 146, 163, 162,\n166, 163, 165, 164, 167,\n165, 160, 165, 159, 167,\n175, 175, 167, 158, 155,\n165, 150, 165, 163, 152)\n\nEtapa 2. Calcular a média\n\n# ctrl+alt+I\nmedia &lt;- mean(dados)\nmedia\n\n[1] 162.28\n\n\nEtapa 3. Calcular a mediana.\n\nmediana &lt;- median(dados)\nmediana\n\n[1] 164\n\n\nEtapa 4. Calcular a moda.\n\nmoda&lt;-table(dados)\nmoda\n\ndados\n146 150 152 155 156 158 159 160 162 163 164 165 166 167 175 \n  1   1   1   1   1   1   1   1   1   3   2   5   1   3   2 \n\n\nOutra maneira de fazer:\n\nmean(dados)\n\n[1] 162.28\n\nmedian(dados)\n\n[1] 164\n\ntable(dados)\n\ndados\n146 150 152 155 156 158 159 160 162 163 164 165 166 167 175 \n  1   1   1   1   1   1   1   1   1   3   2   5   1   3   2 \n\n\nE outra maneira:\n\nsummary(dados)\n\n   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. \n  146.0   159.0   164.0   162.3   165.0   175.0"
+  },
+  {
+    "objectID": "06-exercicios.html#keywords-1",
+    "href": "06-exercicios.html#keywords-1",
+    "title": "c1 ex01",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "06-exercicios.html#answer-1",
+    "href": "06-exercicios.html#answer-1",
+    "title": "c1 ex01",
+    "section": "answer",
+    "text": "answer\nA tabela de frequência absoluta é:\nA tabela de frequência relativa é:\nfrequência absoluta acumulada é:\nA tabela de frequência relativa acumulda é:\ntabela de frequências é:\n\n\n    fi Fi  fri  Fri\n146  1  1 0.04 0.04\n150  1  2 0.04 0.08\n152  1  3 0.04 0.12\n155  1  4 0.04 0.16\n156  1  5 0.04 0.20\n158  1  6 0.04 0.24\n159  1  7 0.04 0.28\n160  1  8 0.04 0.32\n162  1  9 0.04 0.36\n163  3 12 0.12 0.48\n164  2 14 0.08 0.56\n165  5 19 0.20 0.76\n166  1 20 0.04 0.80\n167  3 23 0.12 0.92\n175  2 25 0.08 1.00\n\n\no gráfico de barras é:\n\n\n\n\n\no gráfico circular é:\n\n\n\n\n\no gráfico de linha é:\n\n\n\n\n\nA expressão é: \\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "06-exercicios.html#keywords-2",
+    "href": "06-exercicios.html#keywords-2",
+    "title": "c1 ex01",
+    "section": "keywords",
+    "text": "keywords\nMediana"
+  },
+  {
+    "objectID": "06-exercicios.html#answer-2",
+    "href": "06-exercicios.html#answer-2",
+    "title": "c1 ex01",
+    "section": "answer",
+    "text": "answer\nApesar de já saber qual a média, primeiro precisamos saber a quantidade de clientes que foi atendida no quinto dia útil, assim,\n\\[\\bar x_p= \\frac{1}{5}(15+17+19+21+x)\\] \\[19= \\frac{1}{5}(15+17+19+21+x)\\] \\[72+x=95\\] \\[x=95-72\\] \\[x=23\\] Para encontrar a mediana precisamos colocar os valores em ordem crescente, temos então: \\(15\\) \\(17\\) \\(19\\) \\(21\\) \\(23\\), Portanto,a mediana é \\(19\\) ."
+  },
+  {
+    "objectID": "06-exercicios.html#keywords-3",
+    "href": "06-exercicios.html#keywords-3",
+    "title": "c1 ex01",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "06-exercicios.html#answer-3",
+    "href": "06-exercicios.html#answer-3",
+    "title": "c1 ex01",
+    "section": "answer",
+    "text": "answer\nPrecisamos calcular a média, a mediana e a moda. Para calcular a média devemos somar o número total de golos e dividir pelo número de partidas.\nO número total de golos será encontrado multiplicando-se o número de golos marcados pela quantidade de partidas, ou seja: \\[\nTotal de golos = 0.5+1.3+2.4+3.3+4.2+5.2+7.1 = 45\n\\] Sendo o total de partidas igual a \\(20\\), a média de golos será igual a: \\[\\bar x=M_e=\\frac{45}{20}=2.25\\]\nPara encontrar o valor da moda, vamos verificar a quantidade de golos mais frequente. Neste caso, notamos que em \\(5\\) partidas não foram feitos nenhum golo.\nDepois desse resultado, as partidas que tiveram \\(2\\) golos foram as mais frequentes (ao todo, \\(4\\) partidas). Portanto,\n\\[z = M_o = 0\\]\nA mediana será encontrada colocando os números de golos em ordem. Como o número de jogos foi igual a \\(20\\) que é um valor par, temos que calcular a média entre os dois valores centrais, assim temos:\n\\(0\\) \\(0\\) \\(0\\) \\(0\\) \\(0\\) \\(1\\) \\(1\\) \\(1\\) \\(2\\) \\(2\\) \\(2\\) \\(2\\) \\(3\\) \\(3\\) \\(3\\) \\(4\\) \\(4\\) \\(5\\) \\(5\\) \\(7\\)\n\\[y=M_d=\\frac{2+4}{2}=\\frac{4}{2}=2\\]\nCom esses resultados, sabemos que:\n\\[\\bar x (média) = 2.25\\] \\[y (mediana) = 2\\] \\[z (moda) = 0\\]\nOu seja,\n\\(z\\)&lt;\\(y\\)&lt;\\(\\bar x\\)(0&lt;2&lt;2.25)\nAlternativa:e)\\(z\\)&lt;\\(y\\)&lt;\\(\\bar x\\)."
+  },
+  {
+    "objectID": "06-exercicios.html#keywords-4",
+    "href": "06-exercicios.html#keywords-4",
+    "title": "c1 ex01",
+    "section": "keywords",
+    "text": "keywords\nComo cada nota possui um peso, trata-se de uma média ponderada. A média ponderada é um tipo de média que leva em consideração a importância de cada valor ao calcular a média geral. Atribuindo um peso a cada valor, que indica sua importância relativa."
+  },
+  {
+    "objectID": "06-exercicios.html#answer-4",
+    "href": "06-exercicios.html#answer-4",
+    "title": "c1 ex01",
+    "section": "answer",
+    "text": "answer\nA média ponderada é calculada usando a forma: \\[\n\\bar x_p=\\frac{Σ(w_ix_i)}{Σ(w_i)}\n\\] Onde:\n\\(w_i\\) é o peso associado ao valor \\(x_i\\);\n\\(x_i\\) é o valor;\n\\(Σ\\) é o símbolo que representa a soma.\nCalculando a média ponderada\n\\[\n\\bar x_p=\\frac{Σ(w_ix_i)}{Σ(w_i)}\n\\] \\[\n=\\frac{(5.12,5+3.12+2.9,5)}{(5+3+2)}\n\\] \\[\n=\\frac{(62,5+36+19)}{10}\n\\] \\[\n=\\frac{(117,5)}{10}=11,75\n\\]\nA média do estudante é: 11,75\n\n\n[1] \"Média ponderada: 11.75\""
+  },
+  {
+    "objectID": "06-exercicios.html#keywords-5",
+    "href": "06-exercicios.html#keywords-5",
+    "title": "c1 ex01",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "06-exercicios.html#answer-5",
+    "href": "06-exercicios.html#answer-5",
+    "title": "c1 ex01",
+    "section": "answer",
+    "text": "answer\nA tabela de frequência absoluta é:\n\n\nd1\n 0  1  2  3  4 \n 3 12  7  3  2 \n\n\nA tabela de frequência relativa é:\n\n\nd1\n         0          1          2          3          4 \n0.11111111 0.44444444 0.25925926 0.11111111 0.07407407 \n\n\ntabela de frequências é:\n\n\n\ntabela de frequências\n\n\n\nfi\nfri\n\n\n\n\n0\n3\n0.1111111\n\n\n1\n12\n0.4444444\n\n\n2\n7\n0.2592593\n\n\n3\n3\n0.1111111\n\n\n4\n2\n0.0740741\n\n\n\n\n\no gráfico de barras é:"
+  },
+  {
+    "objectID": "index.html#baixar-o-pdf",
+    "href": "index.html#baixar-o-pdf",
+    "title": "Estatistica Descritiva",
+    "section": "",
+    "text": "Clique no link abaixo para baixar o PDF: Baixar PDF ## Por que Estudar Estatística Descritiva?\nA Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
   }
 ]
