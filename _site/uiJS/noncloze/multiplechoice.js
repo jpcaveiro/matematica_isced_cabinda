@@ -1,17 +1,5 @@
-
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" id="MathJax-Script">
-  MathJax = {
-    tex: {
-      inlineMath: [['\(', '\)'], ['$', '$']], // Define inline delimiters
-      displayMath: [['$$', '$$'], ['\\[', '\\]']] // Display delimiters
-    }
-  };
-</script>
-
- 
-<script>
 // Escolha múltipla
-function show_answer(idname,message,correct) { 
+export function show_answer(idname,message,correct) { 
     console.log("show_answer:" + message)
     document.getElementById(idname).innerHTML = message;
     //document.getElementById("demo").style.fontSize = "25px";
@@ -22,7 +10,7 @@ function show_answer(idname,message,correct) {
     }
     //document.getElementById("demo").style.backgroundColor = "yellow";
 }
-function reset(idnamepartial) { 
+export function reset(idnamepartial) { 
     const idnamecomment = idnamepartial+"-comment"
     const idnameform = idnamepartial+"-form"
     console.log("reset:" + idnamecomment)
@@ -36,16 +24,3 @@ function reset(idnamepartial) {
         radio.checked = false;
     }
 }
-// Essay
-function toggle_div(divname) { 
-  const myDiv = document.getElementById(divname); /* Use ID */
-  const myDivDisplay = myDiv.style.display; /* Use ID */
-  if (myDivDisplay === 'none') {
-    console.log('The div is hidden'); /* Displayed if hidden */
-    myDiv.style.display = 'block'; /* Show the div */
-  } else {
-    console.log('The div is visible'); /* Displayed if visible */
-    myDiv.style.display = 'none'; /* Hide the div */
-  }
-}
-</script>
