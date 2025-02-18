@@ -1,5 +1,9 @@
 ---
 title: "Exercícios Interactivos"
+format: html
+include-in-header:
+  text: |
+    <link rel='stylesheet' href='./uiJS/style.css'>
 ---
 
 ```{r}
@@ -353,3 +357,58 @@ knitr::write_bib(c(
   .packages(), 'bookdown', 'knitr', 'rmarkdown'
 ), 'packages.bib')
 ```
+
+
+# CLOZE
+
+
+
+
+```{r echo=FALSE}
+# Load three instructions.
+source("studyui.R")
+```
+
+
+
+
+```{r echo=FALSE}
+cloze("
+Complete o exemplo: 
+
+$438 = 4 \\times 10^X + 3 \\times 10^Y + 8 \\times 10^Z$
+
+sendo:
+
+* X = {:NUMERICAL:=2:0} 
+* Y = {:NUMERICAL:=1:0}
+* Z = {:NUMERICAL:=0:0}
+
+
+Adicionalmente,
+
+
+* 4 {:multichoice_s:=centenas\\~unidades#Incorreto!\\~dezenas}
+* 3 {:multichoice_s:=dezenas\\~centenas\\~unidades}
+* 8 {:multichoice_s:=unidades\\~dezenas\\~centenas}
+
+", output="html")
+```
+
+
+
+
+```{r echo=FALSE}
+cloze("
+Responda:
+
+$1 + 1$ = {:NUMERICAL:=2:0}
+
+
+Adicionalmente: a lua é um {:multichoice_s:=satélite\\~planeta}
+
+", output="html")
+```
+
+
+

@@ -1,0 +1,151 @@
+/*body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+*/
+
+/* CLOZE > tooltip
+
+This tool tip is used after a user chooses and answer 
+in a multichoice, input text, etc in CLOZE.
+
+*/
+
+.cloze-tooltip-container {
+    visibility: hidden;
+    position: relative;
+    display: inline-block;
+    /*margin: 50px;*/
+}
+
+.cloze-question-mark {
+    width: 20px;
+    height: 20px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cloze-tooltip {
+    position: fixed;
+    background-color: #333;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 1000;
+    visibility: hidden;
+    /*position: absolute;*/
+    /*width: 120px;*/
+    /*text-align: center;*/
+    /*bottom: 125%;*/  /* Position above the question mark */ 
+    /*left: 50%;*/
+    /*margin-left: -60px; /* Center the tooltip */*/
+}
+
+
+/* CLOZE > items
+
+*/
+
+.clozeitem {
+    /*display: flex;*/
+    display: inline; /* or inline-block */
+}
+
+.clozeform {
+    /*display: flex;*/
+    display: center; /* or inline-block */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+
+}
+
+
+/* CLOZE > validation
+
+Inform user if answer is correct (=100), partical correct (> 0), 
+or incorrect (=< 0).
+
+*/
+
+.validation-box-space {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: none; /*2px solid #000;*/
+    visibility: hidden;
+    display: inline-block;  /*display: flex to place its children (the dropdown and the <div>) in a row (horizontally).*/
+    align-items: center;
+    justify-content: center;
+}
+.validation-box {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    /*border: 2px solid #000;*/
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+.correct {
+    background-color: green;
+}
+
+.partiallycorrect {
+    background-color: yellow;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+
+/* Generic classes 
+
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+form {
+    max-width: 300px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45a049;
+}
+

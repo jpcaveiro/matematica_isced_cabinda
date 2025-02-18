@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+
+ 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu with Validation</title>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="style.css">  
+</head>
+
+<body>
+
+<script type="module">
+    
+import {addcloze_multichoice_s} from './cloze/multichoice.js';
+import {addcloze_numerical} from './cloze/numerical.js';
+
+addcloze_multichoice_s('clozeform1', '#q1_dropdown', {
+    options: ['uma opção correta', 'w.op1', 'w.op2', 'wop3'], 
+    feedback: ['op correct', 'op1 feedback \\(\\sqrt{x}\\)', 'op2 feedback $\\sqrt{x}$', 'op3 feedback'],
+    points: [100,30,0,0]
+})
+
+
+addcloze_multichoice_s('clozeform1', '#q3_dropdown', {
+    options: ['3uma opção correta', '3w.op1', '3w.op2', '3wop3'], 
+    feedback: ['3op correct', '3op1 feedback \\(\\sqrt{x}\\)', '3op2 feedback $\\sqrt{x}$', '3op3 feedback'],
+    points: [100,30,0,0]
+})
+
+
+
+addcloze_numerical('clozeform1', '#q2_input_number', {
+    options: [120.1, 130.3], 
+    tolerance: [0.1, 1],
+    points: [100, 50, 0],
+    feedback: ['num op correct', 'num partial correct', 'num wrong answer']
+})
+</script>    
+
+<form name="clozeform1">
+<span>
+Muito texto <div id="q1_dropdown" class="clozeitem"></div> e continuação de muito 
+texto com <div id="q2_input_number" class="clozeitem"></div> e mais texto.</br>
+Depois, responda a isto: <div id="q3_dropdown" class="clozeitem"></div>.
+</span>
+</form>
+
+
+
+</body>
+
+</html>
+
+script type="module" src="./uiJS_demos.js" type="text/javascript"></script
+
