@@ -60,12 +60,56 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+ 
+<script>
+// Escolha múltipla
+function show_answer(idname,message,correct) { 
+    console.log("show_answer:" + message)
+    document.getElementById(idname).innerHTML = message;
+    //document.getElementById("demo").style.fontSize = "25px";
+    if (correct) {
+      document.getElementById(idname).style.color = "green";
+    } else {
+      document.getElementById(idname).style.color = "red";
+    }
+    //document.getElementById("demo").style.backgroundColor = "yellow";
+}
+function reset(idnamepartial) { 
+    const idnamecomment = idnamepartial+"-comment"
+    const idnameform = idnamepartial+"-form"
+    console.log("reset:" + idnamecomment)
+    document.getElementById(idnamecomment).innerHTML = "";
+    //document.getElementById("demo").style.fontSize = "25px";
+    document.getElementById(idnamecomment).style.color = "black";
+    //document.getElementById("demo").style.backgroundColor = "yellow";
+    const form = document.getElementById(idnameform);
+    const radios = form.querySelectorAll('input[type="radio"]');
+    for (const radio of radios) {
+        radio.checked = false;
+    }
+}
+// Essay
+function toggle_div(divname) { 
+  const myDiv = document.getElementById(divname); /* Use ID */
+  const myDivDisplay = myDiv.style.display; /* Use ID */
+  if (myDivDisplay === 'none') {
+    console.log('The div is hidden'); /* Displayed if hidden */
+    myDiv.style.display = 'block'; /* Show the div */
+  } else {
+    console.log('The div is visible'); /* Displayed if visible */
+    myDiv.style.display = 'none'; /* Hide the div */
+  }
+}
+</script>
+
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -95,7 +139,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Introdução à Estatística Descritiva</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./02-analise-exploratoria-dados.qmd" rel="" target="">
+    <a class="nav-link active" href="./02-analise-explo-dados.html" rel="" target="" aria-current="page">
  <span class="menu-text">Análise Exploratória de Dados</span></a>
   </li>  
   <li class="nav-item">
@@ -115,7 +159,15 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Exercícios e Aplicações</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./07-referencias.html" rel="" target="">
+    <a class="nav-link" href="./07-ex-inter.html" rel="" target="">
+ <span class="menu-text">Exercícios Interactivos</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./08-ex-inter_02.qmd" rel="" target="">
+ <span class="menu-text">Exerc Int02</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./09-referencias.html" rel="" target="">
  <span class="menu-text">Referências</span></a>
   </li>  
 </ul>
@@ -129,7 +181,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#medidas-de-localização" id="toc-medidas-de-localização" class="nav-link active" data-scroll-target="#medidas-de-localização">Medidas de localização</a></li>
+  <li><a href="#informações-uteis" id="toc-informações-uteis" class="nav-link" data-scroll-target="#informações-uteis">Informações uteis</a></li>
+  <li><a href="#recursos-de-estatística-descritiva" id="toc-recursos-de-estatística-descritiva" class="nav-link" data-scroll-target="#recursos-de-estatística-descritiva">Recursos de Estatística Descritiva</a>
+  <ul class="collapse">
+  <li><a href="#baixar-documentos" id="toc-baixar-documentos" class="nav-link" data-scroll-target="#baixar-documentos">Baixar documentos</a></li>
+  </ul></li>
+  <li><a href="#meu-website-de-estatística-descritiva" id="toc-meu-website-de-estatística-descritiva" class="nav-link" data-scroll-target="#meu-website-de-estatística-descritiva">Meu Website de Estatística Descritiva</a>
+  <ul class="collapse">
+  <li><a href="#visualizar-pdf-incorporado" id="toc-visualizar-pdf-incorporado" class="nav-link" data-scroll-target="#visualizar-pdf-incorporado">Visualizar PDF incorporado</a></li>
+  </ul></li>
+  <li><a href="#medidas-de-tendência-central" id="toc-medidas-de-tendência-central" class="nav-link" data-scroll-target="#medidas-de-tendência-central">Medidas de Tendência Central</a>
+  <ul class="collapse">
+  <li><a href="#média" id="toc-média" class="nav-link" data-scroll-target="#média">Média</a></li>
+  </ul></li>
+  <li><a href="#medidas-de-tendência-central-1" id="toc-medidas-de-tendência-central-1" class="nav-link" data-scroll-target="#medidas-de-tendência-central-1">Medidas de Tendência Central</a>
+  <ul class="collapse">
+  <li><a href="#média-1" id="toc-média-1" class="nav-link" data-scroll-target="#média-1">Média</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 

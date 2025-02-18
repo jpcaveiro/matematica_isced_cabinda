@@ -22,6 +22,16 @@ website:
         text: Exercícios e Aplicações
       - href: 07-ex-inter.qmd
         text: Exercícios Interactivos
-      - href: 08-referencias.qmd
+      - href: 08-ex-inter_02.qmd
+        text: Exerc Int02
+      - href: 09-referencias.qmd
         text: Referências
-      
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    include-in-header:
+      - header.html
+
+     
