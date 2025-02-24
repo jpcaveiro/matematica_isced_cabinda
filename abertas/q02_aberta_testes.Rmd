@@ -1,0 +1,61 @@
+---
+title: "aberta_testes"
+author: "J p Cruz"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+# essay
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+
+```{r q02-essay}
+set.seed(90) #produz sempre os mesmos dados
+hist(rnorm(100,10,1))
+```
+
+
+
+# question
+
+This is a question about an hist(rnorm(10,0,1))
+
+
+
+## keywords
+
+- [distribuição Normal](https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_normal)
+
+
+## answer
+
+
+You can also embed plots, for example:
+
+```{r pressure2, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+
+# question
+
+
+qqq
+
+
+## keywords
+
+ssss
+
+## answer
+
+You can also embed plots, for example:
+
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+

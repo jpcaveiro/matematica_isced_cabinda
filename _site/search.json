@@ -60,14 +60,14 @@
     "href": "02-analise-explo-dados.html#média",
     "title": "Análise Exploratória de Dados",
     "section": "Média",
-    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
   },
   {
     "objectID": "02-analise-explo-dados.html#média-1",
     "href": "02-analise-explo-dados.html#média-1",
     "title": "Análise Exploratória de Dados",
     "section": "Média",
-    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
   },
   {
     "objectID": "01-Intro.html",
@@ -102,7 +102,7 @@
     "href": "02-analise-explo-dados.html#visualizar-pdf-incorporado",
     "title": "Análise Exploratória de Dados",
     "section": "Visualizar PDF incorporado",
-    "text": "Visualizar PDF incorporado\n```{=html}"
+    "text": "Visualizar PDF incorporado"
   },
   {
     "objectID": "index.html#o-que-é-estatística-descritiva",
@@ -376,5 +376,89 @@
     "title": "Exerc Int02",
     "section": "Como fazer 2",
     "text": "Como fazer 2\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:{r eval=FALSE} install.packages(\"bookdown\") # or the development version # devtools::install_github(\"rstudio/bookdown\")\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/."
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html",
+    "href": "abertas/q02_aberta_testes.html",
+    "title": "aberta_testes",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\n\nset.seed(90) #produz sempre os mesmos dados\nhist(rnorm(100,10,1))"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#keywords",
+    "href": "abertas/q02_aberta_testes.html#keywords",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\n\ndistribuição Normal"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#answer",
+    "href": "abertas/q02_aberta_testes.html#answer",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#keywords-1",
+    "href": "abertas/q02_aberta_testes.html#keywords-1",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#answer-1",
+    "href": "abertas/q02_aberta_testes.html#answer-1",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html",
+    "href": "abertas/q01_aberta_testes.html",
+    "title": "aberta_testes",
+    "section": "",
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nUma imagem:"
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#keywords",
+    "href": "abertas/q01_aberta_testes.html#keywords",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\nssss\nmore keywords"
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#answer",
+    "href": "abertas/q01_aberta_testes.html#answer",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#keywords-1",
+    "href": "abertas/q01_aberta_testes.html#keywords-1",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#answer-1",
+    "href": "abertas/q01_aberta_testes.html#answer-1",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#keywords-2",
+    "href": "abertas/q01_aberta_testes.html#keywords-2",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\nComo cada nota possui um peso, trata-se de uma média ponderada. A média ponderada é um tipo de média que leva em consideração a importância de cada valor ao calcular a média geral. Atribuindo um peso a cada valor, que indica sua importância relativa."
+  },
+  {
+    "objectID": "abertas/q01_aberta_testes.html#answer-2",
+    "href": "abertas/q01_aberta_testes.html#answer-2",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nA média ponderada é calculada usando a forma: [ x_p= ] Onde: \\(w_i\\) é o peso associado ao valor \\(x_i\\); \\(Σ\\) é o símbolo que representa a soma. Calculando a média ponderada \\[\n\\bar x_p=\\frac{Σ(w_ix_i)}{Σ(w_i)}\n\\] \\[\n=\\frac{(5.12,5+3.12+2.9,5)}{(5+3+2)}\n\\] \\[\n=\\frac{(62,5+36+19)}{10}\n\\] \\[\n=\\frac{(117,5)}{10}=11,75\n\\] A média do estudante é: 11,75"
   }
 ]

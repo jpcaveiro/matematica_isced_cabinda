@@ -209,7 +209,7 @@ Aqui estão alguns recursos úteis:
 
 ## Visualizar PDF incorporado
 
-\`\`\`{=html} <iframe src="arquivos/documento.pdf" width="100%" height="600px"></iframe>
+<iframe src="arquivos/documento.pdf" width="100%" height="600px"></iframe>
 
 # Medidas de Tendência Central
 
@@ -217,7 +217,12 @@ Aqui estão alguns recursos úteis:
 
 A média é calculada como a soma de todos os valores dividida pelo número de valores.
 
-\`\`\`{r} dados \<- c(10, 20, 30, 40, 50) media \<- mean(dados) media
+
+```r
+dados <- c(10, 20, 30, 40, 50) 
+media <- mean(dados) media
+```
+
 
 # Medidas de Tendência Central
 
@@ -225,4 +230,33 @@ A média é calculada como a soma de todos os valores dividida pelo número de v
 
 A média é calculada como a soma de todos os valores dividida pelo número de valores.
 
-\`\`\`{r} dados \<- c(10, 20, 30, 40, 50) media \<- mean(dados) media
+```r 
+dados <- c(10, 20, 30, 40, 50) 
+media <- mean(dados) media
+```
+
+
+# Pergunta Aberta
+
+
+
+
+
+```{r echo=FALSE, results = 'asis'}
+source('abertas/rmd2questions.R')
+rmd2question('01','abertas/q01_aberta_testes')
+```
+
+
+
+
+
+```{r echo=FALSE, results = 'asis'}
+source('abertas/rmd2questions.R')
+rmd2question('02','abertas/q02_aberta_testes')
+```
+
+
+
+
+

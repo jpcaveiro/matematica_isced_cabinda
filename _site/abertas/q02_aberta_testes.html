@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="J p Cruz">
+<meta name="dcterms.date" content="2025-02-24">
 
-<title>Estatistica Descritiva - Introdução</title>
+<title>Estatistica Descritiva - aberta_testes</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,25 +22,59 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -170,7 +206,7 @@ function toggle_div(divname) {
 
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -180,7 +216,7 @@ function toggle_div(divname) {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Estatistica Descritiva</span>
     </a>
   </div>
@@ -191,47 +227,47 @@ function toggle_div(divname) {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./about.html"> 
+    <a class="nav-link" href="../about.html"> 
 <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./01-intro.qmd"> 
+    <a class="nav-link" href="../01-intro.qmd"> 
 <span class="menu-text">Introdução à Estatística Descritiva</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./02-analise-explo-dados.html"> 
+    <a class="nav-link" href="../02-analise-explo-dados.html"> 
 <span class="menu-text">Análise Exploratória de Dados</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./03-medidas-dispersao.html"> 
+    <a class="nav-link" href="../03-medidas-dispersao.html"> 
 <span class="menu-text">Medidas de Dispersão</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./04-distribuicoes-frequencia.html"> 
+    <a class="nav-link" href="../04-distribuicoes-frequencia.html"> 
 <span class="menu-text">Distribuições de Frequência</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./05-graficos-estatisticos.html"> 
+    <a class="nav-link" href="../05-graficos-estatisticos.html"> 
 <span class="menu-text">Gráficos Estatísticos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./06-exercicios.html"> 
+    <a class="nav-link" href="../06-exercicios.html"> 
 <span class="menu-text">Exercícios e Aplicações</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./07-ex-inter.html"> 
+    <a class="nav-link" href="../07-ex-inter.html"> 
 <span class="menu-text">Exercícios Interactivos</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./08-ex-inter_02.qmd"> 
+    <a class="nav-link" href="../08-ex-inter_02.qmd"> 
 <span class="menu-text">Exerc Int02</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./09-referencias.html"> 
+    <a class="nav-link" href="../09-referencias.html"> 
 <span class="menu-text">Referências</span></a>
   </li>  
 </ul>
@@ -250,8 +286,17 @@ function toggle_div(divname) {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#conceitos-básicos" id="toc-conceitos-básicos" class="nav-link active" data-scroll-target="#conceitos-básicos">Conceitos Básicos</a></li>
-  <li><a href="#natureza-da-medida-das-variáveis" id="toc-natureza-da-medida-das-variáveis" class="nav-link" data-scroll-target="#natureza-da-medida-das-variáveis">Natureza da medida das variáveis</a></li>
+  <li><a href="#essay" id="toc-essay" class="nav-link active" data-scroll-target="#essay">essay</a></li>
+  <li><a href="#question" id="toc-question" class="nav-link" data-scroll-target="#question">question</a>
+  <ul class="collapse">
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords">keywords</a></li>
+  <li><a href="#answer" id="toc-answer" class="nav-link" data-scroll-target="#answer">answer</a></li>
+  </ul></li>
+  <li><a href="#question-1" id="toc-question-1" class="nav-link" data-scroll-target="#question-1">question</a>
+  <ul class="collapse">
+  <li><a href="#keywords-1" id="toc-keywords-1" class="nav-link" data-scroll-target="#keywords-1">keywords</a></li>
+  <li><a href="#answer-1" id="toc-answer-1" class="nav-link" data-scroll-target="#answer-1">answer</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -260,14 +305,26 @@ function toggle_div(divname) {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introdução</h1>
+<h1 class="title">aberta_testes</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>J p Cruz </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">February 24, 2025</p>
+    </div>
+  </div>
   
     
   </div>
@@ -277,118 +334,59 @@ function toggle_div(divname) {
 </header>
 
 
-<section id="conceitos-básicos" class="level2">
-<h2 class="anchored" data-anchor-id="conceitos-básicos">Conceitos Básicos</h2>
-<p>Alguns termos extensamente utilizados em estatística, são definidos, segue de perto em <a href="https://repositorio.ul.pt/handle/10451/49830">Graça Martins etal(2007)</a>.</p>
-<p><strong>O que é a estatística</strong>?</p>
-<p>A palavra estatística teve origem no latim. Vem de Status que significa estado(Anderson, Sweeney &amp; Williams, 2003).</p>
-<p>A Estatística é, segundo Anderson, et al.&nbsp;(2003), um ramo da matemática que se preocupa em recolher, organizar, descrever, analisar e interpretar dados.</p>
-<p>Todas estas ações são atualmente usadas no nosso quotidiano em inúmeras e várias áreas de atividade - procura e oferta de produtos, taxa de desemprego, cálculo da inflação, resultado das eleições, tendências partidárias, audiências de emissoras de rádio, canais de televisão.</p>
-<p>A Estatística mostra-se, assim, uma ferramenta fundamental quer para o Estado, em todas as suas ações governamentais, bem como para qualquer outro âmbito socioeconómico ou cultural e em todas as especialidades e campos da ciência (Noriega,Huerta, &amp; Sánchez, s/d).</p>
-<p>Neste contexto, são muitas as razões que justificam a necessidade e importância do ensino e da aprendizagem da Estatística.</p>
-<p><a href="http://www.alea.pt/">No site ALEA</a>, considera-se que a estatística tem um papel muito importante na análise e na síntese da informação e que uma população bem informada é uma população mais qualificada.</p>
-<p><strong>Objecto da Estatística</strong></p>
-<p>O objecto da Estatística é o estudo da variabilidade e da incerteza presentes na maior parte dos fenómenos com que nos deparamos no dia a dia, a partir de dados recolhidos sobre esses fenómenos.</p>
-<p>A Estatística fornece-nos as técnicas para extrair informação de dados, os quais são muitas vezes incompletos, na medida em que nos dão informação útil sobre o problema em estudo, não realçando, no entanto, aspectos importantes.</p>
-<p>É objectivo da Estatística extrair informação dos dados para obter uma melhor compreensão das situações que representam.</p>
-<p>Branco (2000) considera que o objectivo do ensino da Estatística é incutir, no aluno, a maneira de pensar própria da Estatística e usar essa maneira de pensar para resolver problemas. Quando o aluno se aperceber de que esta maneira de pensar ajuda a compreender o mundo que o rodeia, então Ela revela-se útil e sua aprendizagem pode tornar-se uma atividade atrativa.</p>
-<p>Muitos educadores e investigadores matemáticos convergem na tese de que a Literacia estatística é uma meta na educação Matemática. (Watson &amp; Moritz, 2000; Konold &amp; Higgins, 2003). Boaventura &amp; Fernandes (2004) generalizam que é importante estudar Estatística visto que a “literacia estatística” dá a possibilidade aos alunos de intervirem como cidadãos esclarecidos, participativos e críticos.</p>
-<p>Entende-se por literacia estatística: “dominar a linguagem estatística (não só ao nível dos conceitos associados às medidas como também aos gráficos); compreender os procedimentos estatísticos(desde a recolha da amostra até divulgação dos resultados); interpretar as situações e os resultados (o que dizem os resultados sobre a situação em questão); avaliar a validade das conclusões (análise crítica sobre a razoabilidade das conclusões tendo em conta os contextos); ponderar eventuais distorções da realidade (considerar possibilidades de enviesamento ou manipulações tendenciosas)” (Canavarro, 2000, p.&nbsp;160).</p>
-<p>A literacia estatística constitui, portanto, uma ponte entre o saber matemático e a utilização da mesma no quotidiano.</p>
-<p>Branco (2000) considera que o ensino da estatística deve incidir na análise de dados reais com o apoio de tecnologias, designadamente informáticas.</p>
-<p>Neste Capítulo “Estatística Descritiva, apresentam-se os conceitos fundamentais da estatística descritiva cobrindo os seguintes tópicos: Introdução à Estatística, Dados tabelas e gráficos, Medidas de localização, Medidas de dispersão, Distribuição e Exercícios e Aplicações.</p>
-<p>A <em>Estatística</em> é a ciência que se ocupa da obtenção de informação, seu tratamento inicial, com a finalidade de, através de modelos probabilísticos adequados, inferir de uma amostra para a população e, eventualmente, prever a evolução futura de um fenómeno.</p>
-<p><strong>Censo e Estudo por Amostragem</strong></p>
-<p>Em termos genéricos, na análise de uma característica <strong>mensurável</strong>, duas perspectivas distintas existem:</p>
-<ol type="1">
-<li><p>Recolhem-se e analisam-se todos os elementos que constituem a população(conjunto constituído por todos os elementos que são objecto de estudo).Neste caso, realiza-se um <em>Censo</em></p></li>
-<li><p>Recolhe-se e analisa-se uma amostra(subconjunto da população). Neste caso, realiza-se um Estudo por <em>Amostragem</em>.</p></li>
-</ol>
-<p>Pretende-se que a amostra seja representativa da população.O processo de recolha e selecção dos elementos que constituem a amostra é objecto de estudo das <em>TÉCNICAS DE AMOSTRAGEM</em>.</p>
-<p><strong>Estatística descritiva</strong> vs <strong>inferencial</strong></p>
-<p><strong>Estatística descritiva</strong>: conjunto de métodos estatísticos que visam sumariar e descrever os atributos mais proeminentes dos dados.</p>
-<p><strong>Estatística Inferencial</strong>: conjunto de métodos estatísticos que visam caracterizar uma população a partir de uma amostra.</p>
-<p>Uma noção fundamental em Estatística é a de conjunto ou agregado, conceito para o qual se usam, indiferentemente, os termos <strong>População</strong> ou <strong>universo</strong>.</p>
-<p><strong>População</strong> ou <strong>Universo Estatístico</strong>: conjunto de elementos, com uma ou mais características comuns, sobre o qual incide o estudo estatístico.</p>
-<p><strong>Ex.:</strong> os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.</p>
-<p>Nem sempre é possível estudar exaustivamente todos os elementos da população! Porquê?</p>
-<ul>
-<li><p>Pode a população ter dimensão infinita Exemplo: População constituída pelas pressões atmosféricas, nos diferentes pontos de uma cidade.</p></li>
-<li><p>Pode o estudo da população levar à destruição da população Exemplo: População dos fósforos de uma caixa.</p></li>
-<li><p>Pode o estudo da população ser muito dispendioso Exemplo: Sondagens exaustivas de todos os eleitores, sobre determinado candidato.</p></li>
-</ul>
-<p>Quando não é possível estudar, exaustivamente, todos os elementos da população, estudam-se só alguns elementos, a que damos o nome de <strong>Amostra</strong>.</p>
-<p><strong>Amostra</strong>: subconjunto finito da população, que se estuda com o objectivo de tirar conclusões para a população de onde foi recolhida.</p>
-<p><strong>Ex.:</strong> conjunto de 15 alunos seleccionados ao acaso do conjunto de todos os alunos de 1ª matricula no ISCED de Cabinda, em um determinado ano letivo.</p>
-<p>A fase de recolha da amostra é importante, pois a <strong>amostra</strong> deve ser tão representativa quanto possível da <strong>População</strong> que se pretende estudar, uma vez que vai ser a partir do estudo da amostra, que vamos tirar conclusões para a População.</p>
-<p><strong>Razões para a recolha de uma amostra</strong>: <strong>dimensão excessiva da populacão</strong>,<strong>estudo de natureza destrutiva</strong>, <strong>economia</strong> e <strong>tempo</strong>.</p>
-<p>Quando a <strong>amostra</strong> não representa correctamente a <strong>população</strong> diz-se <strong>enviesada</strong> e a sua utilização pode dar origem a interpretações erradas, como se sugere nos seguintes exemplos:</p>
-<ul>
-<li><p>Utilizar uma <strong>amostra</strong> constituída por 10 benfiquistas, para prever o vencedor do próximo Benfica-Sporting.</p></li>
-<li><p>Utilizar uma <strong>amostra</strong> constituída pelos leitores habituais de determinada revista especializada, para tirar conclusões sobre a população geral.</p></li>
-</ul>
-<p><strong>Recenseamento</strong> e <strong>sondagem</strong></p>
-<p><strong>Recenseamento</strong>: em regra geral, associado à contagem oficial e periódica dos indivíduos de um País, ou parte de um País. Ele abrange, no entanto, um leque mais vasto de situações. Assim, pode definir-se recenseamento do seguinte modo:</p>
-<p>estudo científico de um universo de pessoas, instituições ou objectos físicos com o propósito de adquirir conhecimentos, observando todos os seus elementos, e fazer juízos quantitativos acerca de características importantes desse universo.</p>
-<p><strong>sondagem</strong></p>
-<p>Por vezes não é viável nem desejável, principalmente quando o número de elementos da <strong>população</strong> é muito elevado, inquirir todos os seus elementos sempre que se quer estudar uma ou mais características particulares dessa <strong>população</strong>. Surge o conceito de <strong>sondagem</strong>, que se pode tentar definir como:</p>
-<ul>
-<li>estudo científico de uma parte de uma população com o objectivo de estudar atitudes, hábitos e preferências da população relativamente a acontecimentos, circunstâncias e assuntos de interesse comum.</li>
-</ul>
-<p>É fundamental referir que, contrariamente ao <strong>recenseamento</strong>, as <strong>sondagens</strong> inquirem ou analisam apenas uma parte da <strong>população</strong> em estudo, isto é, restrinjem-se a uma <strong>amostra dessa população</strong>, mas com o objectivo de extrapolar para todos os elementos da <strong>população</strong> os resultados observados na <strong>amostra</strong>.</p>
-<p><strong>Estatística descritiva</strong> e <strong>estatística indutiva</strong></p>
-<p>Numa análise estatística distinguem-se essencialmente duas fases:</p>
-<ul>
-<li>Uma primeira fase em que se procura descrever e estudar a amostra: <strong>Estatística descritiva</strong>.</li>
-</ul>
-<p><strong>Estatística descritiva</strong> : Procura-se descrever a amostra, pondo em evidência as características principais e as propriedades.</p>
-<p>e uma segunda fase em que se procura tirar conclusões para a população - <strong>Estatística indutiva</strong>.</p>
-<p><strong>Estatística indutiva</strong>: Conhecidas certas propriedades (obtidas a partir de uma análise descritiva da amostra), expressas por meio de proposições, imaginam-se proposições mais gerais, que exprimam a existência de leis (na população).</p>
+<section id="essay" class="level1">
+<h1>essay</h1>
+<p>This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <a href="http://rmarkdown.rstudio.com" class="uri">http://rmarkdown.rstudio.com</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">90</span>) <span class="co">#produz sempre os mesmos dados</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(<span class="fu">rnorm</span>(<span class="dv">100</span>,<span class="dv">10</span>,<span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="q02_aberta_testes_files/figure-html/q02-essay-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
 </section>
-<section id="natureza-da-medida-das-variáveis" class="level2">
-<h2 class="anchored" data-anchor-id="natureza-da-medida-das-variáveis">Natureza da medida das variáveis</h2>
-<p><strong>Variável</strong>:característica mensurável ou atributo de interesse para estudo na população. <strong>Exemplo</strong>: nota de ingresso.</p>
-<p><strong>Nota</strong>: Uma amostra pode conter mais de uma característica de interesse para cada uma das unidades observadas. Com duas características temos uma <strong>amostra bivariada</strong>; com mais do que duas temos uma <strong>amostra multivariada</strong>.</p>
-<p><strong>Exemplo</strong>:Na população de alunos de 1ª matrícula do ISCED de Cabinda, em um determinado ano letivo, pode interessar a análise de várias características em simultâneo como, por exemplo, nota de ingresso e Instituição de proveniência.</p>
-<p><strong>Natureza da variável</strong></p>
-<p>A Natureza da variável podem ser:</p>
-<p><strong>Quantitativa(ou numúrica)</strong>:assumem valores intrinsecamente numéricos.Estas podem ser:</p>
+<section id="question" class="level1">
+<h1>question</h1>
+<p>This is a question about an hist(rnorm(10,0,1))</p>
+<section id="keywords" class="level2">
+<h2 class="anchored" data-anchor-id="keywords">keywords</h2>
 <ul>
-<li><p><strong>Discretas</strong>: assumem um conjunto finito ou infinito numerável (que se consegue contar) de possibilidades.Ex.: número de peças defeituosas por lote.</p></li>
-<li><p><strong>Contínuas</strong>: assumem valores em intervalos reais.Ex.: comprimentos, pesos, tempos, Renda das famílias em Kwanza.</p></li>
+<li><a href="https://pt.wikipedia.org/wiki/Distribui%C3%A7%C3%A3o_normal">distribuição Normal</a></li>
 </ul>
-<p><strong>Qualitativa(ou categórica)</strong>: assumem valores intrinsecamente não numéricos.Ex.: Instituição de proveniência.</p>
-<p><strong>Natureza discreta</strong> ou <strong>contínua</strong>?</p>
-<p>A fronteira pode ser pouco clara. Por vezes,os dados de uma variável contínua são registados com precisão finita sendo, na prática, tomados como de natureza discreta.Ex.: a <strong>idade</strong> de uma pessoa, em anos.</p>
-<p>os valores possíveis que uma variável discreta pode assumir representam uma gama de valores tão dispersos que, na prática, os dados observados para a variável são tratados como se fossem de natureza contínua, agrupando-se os valores em intervalos(classes).Ex.: <strong>nº de habitações familiares por Bairro</strong>.</p>
-<p><strong>Escalas de medidas de uma variável</strong></p>
-<ol type="1">
-<li><strong>Escala de razões</strong>: os valores numéricos possuem ordem e diferenças têm significado.</li>
-</ol>
-<ul>
-<li>O valor zero representa ausência da característica e múltiplos de valores possuem significado.</li>
-</ul>
-<p>São exemplos: <strong>medidas de comprimento</strong>, <strong>pesos</strong>, <strong>intervalos de tempo</strong>, <strong>o nº de filhos de um casal</strong>.</p>
-<ol start="2" type="1">
-<li><strong>Escala de intervalos</strong>: os valores numéricos possuem ordem e diferenças têm significado.</li>
-</ol>
-<ul>
-<li>São exemplos: <strong>temperatura medida em graus ºC</strong> ou <strong>ºF</strong>; <strong>medidas de altitude</strong>.</li>
-</ul>
-<ol start="3" type="1">
-<li><strong>Escala ordinal</strong> : os valores (numéricos ou não) possuem uma ordem intrínseca.</li>
-</ol>
-<ul>
-<li>São exemplos: <strong>classificações obtidas no 2º e 3º ciclos do ensino básico (1 a 5)</strong>; <strong>grupos etários (crianças, jovens, adultos e idosos)</strong>.</li>
-</ul>
-<ol start="4" type="1">
-<li>Escala nominal: os valores (numéricos ou não) não possuem uma ordem intrínseca.</li>
-</ol>
-<ul>
-<li>São exemplos: <strong>tipo de sangue de uma pessoa (O, A, B e AB)</strong>; <strong>sexo (0-Feminino,1 Masculino)</strong>.</li>
-</ul>
+</section>
+<section id="answer" class="level2">
+<h2 class="anchored" data-anchor-id="answer">answer</h2>
+<p>You can also embed plots, for example:</p>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="q02_aberta_testes_files/figure-html/pressure2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
+</section>
+</section>
+<section id="question-1" class="level1">
+<h1>question</h1>
+<p>qqq</p>
+<section id="keywords-1" class="level2">
+<h2 class="anchored" data-anchor-id="keywords-1">keywords</h2>
+<p>ssss</p>
+</section>
+<section id="answer-1" class="level2">
+<h2 class="anchored" data-anchor-id="answer-1">answer</h2>
+<p>You can also embed plots, for example:</p>
+<p>Note that the <code>echo = FALSE</code> parameter was added to the code chunk to prevent printing of the R code that generated the plot.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
