@@ -1,5 +1,18 @@
 ---
 title: "Introdução"
+color:
+  palette:
+    black: "#1C2826"
+    blue: "#0C0A3E" 
+    gray: "#2A2E45"
+    neutral: "#F9F7F1" 
+    red: "#BA274A"
+    violet: "#4D6CFA"
+  background: blue 
+  foreground: black
+  primary: blue
+  secondary: violet
+  info: red
 ---
 
 ## Conceitos Básicos
