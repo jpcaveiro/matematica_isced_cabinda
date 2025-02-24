@@ -8,11 +8,39 @@ output: html_document
 
 # essay
 
+
+* Lembrar de carregar em "outline" ao lado direito
+
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
 Uma imagem:
 
 ![](img/aberta_001_img1.png)
+
+```{r}
+x = seq(-2,2,0.1)
+y = x^2
+plot(x,y)
+```
+
+
+```{r}
+curve(x^2, from = -2, to = 2)
+```
+
+$$f(x | \mu, \sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
+
+
+```{r}
+# Define a média e o desvio padrão
+media <- 0
+desvio_padrao <- 1
+
+# Cria o gráfico da distribuição normal
+curve(dnorm(x, mean = media, sd = desvio_padrao), from = -4, to = 4, 
+      xlab = "Valores", ylab = "Densidade", 
+      main = "Distribuição Normal")
+```
 
 
 
