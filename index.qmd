@@ -1,7 +1,7 @@
 ---
 title: "Estatistica Descritiva"
 ---
-quarto render
+
 # Bem-vindo ao  Website de Estatística Descritiva
 
 Este site é dedicado ao estudo e aplicação da **Estatística Descritiva**, uma área fundamental para a análise e interpretação de dados. Aqui  encontrará conceitos teóricos, exemplos práticos, recursos para download e ferramentas interativas para aprimorar seu conhecimento.
