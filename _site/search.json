@@ -7,67 +7,116 @@
     "text": "quarto render # Bem-vindo ao Website de Estatística Descritiva\nEste site é dedicado ao estudo e aplicação da Estatística Descritiva, uma área fundamental para a análise e interpretação de dados. Aqui encontrará conceitos teóricos, exemplos práticos, recursos para download e ferramentas interativas para aprimorar seu conhecimento."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "index.html#o-que-é-estatística-descritiva",
+    "href": "index.html#o-que-é-estatística-descritiva",
+    "title": "Estatistica Descritiva",
+    "section": "O que é Estatística Descritiva?",
+    "text": "O que é Estatística Descritiva?\nA Estatística Descritiva é o ramo da Estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, você aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais."
+  },
+  {
+    "objectID": "index.html#conteúdos-disponíveis",
+    "href": "index.html#conteúdos-disponíveis",
+    "title": "Estatistica Descritiva",
+    "section": "Conteúdos Disponíveis",
+    "text": "Conteúdos Disponíveis\nExplore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n02-analise-explo-dados.qmd\n\n📊 Conceitos Básicos\n\nMedidas de Tendência Central\nMedidas de Dispersão\nGráficos e Visualizações\n\n\n\n📂 Recursos para Download\n\nPDF: Introdução à Estatística Descritiva\nApresentação: Conceitos Básicos\nPlanilha de Dados para Prática\n\n\n\n🛠️ Ferramentas Interativas\n\nCalculadora de Média e Mediana (em breve)\nGerador de Gráficos (em breve)"
+  },
+  {
+    "objectID": "index.html#baixar-o-pdf",
+    "href": "index.html#baixar-o-pdf",
+    "title": "Estatistica Descritiva",
+    "section": "Baixar o PDF",
+    "text": "Baixar o PDF\nClique no link abaixo para baixar o PDF: Baixar PDF ## Por que Estudar Estatística Descritiva?\nA Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
+  },
+  {
+    "objectID": "index.html#sobre-o-autor",
+    "href": "index.html#sobre-o-autor",
+    "title": "Estatistica Descritiva",
+    "section": "Sobre o Autor",
+    "text": "Sobre o Autor\nOlá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim"
+  },
+  {
+    "objectID": "index.html#comece-agora",
+    "href": "index.html#comece-agora",
+    "title": "Estatistica Descritiva",
+    "section": "Comece Agora!",
+    "text": "Comece Agora!\nClique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html",
+    "href": "abertas/q02_aberta_testes.html",
+    "title": "aberta_testes",
     "section": "",
-    "text": "About this site"
+    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\n\nset.seed(90) #produz sempre os mesmos dados\nhist(rnorm(100,10,1))"
   },
   {
-    "objectID": "02-medidas-tendencia-central.html",
-    "href": "02-medidas-tendencia-central.html",
-    "title": "Medidas de Tendência Central",
+    "objectID": "abertas/q02_aberta_testes.html#keywords",
+    "href": "abertas/q02_aberta_testes.html#keywords",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\n\ndistribuição Normal"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#answer",
+    "href": "abertas/q02_aberta_testes.html#answer",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#keywords-1",
+    "href": "abertas/q02_aberta_testes.html#keywords-1",
+    "title": "aberta_testes",
+    "section": "keywords",
+    "text": "keywords\nssss"
+  },
+  {
+    "objectID": "abertas/q02_aberta_testes.html#answer-1",
+    "href": "abertas/q02_aberta_testes.html#answer-1",
+    "title": "aberta_testes",
+    "section": "answer",
+    "text": "answer\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+  },
+  {
+    "objectID": "07-ex-inter.html",
+    "href": "07-ex-inter.html",
+    "title": "Exercícios Interactivos",
     "section": "",
-    "text": "A média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+    "text": "1 + 1\n\n[1] 2"
   },
   {
-    "objectID": "02-medidas-tendencia-central.html#média",
-    "href": "02-medidas-tendencia-central.html#média",
-    "title": "Medidas de Tendência Central",
-    "section": "",
-    "text": "A média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+    "objectID": "07-ex-inter.html#htmlwidgets",
+    "href": "07-ex-inter.html#htmlwidgets",
+    "title": "Exercícios Interactivos",
+    "section": "HTMLwidgets",
+    "text": "HTMLwidgets\n\n# Carregar a biblioteca leaflet\nlibrary(leaflet)\n\n# Coordenadas aproximadas de Cabinda, Angola\ncabinda_lat &lt;- -5.55\ncabinda_lng &lt;- 12.19\n\n# Criar o mapa\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Adicionar os tiles do OpenStreetMap\n  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = \"Cabinda, Angola\")\nm  # Print the map"
   },
   {
-    "objectID": "02-medidas-tendencia-central.html#média-1",
-    "href": "02-medidas-tendencia-central.html#média-1",
-    "title": "Medidas de Tendência Central",
-    "section": "Média",
-    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\n```{r} dados &lt;- c(10, 20, 30, 40, 50) media &lt;- mean(dados) media"
+    "objectID": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
+    "href": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
+    "title": "Exercícios Interactivos",
+    "section": "Exemplo de questão de múltipla escolha",
+    "text": "Exemplo de questão de múltipla escolha\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:\n\n\n  População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.  População:Todos os estudantes do 1º ano do curso de Matemática, Amostra : Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.\n\n\n\n\n\nLimpar\n\n\n\n\nA função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:\n\n\n \\[Y=β_0+β_1X+e\\]  \\[ \\hat Y=\\hat β_0\\]   \\[ Y=β_0+β_1X\\]  \\[ \\hat Y=\\hat β_0+β_1X\\]\n\n\n\n\n\nLimpar\n\n\n\n\nCom um modelo de regressão, a inferência estatística pode ser feita desde que:\n\n\n  O modelo é estatisticamente válido   Nenhuma das anteriores  \\[R^2=1\\]  1 e 2 estão corretas\n\n\n\n\n\nLimpar\n\n\n\n\nQual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?\n\n\n  O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações  O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões   Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes   O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações\n\n\n\n\n\nLimpar\n\n\n\n\nO diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: :\n\n\n  A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear   A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y   A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de normalidade dos erros é cumprida neste modelo   A suposição de variância constante dos erros não é cumprida neste modelo.   A suposição de variância constante dos erros é cumprida para este modelo.   A suposição de normalidade dos erros não é cumprida para este modelo.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é não linear e positiva.   A relação é não linear e negativa.   a. A relação é linear e positiva   Não há relação.\n\n\n\n\n\nLimpar\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é linear e positiva   A relação é não linear e negativa.   A relação é não linear e positiva.   Não há relação.\n\n\n\n\n\nLimpar\n\n\n\nNum estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:\n\n\n  (A), (D), (E), (F) , (B).   (A), (D), (C), (F) , (H).  (A), (D), (E), (F) , (H).\n\n\n\n\n\nLimpar\n\n\n\nE, as qualitativas são:\n\n\n (B), (C), (G)),(H).  (B), (C), (G).  (B), (C), (G) ,(F) .\n\n\n\n\n\nLimpar\n\n\n\nDiga porque é que a seguinte situação representam má amostra:\n\nPara saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:\n\n\n  Não é representativa da população de onde foi retirada-é uma amostra enviesada.  A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .   Diferentes tipos de pessoas frequentam o mesmo supermercado.\n\n\n\n\n\nLimpar\n\nsingle.choice() function: check arguments.\nsingle.choice() function: check arguments.\n\\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nOUTRA\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:\n\n\nA resposta é 1.\n\nA resposta é \n\n\nLimpar"
   },
   {
-    "objectID": "02-analise-explo-dados.html",
-    "href": "02-analise-explo-dados.html",
-    "title": "Análise Exploratória de Dados",
-    "section": "",
-    "text": "Esta secção segue de perto:[Murteira et al(2015) & Hall et al(2011)]\nA Análise Exploratória de Dados é também designada Análise Preliminar de Dados ou Estatística Descritiva, embora alguns autores estabeleçam diferenças subtis entre estas designações.\nPretende-se que o estudante seja capaz de elaborar e interpretar uma análise estatística exploratória simples de dados univariados.\nFases de uma Análise Exploratória de Dados\nTabelas de contagens que resumem a informação contida na amostra, ordenando os seus valores e agrupando-os em categorias (de valores repetidos ou de valores distribuidos por classes/intervalos). Em geral, são calculadas as\nOrganização dos Dados"
+    "objectID": "07-ex-inter.html#essay-em-ficheiro-externo",
+    "href": "07-ex-inter.html#essay-em-ficheiro-externo",
+    "title": "Exercícios Interactivos",
+    "section": "Essay em ficheiro externo",
+    "text": "Essay em ficheiro externo\n\nhttps://bookdown.org/yihui/rmarkdown-cookbook/include-html.html"
   },
   {
-    "objectID": "02-analise-explo-dados.html#medidas-de-localização",
-    "href": "02-analise-explo-dados.html#medidas-de-localização",
-    "title": "Análise Exploratória de Dados",
-    "section": "Medidas de localização",
-    "text": "Medidas de localização\nDas medidas, ou estatísticas que iremos definir, para caracterizar os dados, destacam-se as medidas de localização nomeadamente as que localizam o centro da amostra (média, moda e mediana) , e as medidas de dispersão.\nVamos estudar seguidamente algumas medidas de localização, nomeadamente as que localizam o centro da amostra:\nMédia Moda Mediana\nProcuraremos realçar:\n\nProcesso de as calcular\nPropriedades\nLimitações\n\nMédia\nA média amostral ou simplesmente média, que se representa por \\(\\bar x\\) é uma medida de localização do centro da amostra, e obtém-se a partir da seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ n x_i\n\\]\ndados não agrupados\nonde ( x_1 , x_2, …, x_n ) representam os elementos da amostra e n a sua dimensão.\nSe as observações se encontram agrupadas em classes, na forma de intervalos, então um valor aproximado para a média é dado pela seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ k n_ik_i\n\\] onde:\n\nk é o número de classes do agrupamento;\n(n_i) é a frequência absoluta da classe i.\n(y_i) é o ponto médio da classe i, o qual é considerado como elemento representativo da classe.\n\nParticularidade\nA média goza de uma particularidade interessante e que consiste no seguinte:\nse calcularmos os desvios de todas as observações relativamente à média e somarmos esses desvios o resultado obtido é igual a zero.\n\\[(x_1-\\bar x)+(x_2-\\bar x)+...+(x_n-\\bar x)=0\\] Suponhamos que numa festa foram distribuídos berlindes pelos meninos presentes. Os berlindes eram lançados ao ar e quem mais corria mais apanhava. No fim fez-se a contagem e verificou-se a seguinte distribuição sobre os números de berlindes que cada menino conseguiu apanhar:\nJoão 8\nFilipa 7\nAna 3\nMaria 5\nTeresa 4\nDavid 6\nA cada menino coube em média 5.5 berlindes. Houve meninos que apanharam menos berlindes do que a média, enquanto que outros apanharam mais. Os meninos que apanharam mais berlindes resolveram dividir com os que apanharam menos de forma a ficarem todos com a mesma quantidade. Terão conseguido?\nResolusão:\nCalculando os desvios relativamente à média, temos:\n               Desvio\n               \nJoão 8 \\[8 - 5.5 = 2.5\\]\nFilipa 7 \\[7 - 5.5 = 1.5\\]\nAna 3 \\[3 - 5.5 = -2.5\\]\nMaria 5 \\[5 - 5.5 = -0.5\\]\nTeresa 4 \\[4 - 5.5 = -1.5\\]\nDavid 6 \\[6 - 5.5 = 0.5\\]\n\\[-0.5 -1.5 + 0.5 + 2.5 + 1.5 -2.5 = 0\\]\nO resultado verifica-se porque a soma dos desvios positivos é igual à soma dos desvios negativos.\nA média tem uma outra característica, que torna a sua utilização vantajosa em certas aplicações:\n\nQuando o que se pretende representar é a quantidade total expressa pelos dados, utiliza-se a média.\nNa realidade, ao multiplicar a média pelo nº total de elementos, obtemos a quantidade pretendida!\n\nOs dados de tipo qualitativo não tem sentido calcular a média, mesmo que os dados sejam números. Se, por exemplo, temos um conjunto de 1’s e 2’s, se se referirem à variável sexo, em que se utilizou o 1 para representar o sexo masculino e o 2 para o sexo feminino (variável codificada), não tem qualquer significado calcular a média daquele conjunto de dados.\nModa\nPara um conjunto de dados, define-se moda como sendo:o valor que surge com mais frequência se os dados são discretos, ou, o intervalo de classe com maior frequência se os dados são contínuos.\nEsta medida é especialmente útil para reduzir a informação de um conjunto de dados qualitativos, apresentados sob a forma de nomes ou categorias, para os quais não se pode calcular a média e por vezes a mediana (se não forem susceptíveis de ordenação).\nMediana\nmediana, \\(m_e\\), é uma medida de localização do centro da distribuição dos dados, definida do seguinte modo:\nOrdenados os elementos da amostra, a mediana é o valor (pertencente ou não à amostra) que a divide ao meio, isto é, 50% dos elementos da amostra são menores ou iguais à mediana e os outros 50% são maiores ou iguais à mediana\nPara a sua determinação utiliza-se a seguinte regra, depois de ordenada a amostra de n elementos:\n\nSe n é ímpar, a mediana é o elemento médio.\nSe n é par, a mediana é a semi-soma dos dois elementos médios.\n\nSe se representarem os elementos da amostra ordenada com a seguinte notação: \\[\nx_{(1)}, x_{2:n}, ..., x_{n:n}\n\\] então uma expressão para o cálculo da mediana será:\n\\[\nmed=\\left\\{\n\\begin{array}{ll}\nX_{\\left(\\frac{n+1}{2}\\right)}, &  \\text{se n ímpar} \\\\\n\\frac{1}{2}\\left(\n     X_{\\left(\\frac{n}{2}\\right)} + X_{\\left(\\frac{n}{2}+1\\right)} \\right),  & \\text{se n par} \\\\\n\\end{array}\n\\right.\n\\]\nomo medida de localização, a mediana é mais resistente do que a média, pois não é tão sensível aos dados !\n\nQuando a distribuição é simétrica, a média e a mediana coincidem.\nA mediana não é tão sensível, como a média, às observações que são muito maiores ou muito menores do que as restantes (outliers). Por outro lado a média reflete o valor de todas as observações.\n\nAssim, não se pode dizer em termos absolutos qual destas medidas de localização é preferível, dependendo do contexto em que estão a ser utilizadas.\nComo a média é influenciada quer por valores muito grandes, quer por valores muito pequenos, se a distribuição dos dados:\n\nfor aproximadamente simétrica, a média aproxima-se da mediana\nfor enviesada para a direita (alguns valores grandes como “outliers”), a média tende a ser maior que a mediana\nfor enviesada para a esquerda (alguns valores pequenos como “outliers”), a média tende a ser inferior à mediana.\n\nRepresentando as ditribuições dos dados (esta observação é válida para as representações gráficas na forma de diagramas de barras ou de histograma) na forma de uma mancha, temos, de um modo geral:\n\nQuantis\nQuantil de ordem p\nGeneralizando a noção de mediana \\(m_e\\), é a medida de localização, tal que 50% dos elementos da amostra são menores ou iguais a \\(m_e\\), e os outros 50% são maiores ou iguais a \\(m_e\\), temos a noção de quantil de ordem p, com 0&lt;p&lt;1, como sendo o valor \\(Q_p\\) tal que 100p% dos elementos da amostra são menores ou iguais a \\(Q_p\\) e os restantes 100 (1-p)% dos elementos da amostra são maiores ou iguais a \\(Q_p\\).\nTal como a mediana, é uma medida que se calcula a partir da amostra ordenada. Um processo de obter os quantis é utilizando a Função Distribuição Empírica."
+    "objectID": "07-ex-inter.html#incluir-geogebra",
+    "href": "07-ex-inter.html#incluir-geogebra",
+    "title": "Exercícios Interactivos",
+    "section": "Incluir geogebra",
+    "text": "Incluir geogebra\n\nknitr::include_url(\"https://www.geogebra.org/m/W9Nz53Ct\")"
   },
   {
-    "objectID": "02-analise-explo-dados.html#informações-uteis",
-    "href": "02-analise-explo-dados.html#informações-uteis",
-    "title": "Análise Exploratória de Dados",
-    "section": "Informações uteis",
-    "text": "Informações uteis\n• INSTITUTO SUPERIOR DE CIÊNCIAS DA EDUCAÇÃO DE CABINDA/ANGOLA\n• PIB per capita de Angola\n• Taxa de pobreza em Angola\n• Dados da UNICEF Angola\n• Instituto Nacional de Estatística de Angola\n•Banco Nacional de Angola\n•Ministério das Finanças de Angola"
-  },
-  {
-    "objectID": "02-analise-explo-dados.html#média",
-    "href": "02-analise-explo-dados.html#média",
-    "title": "Análise Exploratória de Dados",
-    "section": "Média",
-    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
-  },
-  {
-    "objectID": "02-analise-explo-dados.html#média-1",
-    "href": "02-analise-explo-dados.html#média-1",
-    "title": "Análise Exploratória de Dados",
-    "section": "Média",
-    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
+    "objectID": "07-ex-inter.html#como-fazer-2",
+    "href": "07-ex-inter.html#como-fazer-2",
+    "title": "Exercícios Interactivos",
+    "section": "Como fazer 2",
+    "text": "Como fazer 2\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:{r eval=FALSE} install.packages(\"bookdown\") # or the development version # devtools::install_github(\"rstudio/bookdown\")\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/."
   },
   {
     "objectID": "01-Intro.html",
@@ -91,6 +140,27 @@
     "text": "Natureza da medida das variáveis\nVariável:característica mensurável ou atributo de interesse para estudo na população. Exemplo: nota de ingresso.\nNota: Uma amostra pode conter mais de uma característica de interesse para cada uma das unidades observadas. Com duas características temos uma amostra bivariada; com mais do que duas temos uma amostra multivariada.\nExemplo:Na população de alunos de 1ª matrícula do ISCED de Cabinda, em um determinado ano letivo, pode interessar a análise de várias características em simultâneo como, por exemplo, nota de ingresso e Instituição de proveniência.\nNatureza da variável\nA Natureza da variável podem ser:\nQuantitativa(ou numúrica):assumem valores intrinsecamente numéricos.Estas podem ser:\n\nDiscretas: assumem um conjunto finito ou infinito numerável (que se consegue contar) de possibilidades.Ex.: número de peças defeituosas por lote.\nContínuas: assumem valores em intervalos reais.Ex.: comprimentos, pesos, tempos, Renda das famílias em Kwanza.\n\nQualitativa(ou categórica): assumem valores intrinsecamente não numéricos.Ex.: Instituição de proveniência.\nNatureza discreta ou contínua?\nA fronteira pode ser pouco clara. Por vezes,os dados de uma variável contínua são registados com precisão finita sendo, na prática, tomados como de natureza discreta.Ex.: a idade de uma pessoa, em anos.\nos valores possíveis que uma variável discreta pode assumir representam uma gama de valores tão dispersos que, na prática, os dados observados para a variável são tratados como se fossem de natureza contínua, agrupando-se os valores em intervalos(classes).Ex.: nº de habitações familiares por Bairro.\nEscalas de medidas de uma variável\n\nEscala de razões: os valores numéricos possuem ordem e diferenças têm significado.\n\n\nO valor zero representa ausência da característica e múltiplos de valores possuem significado.\n\nSão exemplos: medidas de comprimento, pesos, intervalos de tempo, o nº de filhos de um casal.\n\nEscala de intervalos: os valores numéricos possuem ordem e diferenças têm significado.\n\n\nSão exemplos: temperatura medida em graus ºC ou ºF; medidas de altitude.\n\n\nEscala ordinal : os valores (numéricos ou não) possuem uma ordem intrínseca.\n\n\nSão exemplos: classificações obtidas no 2º e 3º ciclos do ensino básico (1 a 5); grupos etários (crianças, jovens, adultos e idosos).\n\n\nEscala nominal: os valores (numéricos ou não) não possuem uma ordem intrínseca.\n\n\nSão exemplos: tipo de sangue de uma pessoa (O, A, B e AB); sexo (0-Feminino,1 Masculino)."
   },
   {
+    "objectID": "02-analise-explo-dados.html",
+    "href": "02-analise-explo-dados.html",
+    "title": "Análise Exploratória de Dados",
+    "section": "",
+    "text": "Esta secção segue de perto:[Murteira et al(2015) & Hall et al(2011)]\nA Análise Exploratória de Dados é também designada Análise Preliminar de Dados ou Estatística Descritiva, embora alguns autores estabeleçam diferenças subtis entre estas designações.\nPretende-se que o estudante seja capaz de elaborar e interpretar uma análise estatística exploratória simples de dados univariados.\nFases de uma Análise Exploratória de Dados\nTabelas de contagens que resumem a informação contida na amostra, ordenando os seus valores e agrupando-os em categorias (de valores repetidos ou de valores distribuidos por classes/intervalos). Em geral, são calculadas as\nOrganização dos Dados"
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#medidas-de-localização",
+    "href": "02-analise-explo-dados.html#medidas-de-localização",
+    "title": "Análise Exploratória de Dados",
+    "section": "Medidas de localização",
+    "text": "Medidas de localização\nDas medidas, ou estatísticas que iremos definir, para caracterizar os dados, destacam-se as medidas de localização nomeadamente as que localizam o centro da amostra (média, moda e mediana) , e as medidas de dispersão.\nVamos estudar seguidamente algumas medidas de localização, nomeadamente as que localizam o centro da amostra:\nMédia Moda Mediana\nProcuraremos realçar:\n\nProcesso de as calcular\nPropriedades\nLimitações\n\nMédia\nA média amostral ou simplesmente média, que se representa por \\(\\bar x\\) é uma medida de localização do centro da amostra, e obtém-se a partir da seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ n x_i\n\\]\ndados não agrupados\nonde ( x_1 , x_2, …, x_n ) representam os elementos da amostra e n a sua dimensão.\nSe as observações se encontram agrupadas em classes, na forma de intervalos, então um valor aproximado para a média é dado pela seguinte expressão:\n\\[\n\\bar x=\\frac{1}{n}\\sum_i^ k n_ik_i\n\\] onde:\n\nk é o número de classes do agrupamento;\n(n_i) é a frequência absoluta da classe i.\n(y_i) é o ponto médio da classe i, o qual é considerado como elemento representativo da classe.\n\nParticularidade\nA média goza de uma particularidade interessante e que consiste no seguinte:\nse calcularmos os desvios de todas as observações relativamente à média e somarmos esses desvios o resultado obtido é igual a zero.\n\\[(x_1-\\bar x)+(x_2-\\bar x)+...+(x_n-\\bar x)=0\\] Suponhamos que numa festa foram distribuídos berlindes pelos meninos presentes. Os berlindes eram lançados ao ar e quem mais corria mais apanhava. No fim fez-se a contagem e verificou-se a seguinte distribuição sobre os números de berlindes que cada menino conseguiu apanhar:\nJoão 8\nFilipa 7\nAna 3\nMaria 5\nTeresa 4\nDavid 6\nA cada menino coube em média 5.5 berlindes. Houve meninos que apanharam menos berlindes do que a média, enquanto que outros apanharam mais. Os meninos que apanharam mais berlindes resolveram dividir com os que apanharam menos de forma a ficarem todos com a mesma quantidade. Terão conseguido?\nResolusão:\nCalculando os desvios relativamente à média, temos:\n               Desvio\n               \nJoão 8 \\[8 - 5.5 = 2.5\\]\nFilipa 7 \\[7 - 5.5 = 1.5\\]\nAna 3 \\[3 - 5.5 = -2.5\\]\nMaria 5 \\[5 - 5.5 = -0.5\\]\nTeresa 4 \\[4 - 5.5 = -1.5\\]\nDavid 6 \\[6 - 5.5 = 0.5\\]\n\\[-0.5 -1.5 + 0.5 + 2.5 + 1.5 -2.5 = 0\\]\nO resultado verifica-se porque a soma dos desvios positivos é igual à soma dos desvios negativos.\nA média tem uma outra característica, que torna a sua utilização vantajosa em certas aplicações:\n\nQuando o que se pretende representar é a quantidade total expressa pelos dados, utiliza-se a média.\nNa realidade, ao multiplicar a média pelo nº total de elementos, obtemos a quantidade pretendida!\n\nOs dados de tipo qualitativo não tem sentido calcular a média, mesmo que os dados sejam números. Se, por exemplo, temos um conjunto de 1’s e 2’s, se se referirem à variável sexo, em que se utilizou o 1 para representar o sexo masculino e o 2 para o sexo feminino (variável codificada), não tem qualquer significado calcular a média daquele conjunto de dados.\nModa\nPara um conjunto de dados, define-se moda como sendo:o valor que surge com mais frequência se os dados são discretos, ou, o intervalo de classe com maior frequência se os dados são contínuos.\nEsta medida é especialmente útil para reduzir a informação de um conjunto de dados qualitativos, apresentados sob a forma de nomes ou categorias, para os quais não se pode calcular a média e por vezes a mediana (se não forem susceptíveis de ordenação).\nMediana\nmediana, \\(m_e\\), é uma medida de localização do centro da distribuição dos dados, definida do seguinte modo:\nOrdenados os elementos da amostra, a mediana é o valor (pertencente ou não à amostra) que a divide ao meio, isto é, 50% dos elementos da amostra são menores ou iguais à mediana e os outros 50% são maiores ou iguais à mediana\nPara a sua determinação utiliza-se a seguinte regra, depois de ordenada a amostra de n elementos:\n\nSe n é ímpar, a mediana é o elemento médio.\nSe n é par, a mediana é a semi-soma dos dois elementos médios.\n\nSe se representarem os elementos da amostra ordenada com a seguinte notação: \\[\nx_{(1)}, x_{2:n}, ..., x_{n:n}\n\\] então uma expressão para o cálculo da mediana será:\n\\[\nmed=\\left\\{\n\\begin{array}{ll}\nX_{\\left(\\frac{n+1}{2}\\right)}, &  \\text{se n ímpar} \\\\\n\\frac{1}{2}\\left(\n     X_{\\left(\\frac{n}{2}\\right)} + X_{\\left(\\frac{n}{2}+1\\right)} \\right),  & \\text{se n par} \\\\\n\\end{array}\n\\right.\n\\]\nomo medida de localização, a mediana é mais resistente do que a média, pois não é tão sensível aos dados !\n\nQuando a distribuição é simétrica, a média e a mediana coincidem.\nA mediana não é tão sensível, como a média, às observações que são muito maiores ou muito menores do que as restantes (outliers). Por outro lado a média reflete o valor de todas as observações.\n\nAssim, não se pode dizer em termos absolutos qual destas medidas de localização é preferível, dependendo do contexto em que estão a ser utilizadas.\nComo a média é influenciada quer por valores muito grandes, quer por valores muito pequenos, se a distribuição dos dados:\n\nfor aproximadamente simétrica, a média aproxima-se da mediana\nfor enviesada para a direita (alguns valores grandes como “outliers”), a média tende a ser maior que a mediana\nfor enviesada para a esquerda (alguns valores pequenos como “outliers”), a média tende a ser inferior à mediana.\n\nRepresentando as ditribuições dos dados (esta observação é válida para as representações gráficas na forma de diagramas de barras ou de histograma) na forma de uma mancha, temos, de um modo geral:\n\nQuantis\nQuantil de ordem p\nGeneralizando a noção de mediana \\(m_e\\), é a medida de localização, tal que 50% dos elementos da amostra são menores ou iguais a \\(m_e\\), e os outros 50% são maiores ou iguais a \\(m_e\\), temos a noção de quantil de ordem p, com 0&lt;p&lt;1, como sendo o valor \\(Q_p\\) tal que 100p% dos elementos da amostra são menores ou iguais a \\(Q_p\\) e os restantes 100 (1-p)% dos elementos da amostra são maiores ou iguais a \\(Q_p\\).\nTal como a mediana, é uma medida que se calcula a partir da amostra ordenada. Um processo de obter os quantis é utilizando a Função Distribuição Empírica."
+  },
+  {
+    "objectID": "02-analise-explo-dados.html#informações-uteis",
+    "href": "02-analise-explo-dados.html#informações-uteis",
+    "title": "Análise Exploratória de Dados",
+    "section": "Informações uteis",
+    "text": "Informações uteis\n• INSTITUTO SUPERIOR DE CIÊNCIAS DA EDUCAÇÃO DE CABINDA/ANGOLA\n• PIB per capita de Angola\n• Taxa de pobreza em Angola\n• Dados da UNICEF Angola\n• Instituto Nacional de Estatística de Angola\n•Banco Nacional de Angola\n•Ministério das Finanças de Angola"
+  },
+  {
     "objectID": "02-analise-explo-dados.html#baixar-documentos",
     "href": "02-analise-explo-dados.html#baixar-documentos",
     "title": "Análise Exploratória de Dados",
@@ -105,95 +175,18 @@
     "text": "Visualizar PDF incorporado"
   },
   {
-    "objectID": "index.html#o-que-é-estatística-descritiva",
-    "href": "index.html#o-que-é-estatística-descritiva",
-    "title": "Estatistica Descritiva",
-    "section": "O que é Estatística Descritiva?",
-    "text": "O que é Estatística Descritiva?\nA Estatística Descritiva é o ramo da Estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, você aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais."
+    "objectID": "02-analise-explo-dados.html#média",
+    "href": "02-analise-explo-dados.html#média",
+    "title": "Análise Exploratória de Dados",
+    "section": "Média",
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
   },
   {
-    "objectID": "index.html#conteúdos-disponíveis",
-    "href": "index.html#conteúdos-disponíveis",
-    "title": "Estatistica Descritiva",
-    "section": "Conteúdos Disponíveis",
-    "text": "Conteúdos Disponíveis\nExplore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n02-analise-explo-dados.qmd\n\n📊 Conceitos Básicos\n\nMedidas de Tendência Central\nMedidas de Dispersão\nGráficos e Visualizações\n\n\n\n📂 Recursos para Download\n\nPDF: Introdução à Estatística Descritiva\nApresentação: Conceitos Básicos\nPlanilha de Dados para Prática\n\n\n\n🛠️ Ferramentas Interativas\n\nCalculadora de Média e Mediana (em breve)\nGerador de Gráficos (em breve)"
-  },
-  {
-    "objectID": "index.html#recursos-para-download",
-    "href": "index.html#recursos-para-download",
-    "title": "Estatistica Descritiva",
-    "section": "",
-    "text": "Aqui você pode baixar materiais complementares para aprofundar seus estudos:"
-  },
-  {
-    "objectID": "index.html#sobre-o-autor",
-    "href": "index.html#sobre-o-autor",
-    "title": "Estatistica Descritiva",
-    "section": "Sobre o Autor",
-    "text": "Sobre o Autor\nOlá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim"
-  },
-  {
-    "objectID": "index.html#comece-agora",
-    "href": "index.html#comece-agora",
-    "title": "Estatistica Descritiva",
-    "section": "Comece Agora!",
-    "text": "Comece Agora!\nClique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
-  },
-  {
-    "objectID": "index.html#objetivos",
-    "href": "index.html#objetivos",
-    "title": ".",
-    "section": "Objetivos",
-    "text": "Objetivos\n\nFornecer recursos educacionais de alta qualidade para estudantes e professores de Matemática.\nPromover o interesse pela Matemática através de exemplos práticos e aplicações no mundo real.\nFacilitar o acesso a materiais de estudo, como notas de aula, exercícios resolvidos e videoaulas.\nApoiar a preparação para exames e avaliações."
-  },
-  {
-    "objectID": "index.html#conteúdos-disponíveis-1",
-    "href": "index.html#conteúdos-disponíveis-1",
-    "title": "Estatistica Descritiva",
-    "section": "Conteúdos Disponíveis",
-    "text": "Conteúdos Disponíveis\nExplore os tópicos abaixo para começar sua jornada na Estatística Descritiva:\n\n📊 Conceitos Básicos\nMedidas de Tendência Central](/posts/medidas-tendencia-central.qmd) Medidas de Dispersão](/posts/medidas-dispersao.qmd) Gráficos e Visualizações](/posts/graficos.qmd)\n\n\n📂 Recursos para Download\nPDF: Introdução à Estatística Descritiva Apresentação: Conceitos Básicos Planilha de Dados para Prática\n\n\n🛠️ Ferramentas Interativas\nCalculadora de Média e Mediana (em breve) Gerador de Gráficos (em breve)"
-  },
-  {
-    "objectID": "index.html#destaques",
-    "href": "index.html#destaques",
-    "title": ".",
-    "section": "Destaques",
-    "text": "Destaques\n\nBaixar o Guia de Estatística Descritiva: Um material completo sobre os fundamentos da Estatística Descritiva.\nVideoaulas de Cálculo: Acesse nossa playlist de videoaulas para entender conceitos complexos de forma simples.\nExercícios Interativos: Pratique Matemática com exercícios dinâmicos e feedback imediato."
-  },
-  {
-    "objectID": "index.html#como-usar-o-site",
-    "href": "index.html#como-usar-o-site",
-    "title": ".",
-    "section": "Como Usar o Site",
-    "text": "Como Usar o Site\n\nNavegue pelos menus acima para acessar os conteúdos organizados por tópicos.\nUtilize a barra de pesquisa para encontrar tópicos específicos.\nBaixe materiais em PDF, Word ou PowerPoint para estudo offline.\nParticipe das discussões e envie suas dúvidas através do nosso fórum."
-  },
-  {
-    "objectID": "index.html#comece-agora-1",
-    "href": "index.html#comece-agora-1",
-    "title": "Estatistica Descritiva",
-    "section": "Comece Agora!",
-    "text": "Comece Agora!\nClique nos links acima para explorar os conteúdos ou baixe os recursos disponíveis. Se você é novo em Estatística Descritiva, recomendo começar pela Introdução à Estatística Descritiva.\nBoa aprendizagem! 🚀"
-  },
-  {
-    "objectID": "index.html#o-que-é-estatística-descritiva-1",
-    "href": "index.html#o-que-é-estatística-descritiva-1",
-    "title": "Estatistica Descritiva",
-    "section": "O que é Estatística Descritiva?",
-    "text": "O que é Estatística Descritiva?\nA Estatística Descritiva é o ramo da estatística que visa resumir, organizar e descrever conjuntos de dados por meio de medidas e gráficos. Ela é essencial para entender a distribuição, tendência central e dispersão dos dados.\nNeste site, aprenderá sobre: - Medidas de tendência central (média, mediana, moda). - Medidas de dispersão (variância, desvio padrão, amplitude). - Técnicas de visualização de dados (histogramas, boxplots, gráficos de dispersão). - Exemplos práticos com dados reais."
-  },
-  {
-    "objectID": "index.html#por-que-estudar-estatística-descritiva",
-    "href": "index.html#por-que-estudar-estatística-descritiva",
-    "title": "Estatistica Descritiva",
-    "section": "",
-    "text": "A Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
-  },
-  {
-    "objectID": "index.html#sobre-o-autor-1",
-    "href": "index.html#sobre-o-autor-1",
-    "title": "Estatistica Descritiva",
-    "section": "Sobre o Autor",
-    "text": "Sobre o Autor\nOlá! Meu nome é [Seu Nome], e sou [sua profissão ou área de atuação, ex: estudante de estatística, professor, analista de dados]. Criei este site para compartilhar meu conhecimento e facilitar o aprendizado de Estatística Descritiva. Sinta-se à vontade para explorar os conteúdos e entrar em contato se tiver dúvidas ou sugestões.\n👉 Saiba mais sobre mim"
+    "objectID": "02-analise-explo-dados.html#média-1",
+    "href": "02-analise-explo-dados.html#média-1",
+    "title": "Análise Exploratória de Dados",
+    "section": "Média",
+    "text": "Média\nA média é calculada como a soma de todos os valores dividida pelo número de valores.\ndados &lt;- c(10, 20, 30, 40, 50) \nmedia &lt;- mean(dados) media"
   },
   {
     "objectID": "06-exercicios.html",
@@ -228,7 +221,7 @@
     "href": "06-exercicios.html#answer-1",
     "title": "c1 ex01",
     "section": "answer",
-    "text": "answer\nA tabela de frequência absoluta é:\nA tabela de frequência relativa é:\nfrequência absoluta acumulada é:\nA tabela de frequência relativa acumulda é:\ntabela de frequências é:\n\n\n    fi Fi  fri  Fri\n146  1  1 0.04 0.04\n150  1  2 0.04 0.08\n152  1  3 0.04 0.12\n155  1  4 0.04 0.16\n156  1  5 0.04 0.20\n158  1  6 0.04 0.24\n159  1  7 0.04 0.28\n160  1  8 0.04 0.32\n162  1  9 0.04 0.36\n163  3 12 0.12 0.48\n164  2 14 0.08 0.56\n165  5 19 0.20 0.76\n166  1 20 0.04 0.80\n167  3 23 0.12 0.92\n175  2 25 0.08 1.00\n\n\no gráfico de barras é:\n\n\n\n\n\no gráfico circular é:\n\n\n\n\n\no gráfico de linha é:\n\n\n\n\n\nA expressão é: \\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
+    "text": "answer\nA tabela de frequência absoluta é:\nA tabela de frequência relativa é:\nfrequência absoluta acumulada é:\nA tabela de frequência relativa acumulda é:\ntabela de frequências é:\n\n\n    fi Fi  fri  Fri\n146  1  1 0.04 0.04\n150  1  2 0.04 0.08\n152  1  3 0.04 0.12\n155  1  4 0.04 0.16\n156  1  5 0.04 0.20\n158  1  6 0.04 0.24\n159  1  7 0.04 0.28\n160  1  8 0.04 0.32\n162  1  9 0.04 0.36\n163  3 12 0.12 0.48\n164  2 14 0.08 0.56\n165  5 19 0.20 0.76\n166  1 20 0.04 0.80\n167  3 23 0.12 0.92\n175  2 25 0.08 1.00\n\n\no gráfico de barras é:\n\n\n\n\n\n\n\n\n\no gráfico circular é:\n\n\n\n\n\n\n\n\n\no gráfico de linha é:\n\n\n\n\n\n\n\n\n\nA expressão é: \\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
   },
   {
     "objectID": "06-exercicios.html#keywords-2",
@@ -287,55 +280,6 @@
     "text": "answer\nA tabela de frequência absoluta é:\n\n\nd1\n 0  1  2  3  4 \n 3 12  7  3  2 \n\n\nA tabela de frequência relativa é:\n\n\nd1\n         0          1          2          3          4 \n0.11111111 0.44444444 0.25925926 0.11111111 0.07407407 \n\n\ntabela de frequências é:\n\n\n\ntabela de frequências\n\n\n\nfi\nfri\n\n\n\n\n0\n3\n0.1111111\n\n\n1\n12\n0.4444444\n\n\n2\n7\n0.2592593\n\n\n3\n3\n0.1111111\n\n\n4\n2\n0.0740741\n\n\n\n\n\no gráfico de barras é:"
   },
   {
-    "objectID": "index.html#baixar-o-pdf",
-    "href": "index.html#baixar-o-pdf",
-    "title": "Estatistica Descritiva",
-    "section": "Baixar o PDF",
-    "text": "Baixar o PDF\nClique no link abaixo para baixar o PDF: Baixar PDF ## Por que Estudar Estatística Descritiva?\nA Estatística Descritiva é a base para qualquer análise de dados. Ela ajuda-nos a: - Entender padrões e tendências em conjuntos de dados. - Tomar decisões informadas com base em evidências. - Comunicar resultados de forma clara e eficiente.\nSeja um estudante, pesquisador ou profissional, dominar esses conceitos é essencial para trabalhar com dados de maneira eficaz."
-  },
-  {
-    "objectID": "07-ex-inter.html",
-    "href": "07-ex-inter.html",
-    "title": "Exercícios Interactivos",
-    "section": "",
-    "text": "1 + 1\n\n[1] 2"
-  },
-  {
-    "objectID": "07-ex-inter.html#htmlwidgets",
-    "href": "07-ex-inter.html#htmlwidgets",
-    "title": "Exercícios Interactivos",
-    "section": "HTMLwidgets",
-    "text": "HTMLwidgets\n\n# Carregar a biblioteca leaflet\nlibrary(leaflet)\n\n# Coordenadas aproximadas de Cabinda, Angola\ncabinda_lat &lt;- -5.55\ncabinda_lng &lt;- 12.19\n\n# Criar o mapa\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Adicionar os tiles do OpenStreetMap\n  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = \"Cabinda, Angola\")\nm  # Print the map"
-  },
-  {
-    "objectID": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
-    "href": "07-ex-inter.html#exemplo-de-questão-de-múltipla-escolha",
-    "title": "Exercícios Interactivos",
-    "section": "Exemplo de questão de múltipla escolha",
-    "text": "Exemplo de questão de múltipla escolha\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:\n\n\n População:Todos os estudantes do 1º ano do curso de Matemática, Amostra : Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.\n\n\n\n\n\nLimpar\n\n\n\n\nA função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:\n\n\n \\[ Y=β_0+β_1X\\]  \\[ \\hat Y=\\hat β_0\\]   \\[Y=β_0+β_1X+e\\]  \\[ \\hat Y=\\hat β_0+β_1X\\]\n\n\n\n\n\nLimpar\n\n\n\n\nCom um modelo de regressão, a inferência estatística pode ser feita desde que:\n\n\n  O modelo é estatisticamente válido   Nenhuma das anteriores  \\[R^2=1\\]  1 e 2 estão corretas\n\n\n\n\n\nLimpar\n\n\n\n\nQual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?\n\n\n O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões   O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações   Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes   O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações\n\n\n\n\n\nLimpar\n\n\n\n\nO diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: :\n\n\n  A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear   A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.   A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y   A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros é cumprida para este modelo.   A suposição de normalidade dos erros é cumprida neste modelo   A suposição de normalidade dos erros não é cumprida para este modelo.   A suposição de variância constante dos erros não é cumprida neste modelo.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  a. A relação é linear e positiva   A relação é não linear e negativa.   A relação é não linear e positiva.   Não há relação.\n\n\n\n\n\nLimpar\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é linear e positiva   Não há relação.   A relação é não linear e negativa.   A relação é não linear e positiva.\n\n\n\n\n\nLimpar\n\n\n\nNum estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:\n\n\n (A), (D), (E), (F) , (H).   (A), (D), (C), (F) , (H).   (A), (D), (E), (F) , (B).\n\n\n\n\n\nLimpar\n\n\n\nE, as qualitativas são:\n\n\n (B), (C), (G).  (B), (C), (G) ,(F) .  (B), (C), (G)),(H).\n\n\n\n\n\nLimpar\n\n\n\nDiga porque é que a seguinte situação representam má amostra:\n\nPara saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:\n\n\n  Diferentes tipos de pessoas frequentam o mesmo supermercado.  A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .   Não é representativa da população de onde foi retirada-é uma amostra enviesada.\n\n\n\n\n\nLimpar\n\nsingle.choice() function: check arguments.\nsingle.choice() function: check arguments.\n\\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nOUTRA\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:\n\n\nA resposta é 1.\n\nA resposta é \n\n\nLimpar"
-  },
-  {
-    "objectID": "07-ex-inter.html#essay-em-ficheiro-externo",
-    "href": "07-ex-inter.html#essay-em-ficheiro-externo",
-    "title": "Exercícios Interactivos",
-    "section": "Essay em ficheiro externo",
-    "text": "Essay em ficheiro externo\n\nhttps://bookdown.org/yihui/rmarkdown-cookbook/include-html.html"
-  },
-  {
-    "objectID": "07-ex-inter.html#incluir-geogebra",
-    "href": "07-ex-inter.html#incluir-geogebra",
-    "title": "Exercícios Interactivos",
-    "section": "Incluir geogebra",
-    "text": "Incluir geogebra\n\nknitr::include_url(\"https://www.geogebra.org/m/W9Nz53Ct\")"
-  },
-  {
-    "objectID": "07-ex-inter.html#como-fazer-2",
-    "href": "07-ex-inter.html#como-fazer-2",
-    "title": "Exercícios Interactivos",
-    "section": "Como fazer 2",
-    "text": "Como fazer 2\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:{r eval=FALSE} install.packages(\"bookdown\") # or the development version # devtools::install_github(\"rstudio/bookdown\")\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/."
-  },
-  {
     "objectID": "08-ex-inter2.html",
     "href": "08-ex-inter2.html",
     "title": "Exerc Int02",
@@ -347,14 +291,14 @@
     "href": "08-ex-inter2.html#htmlwidgets",
     "title": "Exerc Int02",
     "section": "HTMLwidgets",
-    "text": "HTMLwidgets\n\nlibrary(leaflet)\n\nWarning: package 'leaflet' was built under R version 4.2.3\n\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=174.768, lat=-36.852, popup=\"The birthplace of R\")\nm  # Print the map\n\n\n\n\n\n\n# Carregar a biblioteca leaflet\nlibrary(leaflet)\n\n# Coordenadas aproximadas de Cabinda, Angola\ncabinda_lat &lt;- -5.55\ncabinda_lng &lt;- 12.19\n\n# Criar o mapa\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Adicionar os tiles do OpenStreetMap\n  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = \"Cabinda, Angola\")\nm  # Print the map"
+    "text": "HTMLwidgets\n\nlibrary(leaflet)\n\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Add default OpenStreetMap map tiles\n  addMarkers(lng=174.768, lat=-36.852, popup=\"The birthplace of R\")\nm  # Print the map\n\n\n\n\n\n\n# Carregar a biblioteca leaflet\nlibrary(leaflet)\n\n# Coordenadas aproximadas de Cabinda, Angola\ncabinda_lat &lt;- -5.55\ncabinda_lng &lt;- 12.19\n\n# Criar o mapa\nm &lt;- leaflet() %&gt;%\n  addTiles() %&gt;%  # Adicionar os tiles do OpenStreetMap\n  addMarkers(lng = cabinda_lng, lat = cabinda_lat, popup = \"Cabinda, Angola\")\nm  # Print the map"
   },
   {
     "objectID": "08-ex-inter2.html#exemplo-de-questão-de-múltipla-escolha",
     "href": "08-ex-inter2.html#exemplo-de-questão-de-múltipla-escolha",
     "title": "Exerc Int02",
     "section": "Exemplo de questão de múltipla escolha",
-    "text": "Exemplo de questão de múltipla escolha\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:\n\n\n População,Todos os estudantes do 1º ano do curso de Matemática, Amostra , Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.\n\n\n\n\n\nLimpar\n\n\n\n\nA função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:\n\n\n \\[ \\hat Y=\\hat β_0\\]   \\[Y=β_0+β_1X+e\\]  \\[ \\hat Y=\\hat β_0+β_1X\\]  \\[ Y=β_0+β_1X\\]\n\n\n\n\n\nLimpar\n\n\n\n\nCom um modelo de regressão, a inferência estatística pode ser feita desde que:\n\n\n 1 e 2 estão corretas   Nenhuma das anteriores  \\[R^2=1\\]   O modelo é estatisticamente válido\n\n\n\n\n\nLimpar\n\n\n\n\nQual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?\n\n\n  O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações   O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações   Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes  O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões\n\n\n\n\n\nLimpar\n\n\n\n\nO diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: :\n\n\n  A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear   A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.   A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros não é cumprida neste modelo.   A suposição de variância constante dos erros é cumprida para este modelo.   A suposição de normalidade dos erros não é cumprida para este modelo.   A suposição de normalidade dos erros é cumprida neste modelo\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é não linear e negativa.   a. A relação é linear e positiva   A relação é não linear e positiva.   Não há relação.\n\n\n\n\n\nLimpar\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  A relação é não linear e negativa.   A relação é não linear e positiva.   A relação é linear e positiva   Não há relação.\n\n\n\n\n\nLimpar\n\n\n\nNum estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:\n\n\n  (A), (D), (E), (F) , (B).   (A), (D), (C), (F) , (H).  (A), (D), (E), (F) , (H).\n\n\n\n\n\nLimpar\n\n\n\nE, as qualitativas são:\n\n\n (B), (C), (G).  (B), (C), (G)),(H).  (B), (C), (G) ,(F) .\n\n\n\n\n\nLimpar\n\n\n\nDiga porque é que a seguinte situação representam má amostra:\n\nPara saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:\n\n\n A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .   Diferentes tipos de pessoas frequentam o mesmo supermercado.   Não é representativa da população de onde foi retirada-é uma amostra enviesada.\n\n\n\n\n\nLimpar\n\nsingle.choice() function: check arguments.\nsingle.choice() function: check arguments.\n\\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nOUTRA\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:\n\n\nA resposta é 1.\n\nA resposta é \n\n\nLimpar"
+    "text": "Exemplo de questão de múltipla escolha\n\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população, a amostra e a variável em estudo é:\n\n\n  População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os estudantes do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.   População:Todos os estudantes do 1º ano do ISCED-Cabinda, Amostra : Todos os alunos do 1º ano do curso de Matemática e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.  População,Todos os estudantes do 1º ano do curso de Matemática, Amostra , Os 40 estudantes que responderam ao inquérito e a Variável: N.º de irmãos de cada estudante do 1º ano do curso de Matemática.\n\n\n\n\n\nLimpar\n\n\n\n\nA função a seguir representa uma relação determinística entre uma variável de resposta e uma variável de regressão:\n\n\n \\[ Y=β_0+β_1X\\]  \\[Y=β_0+β_1X+e\\]  \\[ \\hat Y=\\hat β_0+β_1X\\]  \\[ \\hat Y=\\hat β_0\\] \n\n\n\n\n\nLimpar\n\n\n\n\nCom um modelo de regressão, a inferência estatística pode ser feita desde que:\n\n\n \\[R^2=1\\]  1 e 2 estão corretas   Nenhuma das anteriores   O modelo é estatisticamente válido\n\n\n\n\n\nLimpar\n\n\n\n\nQual é a diferença entre o R ao quadrado e o R ao quadrado ajustado?\n\n\n O R quadrado ajustado representa a qualidade do ajuste, enquanto o R quadrado indica quão boas serão as previsões   Não há diferença prática, ambas são medidas do desempenho de um modelo, mas foram desenvolvidas por autores diferentes   O R quadrado ajustado aumenta quanto mais variáveis houver, enquanto o R quadrado penaliza a inclusão de variáveis se elas não fornecerem informações   O R quadrado aumenta quanto mais variáveis houver, enquanto o R quadrado ajustado penaliza a inclusão de variáveis se elas não fornecerem informações\n\n\n\n\n\nLimpar\n\n\n\n\nO diagrama a seguir representa um gráfico de dispersão entre uma variável de resposta e uma variável de regressão. Pode concluir-se que: :\n\n\n  A relação entre a variável de resposta e a independente é forte e não é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é forte e é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente não é linear e é razoável ajustar um modelo de regressão linear   A relação entre a variável resposta e a independente é fraca e não é razoável ajustar um modelo de regressão linear\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa os resíduos VS os valores ajustados de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de normalidade dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de normalidade dos erros é cumprida para este modelo e não é necessário transformar Y   A suposição de variância constante dos erros não é cumprida para este modelo e é necessário transformar Y.   A suposição de variância constante dos erros é cumprida para este modelo e não é necessário transformar para Y.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa o qqNorm dos resíduos de um modelo de regressão linear. Pode concluir-se que: :\n\n\n  A suposição de variância constante dos erros não é cumprida neste modelo.   A suposição de normalidade dos erros não é cumprida para este modelo.   A suposição de normalidade dos erros é cumprida neste modelo   A suposição de variância constante dos erros é cumprida para este modelo.\n\n\n\n\n\nLimpar\n\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  Não há relação.   a. A relação é linear e positiva   A relação é não linear e positiva.   A relação é não linear e negativa.\n\n\n\n\n\nLimpar\n\n\n\nO gráfico a seguir representa um diagrama de dispersão entre duas variáveis.Pode concluir-se que:\n\n:\n\n\n  Não há relação.   A relação é não linear e negativa.   A relação é não linear e positiva.   A relação é linear e positiva\n\n\n\n\n\nLimpar\n\n\n\nNum estudo feito numa escola, recolheram-se dados referentes às seguintes variáveis:(A) idade,(B) ano de escolaridade,(C) sexo,(D) nota na disciplina de Matemática,(E) tempo gasto diariamente no estudo, (F) distância de casa à escola,(G) local de estudo (H) número de irmãos.Das variáveis indicadas, as quantitativas são:\n\n\n  (A), (D), (C), (F) , (H).   (A), (D), (E), (F) , (B).  (A), (D), (E), (F) , (H).\n\n\n\n\n\nLimpar\n\n\n\nE, as qualitativas são:\n\n\n (B), (C), (G).  (B), (C), (G)),(H).  (B), (C), (G) ,(F) .\n\n\n\n\n\nLimpar\n\n\n\nDiga porque é que a seguinte situação representam má amostra:\n\nPara saber qual o candidato mais votado, para a Câmara de determinada cidade, auscultou-se a opinião dos clientes de determinado supermercado:\n\n\n A situação apresentada é representativa da população de onde foi retirada-é amostra não enviesada .   Não é representativa da população de onde foi retirada-é uma amostra enviesada.   Diferentes tipos de pessoas frequentam o mesmo supermercado.\n\n\n\n\n\nLimpar\n\nsingle.choice() function: check arguments.\nsingle.choice() function: check arguments.\n\\[\n\\sum (y_i-\\hat y_i)^2=\\sum (y_i-b_0-b_1x_i^2)\n\\]\nOUTRA\n\nPretendia-se fazer um estudo sobre o número de irmãos dos estudantes do 1º ano do curso de Matemática do ISCED-Cabinda. Para isso, efectuou-se um inquérito ao qual responderam 40 estudantes. A população e a amostra deste estudo é:\n\n\nA resposta é 1.\n\nA resposta é \n\n\nLimpar"
   },
   {
     "objectID": "08-ex-inter2.html#essay-em-ficheiro-externo",
@@ -378,46 +322,11 @@
     "text": "Como fazer 2\nThis is a sample book written in Markdown. You can use anything that Pandoc’s Markdown supports, e.g., a math equation \\(a^2 + b^2 = c^2\\).\nThe bookdown package can be installed from CRAN or Github:{r eval=FALSE} install.packages(\"bookdown\") # or the development version # devtools::install_github(\"rstudio/bookdown\")\nRemember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading #.\nTo compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): https://yihui.name/tinytex/."
   },
   {
-    "objectID": "abertas/q02_aberta_testes.html",
-    "href": "abertas/q02_aberta_testes.html",
-    "title": "aberta_testes",
-    "section": "",
-    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\n\nset.seed(90) #produz sempre os mesmos dados\nhist(rnorm(100,10,1))"
-  },
-  {
-    "objectID": "abertas/q02_aberta_testes.html#keywords",
-    "href": "abertas/q02_aberta_testes.html#keywords",
-    "title": "aberta_testes",
-    "section": "keywords",
-    "text": "keywords\n\ndistribuição Normal"
-  },
-  {
-    "objectID": "abertas/q02_aberta_testes.html#answer",
-    "href": "abertas/q02_aberta_testes.html#answer",
-    "title": "aberta_testes",
-    "section": "answer",
-    "text": "answer\nYou can also embed plots, for example:\n\n\n\n\n\n\n\n\n\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
-  },
-  {
-    "objectID": "abertas/q02_aberta_testes.html#keywords-1",
-    "href": "abertas/q02_aberta_testes.html#keywords-1",
-    "title": "aberta_testes",
-    "section": "keywords",
-    "text": "keywords\nssss"
-  },
-  {
-    "objectID": "abertas/q02_aberta_testes.html#answer-1",
-    "href": "abertas/q02_aberta_testes.html#answer-1",
-    "title": "aberta_testes",
-    "section": "answer",
-    "text": "answer\nYou can also embed plots, for example:\nNote that the echo = FALSE parameter was added to the code chunk to prevent printing of the R code that generated the plot."
-  },
-  {
     "objectID": "abertas/q01_aberta_testes.html",
     "href": "abertas/q01_aberta_testes.html",
     "title": "aberta_testes",
     "section": "",
-    "text": "This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nUma imagem:"
+    "text": "Lembrar de carregar em “outline” ao lado direito\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.\nUma imagem:\n\n\nx = seq(-2,2,0.1)\ny = x^2\nplot(x,y)\n\n\n\n\n\n\n\n\n\ncurve(x^2, from = -2, to = 2)\n\n\n\n\n\n\n\n\n\\[f(x | \\mu, \\sigma^2) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}\\]\n\n# Define a média e o desvio padrão\nmedia &lt;- 0\ndesvio_padrao &lt;- 1\n\n# Cria o gráfico da distribuição normal\ncurve(dnorm(x, mean = media, sd = desvio_padrao), from = -4, to = 4, \n      xlab = \"Valores\", ylab = \"Densidade\", \n      main = \"Distribuição Normal\")"
   },
   {
     "objectID": "abertas/q01_aberta_testes.html#keywords",
@@ -460,5 +369,12 @@
     "title": "aberta_testes",
     "section": "answer",
     "text": "answer\nA média ponderada é calculada usando a forma: [ x_p= ] Onde: \\(w_i\\) é o peso associado ao valor \\(x_i\\); \\(Σ\\) é o símbolo que representa a soma. Calculando a média ponderada \\[\n\\bar x_p=\\frac{Σ(w_ix_i)}{Σ(w_i)}\n\\] \\[\n=\\frac{(5.12,5+3.12+2.9,5)}{(5+3+2)}\n\\] \\[\n=\\frac{(62,5+36+19)}{10}\n\\] \\[\n=\\frac{(117,5)}{10}=11,75\n\\] A média do estudante é: 11,75"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
